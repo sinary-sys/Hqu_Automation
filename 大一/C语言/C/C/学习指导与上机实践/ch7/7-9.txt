@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void main(void){
+  char name[20],substr[20],i,j=0;
+  int start,length;
+  
+  printf("Enter name:");
+  gets(name);
+
+  printf("Enter start and length:");
+  scanf("%d%d",&start,&length);
+
+  if(start<=0||start>=20) {
+	  printf("error start!\n");
+	  exit(1);
+  }
+  if(start+length-1>=20){
+      printf("error start and length!\n");
+	     exit(1);
+  }
+
+  for(i=start-1;i<start+length-1;i++){
+	    substr[j]=name[i];
+	    j++;
+  }
+
+  substr[j]='\0';
+  puts("substr:");
+  puts(substr);
+}

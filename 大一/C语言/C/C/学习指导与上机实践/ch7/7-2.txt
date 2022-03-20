@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main(void){
+	int Fib[21],k;
+	Fib[1]=Fib[2]=1;
+	for(k=3;k<=20;k++)
+		Fib[k]=Fib[k-1]+Fib[k-2]; 
+	printf("Fibonacci数列的前20项为：\n");
+	for(k=1;k<=20;k++){
+		printf("%5d",Fib[k]);
+		if(k%5==0) printf("\n");
+	}
+}

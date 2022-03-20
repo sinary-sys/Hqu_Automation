@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(void){
+	int a[5][5],i,j;
+
+	for(i=0;i<5;i++) a[i][0]=i+1; /*  得到每行的第1列元素*/
+	for(i=0;i<5;i++)
+	   for(j=1;j<5;j++)
+		  a[i][j]=a[i][j-1]%5+1; /* 根据同行的前一列元素，求得后一列元素 */
+
+	for(i=0;i<5;i++){
+		for(j=0;j<5;j++)
+			printf("%-3d",a[i][j]); 
+		printf("\n");
+	}
+}

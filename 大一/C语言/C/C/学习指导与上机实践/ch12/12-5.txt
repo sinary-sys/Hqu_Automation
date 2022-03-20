@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#define N 20
+struct student{
+	char SID[10];
+	char Name[20];
+	char addr[20];
+	int score1;
+	int score2;
+	int score3;
+}
+void main(void){
+	struct student stu[N];
+	FILE *fp;
+	int j=0;
+	int k;
+	if((fp=fopen("c:\\student.txt","r+")) == NULL){
+		printf("open error on writing in");
+		exit(0);
+	}
+	printf("SID\t\tName\t\tAddress\t\tChinese\tMath\tEnglish\n");
+	while(fgetc(fp)!= -1){
+		j++;
+	}
+	k = j/sizeof(struct student);
+	rewind(fp);
+	fread(stu,sizeof(struct student),k,fp);
+	for(j = 0;j < k;j++){
+		printf("%s\t\t",stu[j].SID);
+		printf("%s\t",stu[j].Name);
+		printf("%s\t",stu[j].addr);
+		printf("%d\t",stu[j].score1);
+		printf("%d\t",stu[j].score2);
+		printf("%d\n",stu[j].score3);
+	}
+
+	fclose(fp);
+}

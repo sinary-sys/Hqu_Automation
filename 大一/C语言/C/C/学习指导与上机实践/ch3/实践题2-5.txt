@@ -1,0 +1,20 @@
+#include<stdio.h>
+#define N 3
+void main(void){
+		char name[10];
+		int age;
+		char sex;
+		float maths,english,computer;
+		
+		printf("Please enter your name,age and sex:");
+		scanf("%s%d%c",name,&age,&sex);
+
+    	printf("Please enter your scores(maths,english and computer):");
+		scanf("%f%f%f",&maths,&english,&computer);
+
+(maths>=90&&english>=90&&computer>=90) ? 
+printf("You are excellent!\n"):printf("You should study hard!\n");
+	    /* 注意下面逗号表达式的使用 */
+		printf("name=%s,age=%d,sex=%c\n",name,age,sex),  /* 是逗号不是分号！*/
+printf("maths=%f,english=%f,computer=%f\n",maths,english,computer);   
+}

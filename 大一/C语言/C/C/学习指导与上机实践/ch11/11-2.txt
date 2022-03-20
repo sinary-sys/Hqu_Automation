@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+struct student{
+	char SID[10];
+	char Name[20];
+	char addr[20];
+	int score1;
+	int score2;
+	int score3;
+}
+void main(void){
+		struct student stu;
+	printf("input student's ID: ");
+	gets(stu.SID);
+	printf("input student's Name: ");
+	gets(stu.Name);
+	printf("input student's Address: ");
+	gets(stu.addr);
+	printf("input student Chinese Score: ");
+	scanf("%d",&stu.score1);
+	printf("input student Math Score: ");
+	scanf("%d",&stu.score2);
+	printf("input student English Score: ");
+	scanf("%d",&stu.score3);
+	printf("Student Info:\n");
+	printf("SID\t\tName\t\tAddress\t\tChinese\tMath\tEnglish\n");
+	printf("%s\t\t",stu.SID);
+	printf("%s\t",stu.Name);
+	printf("%s\t",stu.addr);
+	printf("%d\t",stu.score1);
+	printf("%d\t",stu.score2);
+	printf("%d\n",stu.score3);
+}

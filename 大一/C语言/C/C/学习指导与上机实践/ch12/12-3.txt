@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main(void){	
+	FILE *fp1, *fp2;
+	char c;
+
+	if((fp1=fopen("c:\\test.txt","r+")) == NULL){
+		printf("open error on writing in");
+		exit(0);
+	}
+	if((fp2=fopen("c:\\test2.txt","w+")) == NULL){
+		printf("open error on writing in");
+		exit(0);
+	}
+	printf("content:\n");
+	while((c = fgetc(fp1)) != -1){
+		putchar(c);
+		fputc(c, fp2);
+	}
+	printf("\nfinished!\n");
+	fclose(fp1);
+	fclose(fp2);
+}

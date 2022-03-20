@@ -1,0 +1,12 @@
+#include<stdio.h>
+int maxofarray(int a[],int len){
+if(len==1) 
+		 return a[0];
+	 else
+		return a[len-1]>maxofarray(a,len-1)?a[len-1]:maxofarray(a,len-1);
+	}
+void main(void){
+	int b[]={12,2,3,4,5,16,1,8,9,7};
+	int size=sizeof(b)/sizeof(int);
+	printf("Max=%d\n",maxofarray(b,size));
+}

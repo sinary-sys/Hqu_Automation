@@ -1,0 +1,23 @@
+#include<stdio.h>
+#define N 3
+void main(void){
+	char name[10];
+	int age;
+	char sex;
+	float maths,english,computer;
+	float maxscore;
+	
+	printf("Please enter your name,age and sex:");
+	scanf("%s%d%c",name,&age,&sex);
+
+    printf("Please enter your scores(maths,english and computer):");
+	scanf("%f%f%f",&maths,&english,&computer);
+
+	maxscore=maths;
+	if(english>maxscore)    /* 关系表达式 */
+maxscore=english;
+	if(computer>maxscore)  /* 关系表达式 */
+maxscore=computer;
+	printf("name=%s,age=%d,sex=%c\nmaths=%f,english=%f,computer=%f,
+maxsocre=%f\n",name,age,sex,maths,english,computer,maxscore);   
+}

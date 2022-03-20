@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main(void){
+ int Biggest(int a, int b, int c);  /* 函数Biggerst的原型说明 */
+ int l,m,n; 
+ printf("Enter 3 inttegers:");
+ scanf("%d%d%d",&l,&m,&n);
+
+ printf("The biggest is %d\n",Biggest(l,m,n)); 
+}
+
+int Biggest(int a, int b, int c){
+ int Bigger(int ,int );  /* 对定义在调用点之后的函数Bigger()作原型说明 */
+	int temp=Bigger(a,b);
+
+	return Bigger(temp,c);
+}
+
+int Bigger(int x,int y){
+	return (x>y?x:y);
+}

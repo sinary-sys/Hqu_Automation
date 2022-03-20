@@ -1,0 +1,25 @@
+#include<stdio.h>
+void NumToStr(int m,char a[100],int k){
+	 if(k==0) return ;
+	 a[--k]=m%10+48;
+	 m/=10;
+	 NumToStr(m,a,k);
+}
+void main(void){
+int i,x,k=0;
+	 char a[100],sign=' ';
+	 printf("\nInput x:");
+	 scanf("%d",&x);
+	 if(x<0){
+		sign='-';
+		x=-x;
+	 }
+	 i=x;
+do{
+		i/=10;
+		k++;
+	 }while(i!=0);
+	 a[k]='\0';
+	 NumToStr(x,a,k);
+	 printf("The string is %c%s\n",sign,a);
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+
+void main(void){
+  char str[100];
+  int i,len,count=0;
+    
+  puts("Input string:");
+  gets(str);
+
+  len=strlen(str); /* 获取字符串的长度 */
+
+  for(i=0;i<len;i++)
+	  if(str[i]!=' '){  /* 单词开始 */
+		  count++;      /* 个数加1 */
+		  while(str[i]!=' '&&str[i]!='\0') /* 单词结束 */
+			  i++;
+	  }
+  
+ printf("There are %d words in \"%s\".\n",count,str);
+}

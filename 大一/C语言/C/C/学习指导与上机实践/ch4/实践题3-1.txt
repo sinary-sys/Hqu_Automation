@@ -1,0 +1,34 @@
+#include<stdio.h>
+void main(void){
+
+	  int IntVariable;
+	  float FloatVariable;
+	  double DoubleVariable;
+	  long double LDVariable;
+	  char Ch;
+
+    /* input and output of char type data */
+    puts("input a char to Ch:");
+    Ch=getchar();
+    putchar(Ch);
+
+	/* input and output of integer type data */
+	printf("\ninput an integer to IntVariable:");
+	scanf("%o",&IntVariable);              /* Input Octal int data */
+	printf("IntVariable=%d\n",IntVariable);    /* Output decimal int data */
+    
+	/* input and output of float type data */
+	printf("input a float to FloatVariable:");
+	scanf("%f",&FloatVariable);                 /* Input float data */
+	printf("FloatVariable=%-8.3f\n",FloatVariable);  /* Output float data */
+
+    /*  input and output of double & long double type data */
+    printf("\ninput a double to DoubleVariable:");
+    scanf("%lf",&DoubleVariable);              /* error: scanf("%f",&DoubleVariable); */
+    printf("DoubleVariable=%e\n",DoubleVariable); /* output in the form of exponent format */
+
+    printf("\ninput a long double to LDVariable:");
+scanf("%lf",&LDVariable);
+/* error: scanf("%f",&DoubleVariable); or scanf("%e",&DoubleVariable);  */
+    printf("LDVariable=%f\n",LDVariable);    
+}

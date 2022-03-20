@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main(void){
+	int a=10;
+	int *pa=&a;
+	int **q=&pa;
+
+	printf("a=%d\n",a);
+	printf("Address of a is %p\n",pa);
+	printf("Adress of pa is %p\n",q);
+
+ printf("a=%d\n",*pa);
+	printf("a=%d\n",**q);
+printf(¡°*q=%p\n¡±,*q);
+}

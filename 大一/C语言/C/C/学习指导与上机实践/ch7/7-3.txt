@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main(void){
+	int a[10]={1,2,3,4,5,6,7,8,9,10},start,k,i;
+	printf("输入要输出元素的起始序号（1～10）：");
+    scanf("%d",&start);
+	i=start-1;
+  for(k=1;k<=10;k++){
+		printf("%-3d",a[i]);
+		i=(i+1)%10;
+	}
+}

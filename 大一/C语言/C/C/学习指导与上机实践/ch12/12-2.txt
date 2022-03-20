@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(void){
+	FILE *fp;
+	char c;
+
+	if((fp=fopen("c:\\test.txt","r+")) == NULL){
+		printf("open error on writing in");
+		exit(0);
+	}
+	printf("content:\n");
+	while((c = fgetc(fp)) != -1){
+		putchar(c);
+	}
+	fclose(fp);
+}

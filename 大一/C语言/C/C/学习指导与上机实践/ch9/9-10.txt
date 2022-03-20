@@ -1,0 +1,12 @@
+#include <stdio.h>
+static int c=0;
+void *Fun(int a,int b){
+	c=a+b;
+	return &c;
+}
+
+void main(void){
+	int x=10,y=20;
+	int *p=(int*)Fun(x,y);
+	printf("sum=%d\n",*p);	
+}

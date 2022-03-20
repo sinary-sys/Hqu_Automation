@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main(void){
+	int a=5,b=10,c=20;
+	printf("%d\n",a++);
+    printf("%d\n",a);
+
+    printf("%d\n",++b);
+    printf("%d\n",b);
+
+    printf("%d,%d\n",c,c++);
+}

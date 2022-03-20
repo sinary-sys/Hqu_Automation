@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main(void){
+  int a=10,*p=&a;   /* 声明指针变量p，并初始化，让它指向变量a */
+  printf("a=%d\n",a);   /* 直接访问变量a */
+  printf("a=%d\n",*p);  /* 通过指向a的指针p间接访问变量a */
+
+  printf("address of is %p\n",&a);  /* 通过取地址运算符, 输出变量a的存储地址 */
+  printf("Address of a is %p\n",p);   /* 通过指向a的指针，输出变量a的存储地址 */
+}

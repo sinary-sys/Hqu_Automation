@@ -1,0 +1,7 @@
+#include <stdio.h>
+char string[3][20]={"read error","write error","other error"};
+void main(void){
+ char (*p)[20];
+ for(p=string;p<string+3;p++)
+	 printf("%s\n",*p);
+}

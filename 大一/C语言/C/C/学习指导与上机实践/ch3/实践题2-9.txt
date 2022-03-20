@@ -1,0 +1,38 @@
+#include<stdio.h>
+void main(void){
+     int i=+32767;
+     char ch='\x61';  /* 转义字符的使用 */
+     float f=3.5f;
+     double d=3.14;
+
+     printf("----------------\n");
+     printf("i=%d\n",i); 
+printf("i=%x\n",i);  /* 按十六进制形式输出 */
+     i++;              /* 最大正整数的上溢 */
+     printf("i=%d\n",i);  
+     printf("----------------\n");
+
+     i=-32768;
+printf("i=%d\n",i); 
+printf("i=%u\n",i);  /* 按无符号整数形式输出 */
+
+     --i;               /* 最小负整数下溢 */
+     printf("i=%d\n",i);
+     printf("----------------\n");
+
+     i=ch;
+     printf("i=%d\n",i);
+     printf("i=%c\n",i);       /* 以字符形式输出整数 */
+     printf("----------------\n");
+
+     i=f;         /* 长类型数据赋值给短类型变量，产生“截取” */
+     printf("i=%d\n",i);      
+     printf("----------------\n");
+
+     f=100+50;    /* 短类型数据赋值给长类型变量，自动转换 */
+     printf("i=%f\n",f);
+
+     i=d; 
+printf("i=%d\n",i);
+     printf("----------------\n");
+   }

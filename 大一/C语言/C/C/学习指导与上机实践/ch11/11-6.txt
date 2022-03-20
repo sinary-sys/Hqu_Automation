@@ -1,0 +1,29 @@
+#include <stdio.h>
+void main(){
+	union t{
+		int i;
+		char c;	
+	};
+	
+	union t temp = {0x5561};
+	printf("%x\n",temp.i);
+	printf("%c\n",temp.c);
+	temp.c = 'A';
+	printf("%x\n",temp.i);
+	printf("%c\n",temp.c);
+}
+
+#include <stdio.h>
+void main(void){
+	union t{		
+		char c;
+		int i;
+	};
+	
+	union t temp = {0x5561};
+	printf("%x\n",temp.i);
+	printf("%c\n",temp.c);
+	temp.c = 'A';
+	printf("%x\n",temp.i);
+	printf("%c\n",temp.c);
+}

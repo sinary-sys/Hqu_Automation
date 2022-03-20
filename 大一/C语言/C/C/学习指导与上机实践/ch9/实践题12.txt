@@ -1,0 +1,11 @@
+#include<stdio.h>
+#define P(x) printf("%s",x)
+char* c[]={"you can make statement","for the topic","the sentences","How about"};
+char **p[]={c+3,c+2,c+1,c};
+char***pp=p;
+void main(void){
+	P(**++pp);
+	P(*--*++pp+3);
+	P(*pp[-2]+3);
+	P(pp[-1][-1]+3);	
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+void fun1(void){
+	printf("fun1 is called.\n");
+}
+void fun2(void){
+	printf("fun2 is called.\n");
+}
+void main(void){
+ void (*p_fun)(void);
+ p_fun=fun1;
+ (*p_fun)();
+
+ p_fun=fun2;
+ (*p_fun)();
+}

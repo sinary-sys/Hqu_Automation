@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <malloc.h>
+#include<string.h>
+
+char* stringcat(const char* s1,const char* s2){
+ 	char* result=(char*)malloc(sizeof(char)*100); /* 产生接受结果串的存储空间 */
+	unsigned int k,i;
+	for(k=0;k<strlen(s1);k++)   /* 将第1串复制到结果串中 */
+		result[k]=s1[k];
+	for(i=0;i<strlen(s2);i++)    /* 将第2串复制到结果串中 */
+		result[k+i]=s2[i];
+	result[strlen(s1)+strlen(s2)]='\0';  /* 在结果串的最后打上结束标记字符 */
+	return result;                  /* 返回指向结果串的指针 */
+}
+void main(void){
+ char *str1="abcde",*str2="xyz";
+ char* r=stringcat(str1,str2);
+ printf("The result string is %s.\n",r);
+}

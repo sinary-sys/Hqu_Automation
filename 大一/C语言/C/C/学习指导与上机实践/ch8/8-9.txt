@@ -1,0 +1,11 @@
+#include <stdio.h>
+int count(void){	
+	static int num=0;  /* 静态变量如没有初始值，则自动初始化为0 */
+    num++;
+	return num;
+}
+void main(void){
+	int i;
+	for(i=0;i<10;i++) 
+	  printf("%-3d",count());  
+}

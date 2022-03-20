@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main(void){
+	  char name[10];
+	  int age;
+	  char sex;
+	  float maths,english,computer;
+		
+printf("Please enter your name,age and sex:");
+	  scanf("%s%d%c",name,&age,&sex);
+
+   printf("Please enter your scores(maths,english and computer):");
+	  scanf("%f%f%f",&maths,&english,&computer);	        
+	  /* 分析以下sizeof表达式值的含义 */
+   printf("sizeof(int)=%d\n",sizeof(int));
+	   printf("sizeof(float)=%d\n",sizeof(float));
+   printf("sizeof(maths+english+computer)=%d\n",sizeof(maths+english+computer));
+   printf("sizeof(name)=%d\n",sizeof(name));	
+
+	  printf("name=%s,age=%d,sex=%c\n",name,age,sex),
+printf("maths=%f,english=%f,computer=%f\n",maths,english,computer);   
+getch();
+}

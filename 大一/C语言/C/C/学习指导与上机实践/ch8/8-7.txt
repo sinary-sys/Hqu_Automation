@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<string.h>
+#include<stdlib.h>
+void substring(char name[20],int start,char subname[20]){	
+	int k,len;
+	len=strlen(name);
+
+	if(start<1||start>len){  /* 检查起始位置的合法性 */
+		printf("Error start!\n");
+		exit(1);
+	}
+
+	for(k=start-1;k<=len;k++) /* 逐个拷贝各个字符，包括结束标记字符 */
+		subname[k-(start-1)]=name[k];
+}
+
+void main(void){
+  char str[20]="Beijing Uni.",sub[20];
+  int n=4;
+  substring(str,n,sub);
+  puts(sub);
+}

@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+void main(void){
+	float a,b,c,result1=0,result2=0,delta;
+	printf("input a, b, c of a quadratic equation.\n");
+	printf("input a:");
+	scanf("%f", &a);
+	printf("input b:");
+	scanf("%f", &b);
+	printf("input c:");
+	scanf("%f", &c);
+
+	if( a == 0 ){
+		printf("This equation is not a quadratic equation.");
+	}
+
+	else{
+		delta = b * b - 4 * a * c;
+		if(delta < 0){
+			printf("This quadratic equation has no real result\n");
+		}
+		else if(delta == 0){
+			result1 = -b/(2 * a);
+			printf("There are two same real result: %f\n", result1);
+		}
+		else{
+
+			result1 = (-b + sqrt(delta))/(2 * a);
+			result2 = (-b - sqrt(delta))/(2 * a);
+			printf("There are two real result:%f and %f\n", result1, result2);
+		}
+	}
+}

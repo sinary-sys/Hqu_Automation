@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main(){
+	enum bool{false, true};
+	int i = 1, sum = 0;
+	enum bool flag = true;
+	printf("flag = %d\n",flag);
+	do{		
+		sum = sum + i;
+		i++;
+		if(i <= 100)
+			flag = true;
+		else
+			flag = false;
+	}while(flag);
+	printf("flag = %d, sum = %d\n", flag, sum);		
+}

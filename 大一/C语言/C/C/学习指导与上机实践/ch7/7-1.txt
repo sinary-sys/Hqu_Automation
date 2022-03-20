@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main(void){
+	float money[7],highest=-1.0f,sum=0.0f;
+	int k;
+	printf("请输入一周中每天的支出值：");
+	for(k=0;k<7;k++) {
+		scanf("%f",&money[k]);
+		sum+=money[k];
+		if(money[k]>highest) highest=money[k];
+	}
+	printf("总支出：%f,最高支出：%f,日平均支出：%f\n",sum,highest,sum/7);
+}

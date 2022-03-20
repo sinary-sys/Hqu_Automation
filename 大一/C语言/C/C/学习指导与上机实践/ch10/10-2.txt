@@ -1,0 +1,8 @@
+#include <stdio.h>
+#define HALFOF(x) ((x)/2)
+void main(void){
+	float a=10;
+	int b=20;
+	printf("half of a is %f\n",HALFOF(a));
+ printf("half of b is %d\n",HALFOF(b));
+}

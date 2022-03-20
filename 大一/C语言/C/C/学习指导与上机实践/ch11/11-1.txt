@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+void main(void){
+struct student{
+	char SID[10];
+	char Name[20];
+	char addr[20];
+	int score1;
+	int score2;
+	int score3;
+} stu = {"12345","ZhaoXiaokun","Building 23",95,94,89};
+	printf("Student Info:\n");
+	printf("SID\t\tName\t\tAddress\t\tChinese\tMath\tEnglish\n");
+	printf("%s\t\t",stu.SID);
+	printf("%s\t",stu.Name);
+	printf("%s\t",stu.addr);
+	printf("%d\t",stu.score1);
+	printf("%d\t",stu.score2);
+	printf("%d\n",stu.score3);
+}

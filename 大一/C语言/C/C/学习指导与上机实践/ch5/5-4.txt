@@ -1,0 +1,15 @@
+#include <stdio.h>
+void main(void){
+	char c;
+	printf("input a character:");
+	scanf("%c",&c);
+	if(c >= 65 && c <= 90){
+		printf("%c: upper case\n", c);
+	}	
+	else if(c >= 97 && c <= 122){
+		printf("%c: lower case\n", c);
+	}
+	else{
+		printf("%c: other character\n", c);
+	}	
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+long DtoB(unsigned n){
+	long result;
+	
+	if(n==1)  result=1;
+	else    result=n%2+DtoB(n/2)*10;
+	return result;
+}
+void main(void){
+	int m;
+	printf("Please enter m:");
+	scanf("%d",&m);
+
+	printf("Binary form of %d is %ld.\n",m,DtoB(m));
+}
+程序运行情况如下：

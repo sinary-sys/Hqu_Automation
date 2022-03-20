@@ -1,0 +1,21 @@
+/* fun.c */
+#include <stdio.h>
+/* extern */ void fun1(void)
+{
+	printf("fun1 is called.\n");
+}
+void fun2(void)
+{
+	printf("fun2 is called.\n");
+}
+
+
+/*  main.c */
+#include<stdio.h>
+#include¡±fun.c¡±
+void main(void)
+{
+	printf("In main:\n");
+	fun1();
+	fun2();
+}

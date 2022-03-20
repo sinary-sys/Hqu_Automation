@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <string.h>
+struct person{	
+	char ID[18];
+	char Name[20];
+	char addr[20];
+	struct{
+		char CorE;
+		union{
+			struct{
+				char dep[20];
+				int salary;
+			}emp;
+			struct{
+				struct{
+					int year;
+					int month;
+					int day;
+				}date;
+				int stay;
+			}cust;
+		}diff;
+	}other;
+}
+
+void main(void){
+	struct person per;
+	printf("input a person's ID: ");
+	gets(per.ID);
+	printf("input a person's Name: ");
+	gets(per.Name);
+	printf("input a person's Addr: ");
+	gets(per.addr);	
+	printf("input a person's type, Customer or Employee(c or e): ");
+	per.other.CorE = getchar();
+	getchar();
+	if(per.other.CorE == 'c' || per.other.CorE == 'C'){
+		printf("now, input the date of a customer in.\n");
+		printf("input the year: ");
+		scanf("%d", &per.other.diff.cust.date.year);
+		printf("input the year: ");
+		scanf("%d", &per.other.diff.cust.date.month);
+		printf("input the day: ");
+		scanf("%d", &per.other.diff.cust.date.day);
+		printf("now, input how many days this customer will stay: ");
+		scanf("%d",&per.other.diff.cust.stay);
+	}
+	else if(per.other.CorE == 'e' || per.other.CorE == 'E'){
+		printf("now, input this Employee's department: ");
+		gets(per.other.diff.emp.dep);
+		printf("input this Employee's salary: ");
+		scanf("%d", &per.other.diff.emp.salary);
+		
+	}else{
+		printf("Error input\n");
+		exit(0);
+	}
+	if(per.other.CorE == 'c' || per.other.CorE == 'C'){
+printf("%s\t%s\t%s\t%d-%d-%d\t%d\n", per.ID, per.Name, per.addr, per.other.diff.cust.date.year,  per.other.diff.cust.date.month, per.other.diff.cust.date.day,  per.other.diff.cust.stay);
+	}else (per.other.CorE == 'e' || per.other.CorE == 'E'){
+printf("%s\t%s\t%s\t%s\t%d\n", per.ID, per.Name, per.addr, per.other.diff.emp.dep, per.other.diff.emp.salary);
+	}
+	printf("\n");
+}

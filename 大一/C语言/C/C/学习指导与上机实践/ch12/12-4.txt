@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+struct student{
+	char SID[10];
+	char Name[20];
+	char addr[20];
+	int score1;
+	int score2;
+	int score3;
+}
+void main(void){
+	struct student stu;
+	FILE *fp;
+	printf("input student's ID: ");
+	gets(stu.SID);
+	printf("input student's Name: ");
+	gets(stu.Name);
+	printf("input student's Address: ");
+	gets(stu.addr);
+	printf("input student Chinese Score: ");
+	scanf("%d",&stu.score1);
+	printf("input student Math Score: ");
+	scanf("%d",&stu.score2);
+	printf("input student English Score: ");
+	scanf("%d",&stu.score3);
+	
+	if((fp=fopen("c:\\student.txt","a+")) == NULL){
+		printf("open error on writing in");
+		exit(0);
+	}
+	fwrite(&stu,sizeof(stu),1,fp);
+	fclose(fp);
+
+}

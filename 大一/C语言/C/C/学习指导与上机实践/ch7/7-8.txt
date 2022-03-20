@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(void){
+  int a[3][4]={{1,-2,3,-4}, {1,5,0,6}, {7,3,0,3}},i,j;
+  long sum=0;
+
+printf(“参加累加的正整数有：\n”);
+  for(i=0;i<3;i++) 
+    for(j=0;j<4;j++){
+		  if(a[i][j]>0) { sum+=a[i][j];printf("%-3d",a[i][j]); }
+		  if(a[i][j]==0) break; 
+		  else continue;  /* 可以省略 */
+	  }
+	  	
+  printf("\nsum=%ld\n",sum);
+}

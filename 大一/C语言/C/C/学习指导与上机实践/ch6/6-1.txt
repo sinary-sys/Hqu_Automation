@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main(void){
+	int n,i;
+	int result = 0;
+	printf("input n: ");
+	scanf("%d", &n);
+	for(i =0; i <= n; i++){	
+		result = result + i;
+		}
+		printf(" result is %d\n", result);
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main(void){
+		float a, b,result;    char c;		
+		printf("input :\na operater(+,-,*,/) b: ");
+		scanf("%f%c%f",&a,&c,&b);	
+		switch(c){
+			case('+'): result = a + b;break;
+			case('-'): result = a - b;break;
+			case('*'): result = a * b;break;
+			case('/'): result = a / b;break;
+			default: printf("Error input\n");exit(0);		
+		}	
+		printf("%f %c %f = %f\n", a, c, b, result);
+}

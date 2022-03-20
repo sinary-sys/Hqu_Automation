@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(void){
+	FILE *fp;
+	char c;
+
+	if((fp=fopen("c:\\test.txt","w+")) == NULL){
+		printf("open error on writing in");
+		exit(0);
+	}
+	printf("input strings, ended by ctrl + z\n");
+	while((c = getchar()) != -1){
+		fputc(c, fp);
+	}
+	fclose(fp);
+}

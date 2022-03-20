@@ -1,0 +1,12 @@
+#include<stdio.h>
+void fun(int a,int b,int sum){
+ sum=a+b;
+	printf("In fun:sum=%d\n",sum);
+	return;
+}
+
+void main(void){
+ int x=10,y=20,z=0;
+ fun(x,y,z);
+ printf("In main:z=%d\n",z);
+}

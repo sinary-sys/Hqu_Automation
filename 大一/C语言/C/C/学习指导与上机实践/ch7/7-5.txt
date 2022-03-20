@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main(void){
+	int a[11]={2,14,26,30,38,45,80,100,111,222};
+	int i=0,j,data;
+
+	printf("Eter the data:");
+	scanf("%d",&data);
+
+	while(i<10&&data>a[i]) 	i++;
+	if(i==10) a[10]=data;
+	else{
+		for(j=9;j>=i;j--) a[j+1]=a[j];
+		a[i]=data;
+	}
+	
+	for(i=0;i<11;i++)	printf("%-4d",a[i]); /* 输出插入data后数组中各元素值 */
+printf("\n");
+}

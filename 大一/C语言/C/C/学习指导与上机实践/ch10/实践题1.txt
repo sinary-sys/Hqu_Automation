@@ -1,0 +1,10 @@
+#include <stdio.h>
+#define HELLO_WORLD printf("hello,world!\n")
+#define int double
+void main(void){
+	int a=10.5;
+	double b=10.5;
+	printf("a=%f\n",a);
+    printf("b=%f\n",b);
+	HELLO_WORLD;
+}

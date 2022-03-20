@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main(void){
+	char name[]="I love\t my\0 country! ";
+	printf("%s\n",name);
+	puts(name);
+
+	puts("enter a string:\n");
+	gets(name);
+	puts(name);
+}

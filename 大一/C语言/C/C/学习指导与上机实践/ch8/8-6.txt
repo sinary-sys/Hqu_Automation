@@ -1,0 +1,20 @@
+#include <stdio.h>
+void col_max(int a[][4],int m,int result[4]){
+	int col,row,k;
+for(k=0;k<4;k++) result[k]=a[0][k]; 
+/* 初始化一维数组result的各元素值为每列中的第一个 */
+
+	for(col=0;col<4;col++)
+		for(row=0;row<m;row++)
+			if(a[row][col]>result[col]) result[col]=a[row][col];
+}
+
+void main(void){
+	int data[3][4]={{1,2,3,4},{2,3,4,5},{3,4,5,6}};
+	int size=sizeof(data)/sizeof(data[0]);
+	int r[4],k;   /* 一维数组r存储各列的最大值 */
+	
+	col_max(data,size,r); /* 本例等价于col_max(data,3,r) */
+	for(k=0;k<4;k++)
+		printf("The biggest in column %d is %d\n",k+1,r[k]);
+}

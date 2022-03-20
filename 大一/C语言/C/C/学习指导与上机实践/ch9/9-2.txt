@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main(void){
+ int iarray[10];
+ float farray[10];
+ double darray[10];
+
+ int k;
+ printf("\t\t int\tfloat\tdouble\n");
+ for(k=0;k<10;k++)
+	 printf("Element %d\t%ld\t%ld\t%ld\n",k,iarray+k,farray+k,darray+k);
+}

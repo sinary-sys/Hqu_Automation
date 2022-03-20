@@ -1,0 +1,13 @@
+#include <stdio.h>
+int max(int a[],int n){
+	int k,max=a[0];
+	for(k=1;k<n;k++)  if(a[k]>max) max=a[k];
+	return max;
+}
+
+void main(void){
+	int data[]={1,2,3,-5,34,6,7};
+	int size=sizeof(data)/sizeof(int);
+
+	printf("max=%d\n",max(data,size)); /* max(&data[0],size) */
+}
