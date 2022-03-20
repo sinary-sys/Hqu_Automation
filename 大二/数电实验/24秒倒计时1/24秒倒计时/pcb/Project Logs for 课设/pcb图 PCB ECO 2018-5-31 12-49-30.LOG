@@ -1,0 +1,65 @@
+Removed Pin From Net: NetName=VCC Pin=74ls192n11-1
+Removed Pin From Net: NetName=1 Pin=74ls192n12-1
+Removed Pin From Net: NetName=1 Pin=74ls192n12-2
+Removed Pin From Net: NetName=1 Pin=74ls192n12-7
+Removed Pin From Net: NetName=1 Pin=74ls192no1-1
+Removed Pin From Net: NetName=1 Pin=74ls192no2-1
+Removed Pin From Net: NetName=VCC Pin=74ls192no2-2
+Removed Pin From Net: NetName=1 Pin=74ls192no2-7
+Removed Pin From Net: NetName=5 Pin=C1-1
+Removed Pin From Net: NetName=1 Pin=C1-2
+Removed Pin From Net: NetName=VCC Pin=fei0-2
+Removed Pin From Net: NetName=OUT1 Pin=fei0-3
+Removed Pin From Net: NetName=1 Pin=J?-2
+Removed Pin From Net: NetName=7 Pin=S1-2
+Removed Member From Class: ClassName=24秒倒计时 Member=J?
+Added Component: Designator=Rs(HDR1X9)
+Added Component: Designator=S?(DIP_SW_8WAY_SMD)
+Added Pin To Net: NetName=1 Pin=C1-1
+Added Pin To Net: NetName=5 Pin=C1-2
+Added Pin To Net: NetName=VCC Pin=Rs-1
+Added Pin To Net: NetName=2 Pin=S1-2
+Added Pin To Net: NetName=1 Pin=S?-1
+Added Pin To Net: NetName=1 Pin=S?-2
+Added Pin To Net: NetName=1 Pin=S?-3
+Added Pin To Net: NetName=1 Pin=S?-4
+Added Pin To Net: NetName=1 Pin=S?-5
+Added Pin To Net: NetName=1 Pin=S?-6
+Added Pin To Net: NetName=1 Pin=S?-7
+Added Pin To Net: NetName=1 Pin=S?-8
+Change Net Name : Old Net Name=1 New Net Name=GND
+Added Pin To Net: NetName=GA Pin=74ls192no2-7
+Added Pin To Net: NetName=GA Pin=Rs-6
+Added Pin To Net: NetName=GA Pin=S?-12
+Added Net: Name=GA
+Added Pin To Net: NetName=GB Pin=74ls192no1-1
+Added Pin To Net: NetName=GB Pin=Rs-7
+Added Pin To Net: NetName=GB Pin=S?-11
+Added Net: Name=GB
+Added Pin To Net: NetName=GC Pin=74ls192no2-2
+Added Pin To Net: NetName=GC Pin=Rs-8
+Added Pin To Net: NetName=GC Pin=S?-10
+Added Net: Name=GC
+Added Pin To Net: NetName=GD Pin=74ls192no2-1
+Added Pin To Net: NetName=GD Pin=Rs-9
+Added Pin To Net: NetName=GD Pin=S?-9
+Added Net: Name=GD
+Added Pin To Net: NetName=SA Pin=74ls192n12-7
+Added Pin To Net: NetName=SA Pin=Rs-2
+Added Pin To Net: NetName=SA Pin=S?-16
+Added Net: Name=SA
+Added Pin To Net: NetName=SB Pin=74ls192n11-1
+Added Pin To Net: NetName=SB Pin=Rs-3
+Added Pin To Net: NetName=SB Pin=S?-15
+Added Net: Name=SB
+Added Pin To Net: NetName=SC Pin=74ls192n12-2
+Added Pin To Net: NetName=SC Pin=Rs-4
+Added Pin To Net: NetName=SC Pin=S?-14
+Added Net: Name=SC
+Added Pin To Net: NetName=SD Pin=74ls192n12-1
+Added Pin To Net: NetName=SD Pin=Rs-5
+Added Pin To Net: NetName=SD Pin=S?-13
+Added Net: Name=SD
+Added Member To Class: ClassName=24秒倒计时 Member=Component Rs Res Pack4_1
+Added Member To Class: ClassName=24秒倒计时 Member=Component S? SW DIP-8
+Added Room: Name=24秒倒计时

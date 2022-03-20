@@ -1,0 +1,46 @@
+Removed Pin From Net: NetName=GND Pin=ge-1
+Removed Pin From Net: NetName=GND Pin=ge-6
+Removed Pin From Net: NetName=Netge_10 Pin=R7-2
+Removed Pin From Net: NetName=Netge_9 Pin=R8-2
+Removed Pin From Net: NetName=Netge_4 Pin=R11-2
+Removed Pin From Net: NetName=Netge_2 Pin=R12-2
+Removed Pin From Net: NetName=GND Pin=shi-1
+Removed Pin From Net: NetName=NetR5_2 Pin=shi-2
+Removed Pin From Net: NetName=NetR6_2 Pin=shi-3
+Removed Pin From Net: NetName=NetR4_2 Pin=shi-4
+Removed Pin From Net: NetName=NetR3_2 Pin=shi-5
+Removed Pin From Net: NetName=GND Pin=shi-6
+Removed Pin From Net: NetName=NetR2_2 Pin=shi-8
+Removed Pin From Net: NetName=NetR1_2 Pin=shi-9
+Removed Pin From Net: NetName=NetR0_2 Pin=shi-10
+Change Component DesignItemId : Designator=ge Old DesignItemId=Dpy Red-CA New DesignItemId=Dpy Blue-CA
+Change Component DesignItemId : Designator=shi Old DesignItemId=Dpy Red-CA New DesignItemId=Dpy Blue-CA
+Change Component Footprint: Designator=ge Old Footprint=A New Footprint=H
+Change Component Footprint: Designator=shi Old Footprint=A New Footprint=H
+Change Component Comment : Designator=ge Old Comment=Dpy Red-CA New Comment=Dpy Blue-CA
+Change Component Comment : Designator=shi Old Comment=Dpy Red-CA New Comment=Dpy Blue-CA
+Added Pin To Net: NetName=GND Pin=ge-3
+Added Pin To Net: NetName=GND Pin=ge-8
+Added Pin To Net: NetName=Netge_4 Pin=R9-2
+Added Pin To Net: NetName=Netge_2 Pin=R10-2
+Added Pin To Net: NetName=Netge_9 Pin=R12-2
+Added Pin To Net: NetName=Netge_10 Pin=R13-2
+Added Pin To Net: NetName=NetR4_2 Pin=shi-1
+Added Pin To Net: NetName=NetR3_2 Pin=shi-2
+Added Pin To Net: NetName=GND Pin=shi-3
+Added Pin To Net: NetName=NetR2_2 Pin=shi-4
+Added Pin To Net: NetName=NetR1_2 Pin=shi-6
+Added Pin To Net: NetName=NetR0_2 Pin=shi-7
+Added Pin To Net: NetName=GND Pin=shi-8
+Added Pin To Net: NetName=NetR5_2 Pin=shi-9
+Added Pin To Net: NetName=NetR6_2 Pin=shi-10
+Added Pin To Net: NetName=Netge_1 Pin=ge-1
+Added Pin To Net: NetName=Netge_1 Pin=R11-2
+Added Net: Name=Netge_1
+Added Pin To Net: NetName=Netge_6 Pin=ge-6
+Added Pin To Net: NetName=Netge_6 Pin=R8-2
+Added Net: Name=Netge_6
+Added Pin To Net: NetName=Netge_7 Pin=ge-7
+Added Pin To Net: NetName=Netge_7 Pin=R7-2
+Added Net: Name=Netge_7
+Added Room: Name=24√Îµπº∆ ±

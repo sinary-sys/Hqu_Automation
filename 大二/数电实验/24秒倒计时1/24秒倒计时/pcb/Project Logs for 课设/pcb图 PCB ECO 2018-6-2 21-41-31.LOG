@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=SD Pin=gewei2-1
+Removed Pin From Net: NetName=SC Pin=gewei2-2
+Removed Pin From Net: NetName=SB Pin=gewei2-3
+Removed Pin From Net: NetName=SA Pin=gewei2-4
+Removed Pin From Net: NetName=GD Pin=shiwei2-1
+Removed Pin From Net: NetName=GC Pin=shiwei2-2
+Removed Pin From Net: NetName=GB Pin=shiwei2-3
+Removed Pin From Net: NetName=GA Pin=shiwei2-4
+Added Pin To Net: NetName=GD Pin=gewei2-1
+Added Pin To Net: NetName=GC Pin=gewei2-2
+Added Pin To Net: NetName=GB Pin=gewei2-3
+Added Pin To Net: NetName=GA Pin=gewei2-4
+Added Pin To Net: NetName=SD Pin=shiwei2-1
+Added Pin To Net: NetName=SC Pin=shiwei2-2
+Added Pin To Net: NetName=SB Pin=shiwei2-3
+Added Pin To Net: NetName=SA Pin=shiwei2-4
+Added Room: Name=24√Îµπº∆ ±

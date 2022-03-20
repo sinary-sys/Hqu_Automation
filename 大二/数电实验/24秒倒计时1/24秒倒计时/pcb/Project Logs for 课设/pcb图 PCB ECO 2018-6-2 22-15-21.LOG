@@ -1,0 +1,6 @@
+Added Component: Designator=P?(HDR1X4)
+Added Component: Designator=P?(HDR1X3)
+Added Pin To Net: NetName=OUT1 Pin=P?-1
+Added Pin To Net: NetName=LOAD Pin=P?-3
+Added Member To Class: ClassName=24秒倒计时 Member=Component P? Header 3
+Added Room: Name=24秒倒计时

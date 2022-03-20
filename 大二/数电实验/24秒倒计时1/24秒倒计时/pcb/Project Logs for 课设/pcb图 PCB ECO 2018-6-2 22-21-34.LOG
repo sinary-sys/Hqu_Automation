@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=LOAD Pin=P?-1
+Change Component Designator: OldDesignator=P? NewDesignator=P3333
+Change Component Designator: OldDesignator=P? NewDesignator=P4444
+Added Pin To Net: NetName=LOAD Pin=P3333-1
+Added Pin To Net: NetName=JIEWEI Pin=P3333-3
+Added Pin To Net: NetName=DC1 Pin=P4444-1
+Added Member To Class: ClassName=24秒倒计时 Member=Component P3333 Header 3
+Added Member To Class: ClassName=24秒倒计时 Member=Component P4444 Header 3
+Added Room: Name=24秒倒计时

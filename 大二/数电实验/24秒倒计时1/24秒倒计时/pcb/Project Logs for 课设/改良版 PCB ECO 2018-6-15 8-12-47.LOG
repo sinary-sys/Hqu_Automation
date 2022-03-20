@@ -1,0 +1,5 @@
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Member To Class: ClassName=24秒倒计时 Member=Component 大数码管* 3.3v*
+Added Room: Name=24秒倒计时

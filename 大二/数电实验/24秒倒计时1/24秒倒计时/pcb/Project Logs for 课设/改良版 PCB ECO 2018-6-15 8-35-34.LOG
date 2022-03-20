@@ -1,0 +1,21 @@
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Pin To Net: NetName=GD Pin=gewei2-1
+Added Pin To Net: NetName=GC Pin=gewei2-2
+Added Pin To Net: NetName=GB Pin=gewei2-3
+Added Pin To Net: NetName=GA Pin=gewei2-4
+Added Pin To Net: NetName=GB Pin=gewei-1
+Added Pin To Net: NetName=GD Pin=gewei-9
+Added Pin To Net: NetName=GC Pin=gewei-10
+Added Pin To Net: NetName=GA Pin=gewei-15
+Added Pin To Net: NetName=SD Pin=shiwei2-1
+Added Pin To Net: NetName=SC Pin=shiwei2-2
+Added Pin To Net: NetName=SB Pin=shiwei2-3
+Added Pin To Net: NetName=SA Pin=shiwei2-4
+Added Pin To Net: NetName=SB Pin=shiwei-1
+Added Pin To Net: NetName=SD Pin=shiwei-9
+Added Pin To Net: NetName=SC Pin=shiwei-10
+Added Pin To Net: NetName=SA Pin=shiwei-15
+Added Member To Class: ClassName=24秒倒计时 Member=Component 大数码管* 3.3v*
+Added Room: Name=24秒倒计时

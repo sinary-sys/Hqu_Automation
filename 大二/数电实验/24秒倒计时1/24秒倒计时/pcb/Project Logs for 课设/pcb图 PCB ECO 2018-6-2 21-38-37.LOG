@@ -1,0 +1,86 @@
+Removed Pin From Net: NetName=VCC Pin=Rs-1
+Removed Pin From Net: NetName=SA Pin=Rs-2
+Removed Pin From Net: NetName=SB Pin=Rs-3
+Removed Pin From Net: NetName=SC Pin=Rs-4
+Removed Pin From Net: NetName=SD Pin=Rs-5
+Removed Pin From Net: NetName=GA Pin=Rs-6
+Removed Pin From Net: NetName=GB Pin=Rs-7
+Removed Pin From Net: NetName=GC Pin=Rs-8
+Removed Pin From Net: NetName=GD Pin=Rs-9
+Removed Pin From Net: NetName=GA Pin=S?-1
+Removed Pin From Net: NetName=GB Pin=S?-2
+Removed Pin From Net: NetName=GC Pin=S?-3
+Removed Pin From Net: NetName=GD Pin=S?-4
+Removed Pin From Net: NetName=GND Pin=S?-5
+Removed Pin From Net: NetName=GND Pin=S?-6
+Removed Pin From Net: NetName=GND Pin=S?-7
+Removed Pin From Net: NetName=GND Pin=S?-8
+Removed Pin From Net: NetName=SD Pin=S?-9
+Removed Pin From Net: NetName=SC Pin=S?-10
+Removed Pin From Net: NetName=SB Pin=S?-11
+Removed Pin From Net: NetName=SA Pin=S?-12
+Removed Pin From Net: NetName=GND Pin=S?-13
+Removed Pin From Net: NetName=GND Pin=S?-14
+Removed Pin From Net: NetName=GND Pin=S?-15
+Removed Pin From Net: NetName=GND Pin=S?-16
+Removed Member From Class: ClassName=24秒倒计时 Member=Rs
+Removed Member From Class: ClassName=24秒倒计时 Member=S?
+Added Component: Designator=gewei1(HDR1X4)
+Added Component: Designator=gewei2(HDR1X4)
+Added Component: Designator=P?(HDR1X4)
+Added Component: Designator=R20(AXIAL-0.3)
+Added Component: Designator=R21(AXIAL-0.3)
+Added Component: Designator=R22(AXIAL-0.3)
+Added Component: Designator=R23(AXIAL-0.3)
+Added Component: Designator=R24(AXIAL-0.3)
+Added Component: Designator=R25(AXIAL-0.3)
+Added Component: Designator=R26(AXIAL-0.3)
+Added Component: Designator=R27(AXIAL-0.3)
+Added Component: Designator=shiwei1(HDR1X4)
+Added Component: Designator=shiwei2(HDR1X4)
+Added Pin To Net: NetName=GND Pin=gewei1-1
+Added Pin To Net: NetName=GND Pin=gewei1-2
+Added Pin To Net: NetName=GND Pin=gewei1-3
+Added Pin To Net: NetName=GND Pin=gewei1-4
+Added Pin To Net: NetName=SD Pin=gewei2-1
+Added Pin To Net: NetName=SC Pin=gewei2-2
+Added Pin To Net: NetName=SB Pin=gewei2-3
+Added Pin To Net: NetName=SA Pin=gewei2-4
+Added Pin To Net: NetName=VCC Pin=R20-1
+Added Pin To Net: NetName=SA Pin=R20-2
+Added Pin To Net: NetName=VCC Pin=R21-1
+Added Pin To Net: NetName=SB Pin=R21-2
+Added Pin To Net: NetName=VCC Pin=R22-1
+Added Pin To Net: NetName=SC Pin=R22-2
+Added Pin To Net: NetName=VCC Pin=R23-1
+Added Pin To Net: NetName=SD Pin=R23-2
+Added Pin To Net: NetName=VCC Pin=R24-1
+Added Pin To Net: NetName=GA Pin=R24-2
+Added Pin To Net: NetName=VCC Pin=R25-1
+Added Pin To Net: NetName=GB Pin=R25-2
+Added Pin To Net: NetName=VCC Pin=R26-1
+Added Pin To Net: NetName=GC Pin=R26-2
+Added Pin To Net: NetName=VCC Pin=R27-1
+Added Pin To Net: NetName=GD Pin=R27-2
+Added Pin To Net: NetName=GND Pin=shiwei1-1
+Added Pin To Net: NetName=GND Pin=shiwei1-2
+Added Pin To Net: NetName=GND Pin=shiwei1-3
+Added Pin To Net: NetName=GND Pin=shiwei1-4
+Added Pin To Net: NetName=GD Pin=shiwei2-1
+Added Pin To Net: NetName=GC Pin=shiwei2-2
+Added Pin To Net: NetName=GB Pin=shiwei2-3
+Added Pin To Net: NetName=GA Pin=shiwei2-4
+Added Member To Class: ClassName=24秒倒计时 Member=Component gewei1 Header 4
+Added Member To Class: ClassName=24秒倒计时 Member=Component gewei2 Header 4
+Added Member To Class: ClassName=24秒倒计时 Member=Component P? Header 4
+Added Member To Class: ClassName=24秒倒计时 Member=Component R20 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component R21 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component R22 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component R23 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component R24 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component R25 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component R26 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component R27 Res1
+Added Member To Class: ClassName=24秒倒计时 Member=Component shiwei1 Header 4
+Added Member To Class: ClassName=24秒倒计时 Member=Component shiwei2 Header 4
+Added Room: Name=24秒倒计时

@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=2 Pin=R?-2
+Removed Pin From Net: NetName=7 Pin=R?-3
+Removed Member From Class: ClassName=24秒倒计时 Member=R?
+Added Component: Designator=P?(HDR1X4)
+Added Component: Designator=Rp?(RES_ADJ)
+Added Pin To Net: NetName=2 Pin=Rp?-2
+Added Pin To Net: NetName=7 Pin=Rp?-3
+Added Member To Class: ClassName=24秒倒计时 Member=Component P? Header 2
+Added Member To Class: ClassName=24秒倒计时 Member=Component Rp? Res_ADJ
+Added Room: Name=24秒倒计时

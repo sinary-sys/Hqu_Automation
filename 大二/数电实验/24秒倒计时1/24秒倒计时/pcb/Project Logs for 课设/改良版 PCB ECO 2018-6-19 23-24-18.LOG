@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=r1-2
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Pin To Net: NetName=GND Pin=r1-1
+Added Pin To Net: NetName=Netr1_2 Pin=r1-2
+Added Pin To Net: NetName=Netr1_2 Pin=shumaguan2-3
+Added Net: Name=Netr1_2
+Added Member To Class: ClassName=24秒倒计时 Member=Component 大数码管* 3.3v*
+Added Room: Name=24秒倒计时

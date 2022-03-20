@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=GD Pin=gewei1-1
+Removed Pin From Net: NetName=GC Pin=gewei1-2
+Removed Pin From Net: NetName=GB Pin=gewei1-3
+Removed Pin From Net: NetName=GA Pin=gewei1-4
+Removed Pin From Net: NetName=GND Pin=gewei2-1
+Removed Pin From Net: NetName=GND Pin=gewei2-2
+Removed Pin From Net: NetName=GND Pin=gewei2-3
+Removed Pin From Net: NetName=GND Pin=gewei2-4
+Removed Pin From Net: NetName=GND Pin=shiwei1-1
+Removed Pin From Net: NetName=GND Pin=shiwei1-2
+Removed Pin From Net: NetName=GND Pin=shiwei1-3
+Removed Pin From Net: NetName=GND Pin=shiwei1-4
+Removed Pin From Net: NetName=SD Pin=shiwei2-1
+Removed Pin From Net: NetName=SC Pin=shiwei2-2
+Removed Pin From Net: NetName=SB Pin=shiwei2-3
+Removed Pin From Net: NetName=SA Pin=shiwei2-4
+Added Component: Designator=大数码管*(shumaguan)
+Added Pin To Net: NetName=GND Pin=gewei1-1
+Added Pin To Net: NetName=GND Pin=gewei1-2
+Added Pin To Net: NetName=GND Pin=gewei1-3
+Added Pin To Net: NetName=GND Pin=gewei1-4
+Added Pin To Net: NetName=GD Pin=gewei2-1
+Added Pin To Net: NetName=GC Pin=gewei2-2
+Added Pin To Net: NetName=GB Pin=gewei2-3
+Added Pin To Net: NetName=GA Pin=gewei2-4
+Added Pin To Net: NetName=SD Pin=shiwei1-1
+Added Pin To Net: NetName=SC Pin=shiwei1-2
+Added Pin To Net: NetName=SB Pin=shiwei1-3
+Added Pin To Net: NetName=SA Pin=shiwei1-4
+Added Pin To Net: NetName=GND Pin=shiwei2-1
+Added Pin To Net: NetName=GND Pin=shiwei2-2
+Added Pin To Net: NetName=GND Pin=shiwei2-3
+Added Pin To Net: NetName=GND Pin=shiwei2-4
+Added Member To Class: ClassName=24秒倒计时 Member=Component 大数码管* 3.3v*
+Added Room: Name=24秒倒计时

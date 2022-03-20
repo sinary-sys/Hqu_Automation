@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=r1-1
+Removed Pin From Net: NetName=Netr1_2 Pin=shumaguan2-3
+Removed Pin From Net: NetName=Netr2_1 Pin=shumaguan4-3
+Removed Pin From Net: NetName=VCC Pin=VCC-1
+Removed Pin From Net: NetName=VCC Pin=VCC-2
+Removed Member From Class: ClassName=24秒倒计时 Member=VCC
+Added Pin To Net: NetName=Netr1_2 Pin=shumaguan1-3
+Added Pin To Net: NetName=Netr2_1 Pin=shumaguan3-3
+Added Member To Class: ClassName=24秒倒计时 Member=Component shumaguan1 Header 5
+Added Room: Name=24秒倒计时

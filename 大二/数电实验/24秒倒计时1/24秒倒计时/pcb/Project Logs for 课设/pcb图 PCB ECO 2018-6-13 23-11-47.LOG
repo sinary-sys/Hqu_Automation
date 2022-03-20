@@ -1,0 +1,70 @@
+Removed Pin From Net: NetName=GND Pin=ge-3
+Removed Pin From Net: NetName=GND Pin=ge-8
+Removed Pin From Net: NetName=A1 Pin=R0-1
+Removed Pin From Net: NetName=B1 Pin=R1-1
+Removed Pin From Net: NetName=C1 Pin=R2-1
+Removed Pin From Net: NetName=D1 Pin=R3-1
+Removed Pin From Net: NetName=E1 Pin=R4-1
+Removed Pin From Net: NetName=F1 Pin=R5-1
+Removed Pin From Net: NetName=G1 Pin=R6-1
+Removed Pin From Net: NetName=A0 Pin=R7-1
+Removed Pin From Net: NetName=B0 Pin=R8-1
+Removed Pin From Net: NetName=C0 Pin=R9-1
+Removed Pin From Net: NetName=D0 Pin=R10-1
+Removed Pin From Net: NetName=E0 Pin=R11-1
+Removed Pin From Net: NetName=F0 Pin=R12-1
+Removed Pin From Net: NetName=G0 Pin=R13-1
+Removed Pin From Net: NetName=GND Pin=shi-3
+Removed Pin From Net: NetName=GND Pin=shi-8
+Removed Member From Class: ClassName=24秒倒计时 Member=ge
+Removed Member From Class: ClassName=24秒倒计时 Member=R0
+Removed Member From Class: ClassName=24秒倒计时 Member=R3
+Removed Member From Class: ClassName=24秒倒计时 Member=R4
+Removed Member From Class: ClassName=24秒倒计时 Member=R5
+Removed Member From Class: ClassName=24秒倒计时 Member=R6
+Removed Member From Class: ClassName=24秒倒计时 Member=R7
+Removed Member From Class: ClassName=24秒倒计时 Member=R8
+Removed Member From Class: ClassName=24秒倒计时 Member=R9
+Removed Member From Class: ClassName=24秒倒计时 Member=R10
+Removed Member From Class: ClassName=24秒倒计时 Member=R11
+Removed Member From Class: ClassName=24秒倒计时 Member=R12
+Removed Member From Class: ClassName=24秒倒计时 Member=R13
+Removed Member From Class: ClassName=24秒倒计时 Member=shi
+Change Component DesignItemId : Designator=R1 Old DesignItemId=Res1 New DesignItemId=Res1_1
+Change Component DesignItemId : Designator=R2 Old DesignItemId=Res1 New DesignItemId=Res1_1
+Added Component: Designator=P?(HDR1X8)
+Added Component: Designator=shumaguan1(HDR1X5)
+Added Component: Designator=shumaguan2(HDR1X5)
+Added Component: Designator=shumaguan3(HDR1X5)
+Added Component: Designator=shumaguan4(HDR1X5)
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=E1 Pin=shumaguan1-1
+Added Pin To Net: NetName=D1 Pin=shumaguan1-2
+Added Pin To Net: NetName=C1 Pin=shumaguan1-4
+Added Pin To Net: NetName=B1 Pin=shumaguan2-1
+Added Pin To Net: NetName=A1 Pin=shumaguan2-2
+Added Pin To Net: NetName=F1 Pin=shumaguan2-4
+Added Pin To Net: NetName=G1 Pin=shumaguan2-5
+Added Pin To Net: NetName=E0 Pin=shumaguan3-1
+Added Pin To Net: NetName=D0 Pin=shumaguan3-2
+Added Pin To Net: NetName=C0 Pin=shumaguan3-4
+Added Pin To Net: NetName=B0 Pin=shumaguan4-1
+Added Pin To Net: NetName=A0 Pin=shumaguan4-2
+Added Pin To Net: NetName=F0 Pin=shumaguan4-4
+Added Pin To Net: NetName=G0 Pin=shumaguan4-5
+Added Pin To Net: NetName=Netr1_1 Pin=R1-1
+Added Pin To Net: NetName=Netr1_1 Pin=shumaguan2-3
+Added Net: Name=Netr1_1
+Added Pin To Net: NetName=Netr2_1 Pin=R2-1
+Added Pin To Net: NetName=Netr2_1 Pin=shumaguan4-3
+Added Net: Name=Netr2_1
+Added Member To Class: ClassName=24秒倒计时 Member=Component shumaguan1 Header 5
+Added Member To Class: ClassName=24秒倒计时 Member=Component shumaguan2 Header 5
+Added Member To Class: ClassName=24秒倒计时 Member=Component shumaguan3 Header 5
+Added Member To Class: ClassName=24秒倒计时 Member=Component shumaguan4 Header 5
+Added Member To Class: ClassName=24秒倒计时 Member=Component 大数码管* 3.3v*
+Added Room: Name=24秒倒计时

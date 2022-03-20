@@ -1,0 +1,254 @@
+Added Component: Designator=555-1(HDR1X4)
+Added Component: Designator=555-2(HDR1X4)
+Added Component: Designator=C0(CAP_4*7mm)
+Added Component: Designator=C1(CAP)
+Added Component: Designator=D?(LED_A2)
+Added Component: Designator=gewei1(HDR1X4)
+Added Component: Designator=gewei2(HDR1X4)
+Added Component: Designator=gewei(DIP-16)
+Added Component: Designator=GND(HDR1X2)
+Added Component: Designator=r1(AXIAL-0.3)
+Added Component: Designator=r2(AXIAL-0.3)
+Added Component: Designator=R14(AXIAL-0.3)
+Added Component: Designator=R15(AXIAL-0.3)
+Added Component: Designator=R16(AXIAL-0.3)
+Added Component: Designator=R17(AXIAL-0.3)
+Added Component: Designator=R20(AXIAL-0.3)
+Added Component: Designator=R21(AXIAL-0.3)
+Added Component: Designator=R22(AXIAL-0.3)
+Added Component: Designator=R23(AXIAL-0.3)
+Added Component: Designator=R24(AXIAL-0.3)
+Added Component: Designator=R25(AXIAL-0.3)
+Added Component: Designator=R26(AXIAL-0.3)
+Added Component: Designator=R27(AXIAL-0.3)
+Added Component: Designator=Rp?(RES_ADJ)
+Added Component: Designator=S1(SWITCH_A1)
+Added Component: Designator=S2(SWITCH_A1)
+Added Component: Designator=shi(DIP-16)
+Added Component: Designator=shiwei1(HDR1X4)
+Added Component: Designator=shiwei2(HDR1X4)
+Added Component: Designator=shiwei(DIP-16)
+Added Component: Designator=shumaguan1(HDR1X5)
+Added Component: Designator=shumaguan2(HDR1X5)
+Added Component: Designator=shumaguan3(HDR1X5)
+Added Component: Designator=shumaguan4(HDR1X5)
+Added Component: Designator=U1(DIP-14)
+Added Component: Designator=U?(DIP-16)
+Added Component: Designator=VCC(HDR1X2)
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Component: Designator=大数码管*(shumaguan)
+Added Pin To Net: NetName=2 Pin=555-1-2
+Added Pin To Net: NetName=2 Pin=555-2-2
+Added Pin To Net: NetName=2 Pin=C0-1
+Added Pin To Net: NetName=2 Pin=Rp?-2
+Added Pin To Net: NetName=2 Pin=S1-2
+Added Net: Name=2
+Added Pin To Net: NetName=5 Pin=555-2-1
+Added Pin To Net: NetName=5 Pin=C1-2
+Added Net: Name=5
+Added Pin To Net: NetName=7 Pin=555-2-3
+Added Pin To Net: NetName=7 Pin=R14-1
+Added Pin To Net: NetName=7 Pin=Rp?-3
+Added Net: Name=7
+Added Pin To Net: NetName=A0 Pin=shumaguan4-2
+Added Pin To Net: NetName=A0 Pin=U?-13
+Added Net: Name=A0
+Added Pin To Net: NetName=A1 Pin=shi-13
+Added Pin To Net: NetName=A1 Pin=shumaguan2-2
+Added Net: Name=A1
+Added Pin To Net: NetName=B0 Pin=shumaguan4-1
+Added Pin To Net: NetName=B0 Pin=U?-12
+Added Net: Name=B0
+Added Pin To Net: NetName=B1 Pin=shi-12
+Added Pin To Net: NetName=B1 Pin=shumaguan2-1
+Added Net: Name=B1
+Added Pin To Net: NetName=C0 Pin=shumaguan3-4
+Added Pin To Net: NetName=C0 Pin=U?-11
+Added Net: Name=C0
+Added Pin To Net: NetName=C1 Pin=shi-11
+Added Pin To Net: NetName=C1 Pin=shumaguan1-4
+Added Net: Name=C1
+Added Pin To Net: NetName=CLK Pin=gewei-4
+Added Pin To Net: NetName=CLK Pin=U1-6
+Added Net: Name=CLK
+Added Pin To Net: NetName=CLOCK Pin=555-1-3
+Added Pin To Net: NetName=CLOCK Pin=U1-2
+Added Net: Name=CLOCK
+Added Pin To Net: NetName=D0 Pin=shumaguan3-2
+Added Pin To Net: NetName=D0 Pin=U?-10
+Added Net: Name=D0
+Added Pin To Net: NetName=D1 Pin=shi-10
+Added Pin To Net: NetName=D1 Pin=shumaguan1-2
+Added Net: Name=D1
+Added Pin To Net: NetName=E0 Pin=shumaguan3-1
+Added Pin To Net: NetName=E0 Pin=U?-9
+Added Net: Name=E0
+Added Pin To Net: NetName=E1 Pin=shi-9
+Added Pin To Net: NetName=E1 Pin=shumaguan1-1
+Added Net: Name=E1
+Added Pin To Net: NetName=F0 Pin=shumaguan4-4
+Added Pin To Net: NetName=F0 Pin=U?-15
+Added Net: Name=F0
+Added Pin To Net: NetName=F1 Pin=shi-15
+Added Pin To Net: NetName=F1 Pin=shumaguan2-4
+Added Net: Name=F1
+Added Pin To Net: NetName=G0 Pin=shumaguan4-5
+Added Pin To Net: NetName=G0 Pin=U?-14
+Added Net: Name=G0
+Added Pin To Net: NetName=G1 Pin=shi-14
+Added Pin To Net: NetName=G1 Pin=shumaguan2-5
+Added Net: Name=G1
+Added Pin To Net: NetName=GA Pin=R24-2
+Added Net: Name=GA
+Added Pin To Net: NetName=GB Pin=R25-2
+Added Net: Name=GB
+Added Pin To Net: NetName=GC Pin=R26-2
+Added Net: Name=GC
+Added Pin To Net: NetName=GD Pin=R27-2
+Added Net: Name=GD
+Added Pin To Net: NetName=GND Pin=555-1-1
+Added Pin To Net: NetName=GND Pin=C0-2
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=gewei1-1
+Added Pin To Net: NetName=GND Pin=gewei1-2
+Added Pin To Net: NetName=GND Pin=gewei1-3
+Added Pin To Net: NetName=GND Pin=gewei1-4
+Added Pin To Net: NetName=GND Pin=gewei-8
+Added Pin To Net: NetName=GND Pin=gewei-14
+Added Pin To Net: NetName=GND Pin=GND-1
+Added Pin To Net: NetName=GND Pin=GND-2
+Added Pin To Net: NetName=GND Pin=r1-2
+Added Pin To Net: NetName=GND Pin=r2-2
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=GND Pin=shi-5
+Added Pin To Net: NetName=GND Pin=shi-8
+Added Pin To Net: NetName=GND Pin=shiwei1-1
+Added Pin To Net: NetName=GND Pin=shiwei1-2
+Added Pin To Net: NetName=GND Pin=shiwei1-3
+Added Pin To Net: NetName=GND Pin=shiwei1-4
+Added Pin To Net: NetName=GND Pin=shiwei-8
+Added Pin To Net: NetName=GND Pin=shiwei-14
+Added Pin To Net: NetName=GND Pin=U1-7
+Added Pin To Net: NetName=GND Pin=U?-5
+Added Pin To Net: NetName=GND Pin=U?-8
+Added Net: Name=GND
+Added Pin To Net: NetName=JIEWEI Pin=gewei-13
+Added Pin To Net: NetName=JIEWEI Pin=shiwei-4
+Added Net: Name=JIEWEI
+Added Pin To Net: NetName=LOAD Pin=gewei-11
+Added Pin To Net: NetName=LOAD Pin=R16-1
+Added Pin To Net: NetName=LOAD Pin=shiwei-11
+Added Net: Name=LOAD
+Added Pin To Net: NetName=NetD?_2 Pin=D?-2
+Added Pin To Net: NetName=NetD?_2 Pin=R17-2
+Added Net: Name=NetD?_2
+Added Pin To Net: NetName=Netgewei2_1 Pin=gewei2-1
+Added Pin To Net: NetName=Netgewei2_1 Pin=gewei-9
+Added Net: Name=Netgewei2_1
+Added Pin To Net: NetName=Netgewei2_2 Pin=gewei2-2
+Added Pin To Net: NetName=Netgewei2_2 Pin=gewei-10
+Added Net: Name=Netgewei2_2
+Added Pin To Net: NetName=Netgewei2_3 Pin=gewei2-3
+Added Pin To Net: NetName=Netgewei2_3 Pin=gewei-1
+Added Net: Name=Netgewei2_3
+Added Pin To Net: NetName=Netgewei2_4 Pin=gewei2-4
+Added Pin To Net: NetName=Netgewei2_4 Pin=gewei-15
+Added Net: Name=Netgewei2_4
+Added Pin To Net: NetName=Netgewei_2 Pin=gewei-2
+Added Pin To Net: NetName=Netgewei_2 Pin=U?-1
+Added Net: Name=Netgewei_2
+Added Pin To Net: NetName=Netgewei_3 Pin=gewei-3
+Added Pin To Net: NetName=Netgewei_3 Pin=U?-7
+Added Net: Name=Netgewei_3
+Added Pin To Net: NetName=Netgewei_6 Pin=gewei-6
+Added Pin To Net: NetName=Netgewei_6 Pin=U?-2
+Added Net: Name=Netgewei_6
+Added Pin To Net: NetName=Netgewei_7 Pin=gewei-7
+Added Pin To Net: NetName=Netgewei_7 Pin=U?-6
+Added Net: Name=Netgewei_7
+Added Pin To Net: NetName=Netr1_1 Pin=r1-1
+Added Pin To Net: NetName=Netr1_1 Pin=shumaguan2-3
+Added Net: Name=Netr1_1
+Added Pin To Net: NetName=Netr2_1 Pin=r2-1
+Added Pin To Net: NetName=Netr2_1 Pin=shumaguan4-3
+Added Net: Name=Netr2_1
+Added Pin To Net: NetName=NetR15_1 Pin=R15-1
+Added Pin To Net: NetName=NetR15_1 Pin=S2-2
+Added Net: Name=NetR15_1
+Added Pin To Net: NetName=NetR16_2 Pin=R16-2
+Added Pin To Net: NetName=NetR16_2 Pin=U1-11
+Added Net: Name=NetR16_2
+Added Pin To Net: NetName=Netshi_1 Pin=shi-1
+Added Pin To Net: NetName=Netshi_1 Pin=shiwei-2
+Added Net: Name=Netshi_1
+Added Pin To Net: NetName=Netshi_2 Pin=shi-2
+Added Pin To Net: NetName=Netshi_2 Pin=shiwei-6
+Added Net: Name=Netshi_2
+Added Pin To Net: NetName=Netshi_6 Pin=shi-6
+Added Pin To Net: NetName=Netshi_6 Pin=shiwei-7
+Added Net: Name=Netshi_6
+Added Pin To Net: NetName=Netshi_7 Pin=shi-7
+Added Pin To Net: NetName=Netshi_7 Pin=shiwei-3
+Added Net: Name=Netshi_7
+Added Pin To Net: NetName=Netshiwei2_1 Pin=shiwei2-1
+Added Pin To Net: NetName=Netshiwei2_1 Pin=shiwei-9
+Added Net: Name=Netshiwei2_1
+Added Pin To Net: NetName=Netshiwei2_2 Pin=shiwei2-2
+Added Pin To Net: NetName=Netshiwei2_2 Pin=shiwei-10
+Added Net: Name=Netshiwei2_2
+Added Pin To Net: NetName=Netshiwei2_3 Pin=shiwei2-3
+Added Pin To Net: NetName=Netshiwei2_3 Pin=shiwei-1
+Added Net: Name=Netshiwei2_3
+Added Pin To Net: NetName=Netshiwei2_4 Pin=shiwei2-4
+Added Pin To Net: NetName=Netshiwei2_4 Pin=shiwei-15
+Added Net: Name=Netshiwei2_4
+Added Pin To Net: NetName=NetU1_3 Pin=U1-3
+Added Pin To Net: NetName=NetU1_3 Pin=U1-4
+Added Pin To Net: NetName=NetU1_3 Pin=U1-5
+Added Net: Name=NetU1_3
+Added Pin To Net: NetName=OUT1 Pin=R17-1
+Added Pin To Net: NetName=OUT1 Pin=shiwei-13
+Added Pin To Net: NetName=OUT1 Pin=U1-1
+Added Net: Name=OUT1
+Added Pin To Net: NetName=SA Pin=R20-2
+Added Net: Name=SA
+Added Pin To Net: NetName=SB Pin=R21-2
+Added Net: Name=SB
+Added Pin To Net: NetName=SC Pin=R22-2
+Added Net: Name=SC
+Added Pin To Net: NetName=SD Pin=R23-2
+Added Net: Name=SD
+Added Pin To Net: NetName=SET Pin=U1-12
+Added Net: Name=SET
+Added Pin To Net: NetName=VCC Pin=555-1-4
+Added Pin To Net: NetName=VCC Pin=555-2-4
+Added Pin To Net: NetName=VCC Pin=D?-1
+Added Pin To Net: NetName=VCC Pin=gewei-5
+Added Pin To Net: NetName=VCC Pin=gewei-16
+Added Pin To Net: NetName=VCC Pin=R14-2
+Added Pin To Net: NetName=VCC Pin=R15-2
+Added Pin To Net: NetName=VCC Pin=R20-1
+Added Pin To Net: NetName=VCC Pin=R21-1
+Added Pin To Net: NetName=VCC Pin=R22-1
+Added Pin To Net: NetName=VCC Pin=R23-1
+Added Pin To Net: NetName=VCC Pin=R24-1
+Added Pin To Net: NetName=VCC Pin=R25-1
+Added Pin To Net: NetName=VCC Pin=R26-1
+Added Pin To Net: NetName=VCC Pin=R27-1
+Added Pin To Net: NetName=VCC Pin=shi-3
+Added Pin To Net: NetName=VCC Pin=shi-4
+Added Pin To Net: NetName=VCC Pin=shi-16
+Added Pin To Net: NetName=VCC Pin=shiwei-5
+Added Pin To Net: NetName=VCC Pin=shiwei-16
+Added Pin To Net: NetName=VCC Pin=U1-13
+Added Pin To Net: NetName=VCC Pin=U1-14
+Added Pin To Net: NetName=VCC Pin=U?-3
+Added Pin To Net: NetName=VCC Pin=U?-4
+Added Pin To Net: NetName=VCC Pin=U?-16
+Added Pin To Net: NetName=VCC Pin=VCC-1
+Added Pin To Net: NetName=VCC Pin=VCC-2
+Added Net: Name=VCC
+Added Class: Name=24秒倒计时
+Added Room: Name=24秒倒计时
