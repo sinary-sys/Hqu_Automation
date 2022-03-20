@@ -1,0 +1,13 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		默认值|Default = 默认值|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00000000-0000-0000-0000-000000000000}.默认值|Default.ActiveCfg = 默认值
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

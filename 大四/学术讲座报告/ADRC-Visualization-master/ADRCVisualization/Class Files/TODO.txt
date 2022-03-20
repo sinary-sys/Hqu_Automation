@@ -1,0 +1,19 @@
+﻿Research parameter optimization with neural network
+
+u:  
+u0: 
+r:  ramp up, acceleration to target setpoint, speeds up or slows down the transient, maximum slope for acceleration
+r0: controller parameter, is equal to r
+h:	sampling period
+h0: controller parameter, is equal to h
+h1: precision coefficient, typically a 4x multiple of h
+v1: desired target
+v2: derivative of the target
+z1: 
+z2: 
+z3: 
+b:  
+b0: 
+d:  h * r^2, time period * the maximum acceleration that can be used squard
+y:  the input from the sensor, process variable = pv = y
+v:  setpoint or target 

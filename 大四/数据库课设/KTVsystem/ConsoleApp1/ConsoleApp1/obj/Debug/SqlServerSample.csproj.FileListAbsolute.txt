@@ -1,0 +1,7 @@
+F:\学习资料\大四\数据库课设\KTVsystem\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+F:\学习资料\大四\数据库课设\KTVsystem\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+F:\学习资料\大四\数据库课设\KTVsystem\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+F:\学习资料\大四\数据库课设\KTVsystem\ConsoleApp1\ConsoleApp1\obj\Debug\SqlServerSample.csprojAssemblyReference.cache
+F:\学习资料\大四\数据库课设\KTVsystem\ConsoleApp1\ConsoleApp1\obj\Debug\SqlServerSample.csproj.CoreCompileInputs.cache
+F:\学习资料\大四\数据库课设\KTVsystem\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+F:\学习资料\大四\数据库课设\KTVsystem\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

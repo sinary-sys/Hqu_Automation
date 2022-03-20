@@ -1,0 +1,16 @@
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\ktvsystem.exe
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\ktvsystem.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\ktvsystem.deps.json
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\ktvsystem.runtimeconfig.json
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\ktvsystem.pdb
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\Interop.WMPLib.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\Interop.MediaPlayer.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\Interop.WMPLauncher.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\Interop.WMPDXMLib.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\Interop.WMLSS.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\System.Data.SqlClient.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\runtimes\win-arm64\native\sni.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\runtimes\win-x64\native\sni.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\runtimes\win-x86\native\sni.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\bin\Release\net5.0-windows\publish\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

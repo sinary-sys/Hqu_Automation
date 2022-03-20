@@ -1,0 +1,14 @@
+D:\数据库\WinFormsApp1.exe
+D:\数据库\WinFormsApp1.dll
+D:\数据库\WinFormsApp1.deps.json
+D:\数据库\WinFormsApp1.runtimeconfig.json
+D:\数据库\WinFormsApp1.pdb
+D:\数据库\Interop.TxAgg.dll
+D:\数据库\Interop.WMPNSSCI.dll
+D:\数据库\Interop.WMPLib.dll
+D:\数据库\System.Data.SqlClient.dll
+D:\数据库\runtimes\win-arm64\native\sni.dll
+D:\数据库\runtimes\win-x64\native\sni.dll
+D:\数据库\runtimes\win-x86\native\sni.dll
+D:\数据库\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\数据库\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

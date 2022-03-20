@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\Users\Lenovo\source\repos\WinFormsApp1\WinFormsApp1\My Project\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+    <ActiveDebugProfile>WinFormsApp1</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="会员信息.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="修改密码.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="注册账号.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="添加歌曲.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="登录.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="点歌系统.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="会员管理.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="管理人员.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="管理员修改密码.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="管理员系统.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

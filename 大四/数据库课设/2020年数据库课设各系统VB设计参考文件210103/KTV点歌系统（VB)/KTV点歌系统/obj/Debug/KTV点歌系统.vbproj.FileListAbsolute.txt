@@ -1,0 +1,94 @@
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.exe.config
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.exe
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.pdb
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.xml
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.Resources.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.GenerateResource.Cache
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.exe
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.xml
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.pdb
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.用户主窗口.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.管理员主窗口.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.KTV介绍.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.公司致辞.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.用户登入界面.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.登入界面.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.管理员登入界面.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌手性别点歌.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌星点歌.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌名点歌.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.拼音点歌.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲编号点歌.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲管理.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.后台日记.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.已点歌曲.resources
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\bin\Debug\Interop.WMPLib.dll
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\Interop.WMPLib.dll
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.ResolveComReference.cache
+C:\Users\17859\Desktop\数据库课设\程序\KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.exe.config
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.exe
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.pdb
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\bin\Debug\KTV点歌系统.xml
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\bin\Debug\Interop.WMPLib.dll
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\bin\Debug\AxInterop.WMPLib.dll
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.vbprojAssemblyReference.cache
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\Interop.WMPLib.dll
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\AxInterop.WMPLib.dll
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.ResolveComReference.cache
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.KTV介绍.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.公司致辞.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.后台日记.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.已点歌曲.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.拼音点歌.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌名点歌.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌手性别点歌.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌星点歌.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲管理.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲编号点歌.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.用户主窗口.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.Resources.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.用户登入界面.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.登入界面.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.管理员主窗口.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.管理员登入界面.resources
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.GenerateResource.cache
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.CoreCompileInputs.cache
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.exe
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.xml
+F:\1 Work\1 教学\13_课程设计\19-20上数据库课设\学生缴交\16自动化一班数据库课程设计1次交\16自动化一班数据库课程设计\1028张淑玲KTV点歌系统\1028+张淑玲+KTV点歌系统\VS_KTV点歌系统\KTV点歌系统\obj\Debug\KTV点歌系统.pdb
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\bin\Debug\KTV点歌系统.exe.config
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\bin\Debug\KTV点歌系统.exe
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\bin\Debug\KTV点歌系统.pdb
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\bin\Debug\KTV点歌系统.xml
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\bin\Debug\Interop.WMPLib.dll
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.vbprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\Interop.WMPLib.dll
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.ResolveComReference.cache
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.KTV介绍.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.公司致辞.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.后台日记.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.已点歌曲.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.拼音点歌.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.歌名点歌.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.歌手性别点歌.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.歌星点歌.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲管理.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.歌曲编号点歌.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.用户主窗口.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.Resources.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.用户登入界面.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.登入界面.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.管理员主窗口.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.管理员登入界面.resources
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.GenerateResource.cache
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.vbproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.exe
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.xml
+C:\Users\Lenovo\Documents\Tencent Files\499667095\FileRecv\2020年数据库课设各系统VB设计参考文件210103\KTV点歌系统（VB)\KTV点歌系统\obj\Debug\KTV点歌系统.pdb

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WinFormsApp1</id>
+    <version>1.0.0</version>
+    <authors>WinFormsApp1</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="System.Data.SqlClient" version="4.8.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Users\Lenovo\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.runtimeconfig.json" target="lib\net5.0-windows7.0\WinFormsApp1.runtimeconfig.json" />
+    <file src="D:\Users\Lenovo\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.dll" target="lib\net5.0-windows7.0\WinFormsApp1.dll" />
+  </files>
+</package>

@@ -1,0 +1,40 @@
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.exe
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.pdb
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.xml
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.登录.resources
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.Resources.resources
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.vbproj.GenerateResource.Cache
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.exe
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.xml
+C:\Users\qing\AppData\Local\Temporary Projects\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.pdb
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.exe
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.xml
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.pdb
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.exe
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.pdb
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.xml
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\ResolveAssemblyReference.cache
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.登录.resources
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.Resources.resources
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.vbproj.GenerateResource.Cache
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.管理员管理.resources
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.用户注册.resources
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.宿舍水电费查询.resources
+E:\数据库课设\VS\梅苑水电费管理系统\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.修改密码.resources
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.exe.config
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.exe
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.pdb
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\bin\Debug\梅苑水电费管理系统.xml
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.vbprojAssemblyReference.cache
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.登录.resources
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.修改密码.resources
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.用户注册.resources
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.宿舍水电费查询.resources
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.管理员管理.resources
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.Resources.resources
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.vbproj.GenerateResource.cache
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.vbproj.CoreCompileInputs.cache
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.exe
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.xml
+F:\1 Work\1 教学\13_课程设计\17_18上数据库课设\2014自动化2班数据库\1415322031+郑远航\梅苑水电费管理系统（VB）\梅苑水电费管理系统\obj\Debug\梅苑水电费管理系统.pdb

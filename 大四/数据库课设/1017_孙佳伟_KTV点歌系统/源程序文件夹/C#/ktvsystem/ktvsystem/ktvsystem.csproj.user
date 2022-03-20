@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>F:\学习资料\大四\数据库课设\1017_孙佳伟_KTV点歌系统\源程序文件夹\C#\ktvsystem\ktvsystem\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Administratorchangespassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AdministratorSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="musicplayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Memberinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="membermanagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RequestSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SongManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="userchangepassage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="usermanagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

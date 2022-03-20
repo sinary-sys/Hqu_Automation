@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="图书管理系统DataSet2" targetNamespace="http://tempuri.org/图书管理系统DataSet2.xsd" xmlns:mstns="http://tempuri.org/图书管理系统DataSet2.xsd" xmlns="http://tempuri.org/图书管理系统DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="图书管理系统ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="图书管理系统ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.图书管理系统.My.MySettings.GlobalReference.Default.图书管理系统ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BorrowReportsTableAdapter" GeneratorDataComponentClassName="BorrowReportsTableAdapter" Name="BorrowReports" UserDataComponentName="BorrowReportsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="图书管理系统ConnectionString (MySettings)" DbObjectName="图书管理系统.dbo.BorrowReports" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 借书证号, 姓名, 书名, 作者, 出版社, 出版时间, 借出日期, 应归还日期, 归还日期 FROM dbo.BorrowReports</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="借书证号" DataSetColumn="借书证号" />
+              <Mapping SourceColumn="姓名" DataSetColumn="姓名" />
+              <Mapping SourceColumn="书名" DataSetColumn="书名" />
+              <Mapping SourceColumn="作者" DataSetColumn="作者" />
+              <Mapping SourceColumn="出版社" DataSetColumn="出版社" />
+              <Mapping SourceColumn="出版时间" DataSetColumn="出版时间" />
+              <Mapping SourceColumn="借出日期" DataSetColumn="借出日期" />
+              <Mapping SourceColumn="应归还日期" DataSetColumn="应归还日期" />
+              <Mapping SourceColumn="归还日期" DataSetColumn="归还日期" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="图书管理系统DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="图书管理系统DataSet2" msprop:Generator_UserDSName="图书管理系统DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BorrowReports" msprop:Generator_TableClassName="BorrowReportsDataTable" msprop:Generator_TableVarName="tableBorrowReports" msprop:Generator_TablePropName="BorrowReports" msprop:Generator_RowDeletingName="BorrowReportsRowDeleting" msprop:Generator_RowChangingName="BorrowReportsRowChanging" msprop:Generator_RowEvHandlerName="BorrowReportsRowChangeEventHandler" msprop:Generator_RowDeletedName="BorrowReportsRowDeleted" msprop:Generator_UserTableName="BorrowReports" msprop:Generator_RowChangedName="BorrowReportsRowChanged" msprop:Generator_RowEvArgName="BorrowReportsRowChangeEvent" msprop:Generator_RowClassName="BorrowReportsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="借书证号" msprop:Generator_ColumnVarNameInTable="column借书证号" msprop:Generator_ColumnPropNameInRow="借书证号" msprop:Generator_ColumnPropNameInTable="借书证号Column" msprop:Generator_UserColumnName="借书证号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="姓名" msprop:Generator_ColumnVarNameInTable="column姓名" msprop:Generator_ColumnPropNameInRow="姓名" msprop:Generator_ColumnPropNameInTable="姓名Column" msprop:Generator_UserColumnName="姓名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="书名" msprop:Generator_ColumnVarNameInTable="column书名" msprop:Generator_ColumnPropNameInRow="书名" msprop:Generator_ColumnPropNameInTable="书名Column" msprop:Generator_UserColumnName="书名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="作者" msprop:Generator_ColumnVarNameInTable="column作者" msprop:Generator_ColumnPropNameInRow="作者" msprop:Generator_ColumnPropNameInTable="作者Column" msprop:Generator_UserColumnName="作者" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="出版时间" msprop:Generator_ColumnVarNameInTable="column出版时间" msprop:Generator_ColumnPropNameInRow="出版时间" msprop:Generator_ColumnPropNameInTable="出版时间Column" msprop:Generator_UserColumnName="出版时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="借出日期" msprop:Generator_ColumnVarNameInTable="column借出日期" msprop:Generator_ColumnPropNameInRow="借出日期" msprop:Generator_ColumnPropNameInTable="借出日期Column" msprop:Generator_UserColumnName="借出日期" type="xs:dateTime" />
+              <xs:element name="应归还日期" msprop:Generator_ColumnVarNameInTable="column应归还日期" msprop:Generator_ColumnPropNameInRow="应归还日期" msprop:Generator_ColumnPropNameInTable="应归还日期Column" msprop:Generator_UserColumnName="应归还日期" type="xs:dateTime" />
+              <xs:element name="归还日期" msprop:Generator_ColumnVarNameInTable="column归还日期" msprop:Generator_ColumnPropNameInRow="归还日期" msprop:Generator_ColumnPropNameInTable="归还日期Column" msprop:Generator_UserColumnName="归还日期" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="图书管理系统DataSet" targetNamespace="http://tempuri.org/图书管理系统DataSet.xsd" xmlns:mstns="http://tempuri.org/图书管理系统DataSet.xsd" xmlns="http://tempuri.org/图书管理系统DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="图书管理系统ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="图书管理系统ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.图书管理系统.My.MySettings.GlobalReference.Default.图书管理系统ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BookReportsTableAdapter" GeneratorDataComponentClassName="BookReportsTableAdapter" Name="BookReports" UserDataComponentName="BookReportsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="图书管理系统ConnectionString (MySettings)" DbObjectName="图书管理系统.dbo.BookReports" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 书号, 书名, 作者, 出版社, 出版时间, 类型名, 总数量, 价格 FROM dbo.BookReports</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="书号" DataSetColumn="书号" />
+              <Mapping SourceColumn="书名" DataSetColumn="书名" />
+              <Mapping SourceColumn="作者" DataSetColumn="作者" />
+              <Mapping SourceColumn="出版社" DataSetColumn="出版社" />
+              <Mapping SourceColumn="出版时间" DataSetColumn="出版时间" />
+              <Mapping SourceColumn="类型名" DataSetColumn="类型名" />
+              <Mapping SourceColumn="总数量" DataSetColumn="总数量" />
+              <Mapping SourceColumn="价格" DataSetColumn="价格" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="图书管理系统DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="图书管理系统DataSet" msprop:Generator_UserDSName="图书管理系统DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookReports" msprop:Generator_TableClassName="BookReportsDataTable" msprop:Generator_TableVarName="tableBookReports" msprop:Generator_TablePropName="BookReports" msprop:Generator_RowDeletingName="BookReportsRowDeleting" msprop:Generator_RowChangingName="BookReportsRowChanging" msprop:Generator_RowEvHandlerName="BookReportsRowChangeEventHandler" msprop:Generator_RowDeletedName="BookReportsRowDeleted" msprop:Generator_UserTableName="BookReports" msprop:Generator_RowChangedName="BookReportsRowChanged" msprop:Generator_RowEvArgName="BookReportsRowChangeEvent" msprop:Generator_RowClassName="BookReportsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="书号" msprop:Generator_ColumnVarNameInTable="column书号" msprop:Generator_ColumnPropNameInRow="书号" msprop:Generator_ColumnPropNameInTable="书号Column" msprop:Generator_UserColumnName="书号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="书名" msprop:Generator_ColumnVarNameInTable="column书名" msprop:Generator_ColumnPropNameInRow="书名" msprop:Generator_ColumnPropNameInTable="书名Column" msprop:Generator_UserColumnName="书名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="作者" msprop:Generator_ColumnVarNameInTable="column作者" msprop:Generator_ColumnPropNameInRow="作者" msprop:Generator_ColumnPropNameInTable="作者Column" msprop:Generator_UserColumnName="作者" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="出版时间" msprop:Generator_ColumnVarNameInTable="column出版时间" msprop:Generator_ColumnPropNameInRow="出版时间" msprop:Generator_ColumnPropNameInTable="出版时间Column" msprop:Generator_UserColumnName="出版时间" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="类型名" msprop:Generator_ColumnVarNameInTable="column类型名" msprop:Generator_ColumnPropNameInRow="类型名" msprop:Generator_ColumnPropNameInTable="类型名Column" msprop:Generator_UserColumnName="类型名">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="总数量" msprop:Generator_ColumnVarNameInTable="column总数量" msprop:Generator_ColumnPropNameInRow="总数量" msprop:Generator_ColumnPropNameInTable="总数量Column" msprop:Generator_UserColumnName="总数量" type="xs:int" minOccurs="0" />
+              <xs:element name="价格" msprop:Generator_ColumnVarNameInTable="column价格" msprop:Generator_ColumnPropNameInRow="价格" msprop:Generator_ColumnPropNameInTable="价格Column" msprop:Generator_UserColumnName="价格" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BookReports" />
+      <xs:field xpath="mstns:书号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

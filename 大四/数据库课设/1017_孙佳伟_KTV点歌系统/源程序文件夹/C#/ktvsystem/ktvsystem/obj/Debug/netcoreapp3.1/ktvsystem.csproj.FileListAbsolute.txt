@@ -1,0 +1,15 @@
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\bin\Debug\netcoreapp3.1\ktvsystem.exe
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\bin\Debug\netcoreapp3.1\ktvsystem.deps.json
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\bin\Debug\netcoreapp3.1\ktvsystem.runtimeconfig.json
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\bin\Debug\netcoreapp3.1\ktvsystem.runtimeconfig.dev.json
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\bin\Debug\netcoreapp3.1\ktvsystem.dll
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\bin\Debug\netcoreapp3.1\ktvsystem.pdb
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.dll
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.pdb
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\ktvsystem\ktvsystem\obj\Debug\netcoreapp3.1\ktvsystem.signin.resources
