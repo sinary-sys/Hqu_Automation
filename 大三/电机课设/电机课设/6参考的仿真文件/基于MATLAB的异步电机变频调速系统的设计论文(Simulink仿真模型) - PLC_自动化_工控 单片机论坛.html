@@ -1,0 +1,1171 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>基于MATLAB的异步电机变频调速系统的设计论文(Simulink仿真模型) - PLC/自动化/工控 单片机论坛 </title>
+<link href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="canonical" />
+
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="http://www.51hei.com/bbs/" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_common.css?I0s" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_forum_viewthread.css?I0s" /><script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'I0s', charset = 'gbk', discuz_uid = '0', cookiepre = '5Qbx_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|,2|黑币|,3|贡献|', defaultstyle = '', REPORTURL = 'aHR0cDovL3d3dy41MWhlaS5jb20vYmJzL2Rwai0xMzM4MDktMS5odG1s', SITEURL = 'http://www.51hei.com/bbs/', JSPATH = 'data/cache/', DYNAMICURL = '';</script>
+<script src="data/cache/common.js?I0s" type="text/javascript"></script>
+<meta name="application-name" content="单片机论坛" />
+<meta name="msapplication-tooltip" content="单片机论坛" />
+<meta name="msapplication-task" content="name=门户;action-uri=http://www.51hei.com/bbs/portal.php;icon-uri=http://www.51hei.com/bbs/static/image/common/portal.ico" /><meta name="msapplication-task" content="name=论坛;action-uri=http://www.51hei.com/bbs/;icon-uri=http://www.51hei.com/bbs/static/image/common/bbs.ico" />
+<meta name="msapplication-task" content="name=群组;action-uri=http://www.51hei.com/bbs/group.php;icon-uri=http://www.51hei.com/bbs/static/image/common/group.ico" /><meta name="msapplication-task" content="name=;action-uri=http://www.51hei.com/bbs/home.php;icon-uri=http://www.51hei.com/bbs/static/image/common/home.ico" /><script src="data/cache/forum.js?I0s" type="text/javascript"></script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?85fb66a4d8a26adebaeeafa1df93222e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="wp">
+<div class="z"><a href="javascript:;"  onclick="setHomepage('http://www.51hei.com/bbs/');">设为首页</a><a href="http://www.51hei.com/bbs/"  onclick="addFavorite(this.href, '单片机论坛');return false;">收藏本站</a></div>
+<div class="y">
+<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
+<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到宽版" class="switchwidth">切换到宽版</a>
+</div>
+</div>
+</div>
+
+<div id="hd">
+<div class="wp">
+<div class="hdc cl"><h2><a href="http://www.51hei.com/bbs/" title="单片机论坛"><img src="static/image/common/logo.png" alt="单片机论坛" border="0" /></a></h2><script src="data/cache/logging.js?I0s" type="text/javascript"></script>
+<form method="post" autocomplete="off" id="lsform" action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes" onsubmit="return lsSubmit();">
+<div class="fastlg cl">
+<span id="return_ls" style="display:none"></span>
+<div class="y pns">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<span class="ftid">
+<select name="fastloginfield" id="ls_fastloginfield" width="40" tabindex="900">
+<option value="username">用户名</option>
+<option value="email">Email</option>
+</select>
+</span>
+<script type="text/javascript">simulateSelect('ls_fastloginfield')</script>
+</td>
+<td><input type="text" name="username" id="ls_username" autocomplete="off" class="px vm" tabindex="901" /></td>
+<td class="fastlg_l"><label for="ls_cookietime"><input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="2592000" tabindex="903" checked="checked"/>自动登录</label></td>
+<td>&nbsp;<a href="javascript:;" onclick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')">找回密码</a></td>
+</tr>
+<tr>
+<td><label for="ls_password" class="z psw_w">密码</label></td>
+<td><input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" tabindex="902" /></td>
+<td class="fastlg_l"><button type="submit" class="pn vm" tabindex="904" style="width: 75px;"><em>登录</em></button></td>
+<td>&nbsp;<a href="member.php?mod=register" class="xi2 xw1">立即注册</a></td>
+</tr>
+</table>
+<input type="hidden" name="quickforward" value="yes" />
+<input type="hidden" name="handlekey" value="ls" />
+</div>
+
+<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
+<p><a href="http://www.51hei.com/bbs/connect.php?mod=login&op=init&referer=forum.php%3Fmod%3Dviewthread%26tid%3D133809%26extra%3Dpage%253D1%26page%3D1%26&statfrom=login_simple"><img src="static/image/common/qq_login.gif" class="vm" alt="QQ登录" /></a></p>
+<p class="hm xg1" style="padding-top: 2px;">只需一步，快速开始</p>
+</div>
+</div>
+</form>
+
+</div>
+
+<div id="nv">
+<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(57);})">快捷导航</a>
+<ul><li class="a" id="mn_Ne347" ><a href="http://www.51hei.com/" hidefocus="true" target="_blank"  >首页</a></li><li id="mn_Nfad7" ><a href="http://www.51hei.com/bbs/" hidefocus="true"  >论坛</a></li><li id="mn_N63af" ><a href="http://www.51hei.com/bbs/mcu-h24-1.html" hidefocus="true"  >问答区</a></li><li id="mn_Nf5b2" ><a href="http://www.51hei.com/mcuteach/252.html" hidefocus="true" target="_blank"  >单片机教程</a></li><li id="mn_Ne3ee" ><a href="http://www.51hei.com/sp/" hidefocus="true" target="_blank"  >视频教程</a></li></ul>
+</div>
+<div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+</div><div class="a_mu"><p align="left" style="margin-top: 0px; margin-bottom: 6px; text-indent:13px;padding-top:6px">
+  <font color="#FF0000">热门：</font>
+<a href="http://www.51hei.com/bbs/mcu-2-1.html">51单片机</a> |
+<a href="http://www.51hei.com/bbs/mcu-h24-1.html">24小时必答区</a> |						
+<a href="http://www.51hei.com/bbs/mcu-xuexi-1.html">单片机教程</a> |						
+<a href="http://www.51hei.com/bbs/mcu-diy-1.html">单片机DIY制作</a> |
+<a href="http://www.51hei.com/bbs/mcu-stm32-1.html">STM32</a> |
+<a href="http://www.51hei.com/bbs/mcu-cortexm3-1.html">Cortex M3</a> |						
+<a href="http://www.51hei.com/bbs/mcu-dianzi-1.html">模数电子</a> |						
+<a href="http://www.51hei.com/bbs/mcu-dianzidiy-1.html">电子DIY制作</a> |
+<a href="http://www.51hei.com/bbs/mcu-gongfangdiy-1.html">音响/功放</a> |
+<a href="http://www.51hei.com/bbs/mcu-cj-1.html">拆机乐园</a> |
+<a href="http://www.51hei.com/bbs/mcu-Arduino-1.html">Arduino</a> |
+<a href="http://www.51hei.com/bbs/mcu-20-1.html">嵌入式OS</a> |                                                
+<a href="http://www.51hei.com/bbs/mcu-8-1.html">程序设计</a>
+</p>
+</div><div id="scbar" class="cl">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search" />
+<input type="hidden" name="formhash" value="b806d97b" />
+<input type="hidden" name="srchtype" value="title" />
+<input type="hidden" name="srhfid" value="57" />
+<input type="hidden" name="srhlocality" value="forum::viewthread" />
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="scbar_icon_td"></td>
+<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">搜索</a></td>
+<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+<td class="scbar_hot_td">
+<div id="scbar_hot">
+</div>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="57" >本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="group">群组</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+</div>
+</div>
+
+
+<div id="wp" class="wp">
+<script type="text/javascript">var fid = parseInt('57'), tid = parseInt('133809');</script>
+
+<script src="data/cache/forum_viewthread.js?I0s" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '733';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页">单片机论坛</a><em>&raquo;</em><a href="/bbs/">论坛</a> <em>&rsaquo;</em> <a href="http://www.51hei.com/bbs/forum.php?gid=41">电子技术分类讨论区</a> <em>&rsaquo;</em> <a href="http://www.51hei.com/bbs/mcu-plc-1.html">PLC/自动化/工控</a> <em>&rsaquo;</em> <a href="http://www.51hei.com/bbs/dpj-133809-1.html">基于MATLAB的异步电机变频调速系统的设计论文(Simulink ...</a>
+</div>
+</div>
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="pgt" class="pgs mbm cl ">
+<div class="pgt"></div>
+<span class="y pgb"><a href="http://www.51hei.com/bbs/mcu-plc-1.html">返回列表</a></span>
+<a id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=57')" href="javascript:;" title="发新帖"><img src="static/image/common/pn_post.png" alt="发新帖" /></a></div>
+
+
+
+<div id="postlist" class="pl bm">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls ptn pbn">
+<div class="hm ptn">
+<span class="xg1">查看:</span> <span class="xi1">22460</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">7</span>
+</div>
+</td>
+<td class="plc ptm pbn vwthd">
+<span class="xg1 side_btn">
+<a onclick="setcookie('close_leftinfo', 1);location.reload();" title="收起左侧" class="btn_s_close" href="javascript:;"><img src="static/image/common/control_l.png" alt="收起左侧" class="vm" /></a>
+</span>
+<h1 class="ts">
+<span id="thread_subject">基于MATLAB的异步电机变频调速系统的设计论文(Simulink仿真模型)</span>
+</h1>
+<span class="xg1">
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" onclick="return copyThreadUrl(this, '单片机论坛')" >[复制链接]</a>
+</span>
+</td>
+</tr>
+</table>
+
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tr>
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table><div id="post_549210" ><table id="pid549210" class="plhin" summary="pid549210" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar549210" class="pls favatar">
+ <div class="p_pop blk bui card_gender_" id="userinfo549210" style="display: none; ">
+<div class="m z">
+<div id="userinfo549210_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-393039.html" target="_blank" class="xi2">Elio丶</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=393039&do=profile" target="_blank" class="xi2">43</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=393039&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-393039.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/39/30/39_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon549210" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-393039.html" target="_blank" class="xi2">Elio丶</a>
+<em id="authorposton549210">发表于 2018-9-3 16:20</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+<span class="pipe show">|</span><a href="javascript:;" onclick="readmode($('thread_subject').innerHTML, 549210);" class="show">阅读模式</a>
+</div>
+</div>
+</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
+ 
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_549210">
+<div align="center"><strong>基于MATLAB的异步电动机变频调速仿真实现<br />
+SIMULATION FOR FREQUENCY CONTROL SYSTEM OF ASYNCHRONOUS MOTOR BASED ON MATLAB</strong><br />
+</div><br />
+本文主要对交流异步电动机SPWM变频调速矢量控制系统进行建模与仿真。变频调速系统在异步电动机的各种调速方式中效率最高、性能最好，因此有着极其重要的地位。电气传动控制系统计算机仿真是应用现代软件工具对其工作特性进行研究的一种十分重要的方法。通过仿真试验，可以比较各种策略与方案，优化并确定相关参数。因此进行系统仿真是不可或缺的，为科学决策提供了可靠的依据。<br />
+本文介绍了交流调速系统概况、矢量控制的基本概念以及异步电动机变频调速系统在 MATLAB/Simulink仿真工具中模型建立以及特性研究。一方面，本文通过对交流异步电动机矢量控制调速系统各部分仿真，得出该系统各部分的运行特性；另一方面，通过对转矩内环的转速、磁链闭环矢量控制系统和转差频率控制的异步电动机矢量控制系统的仿真，熟悉了矢量控制系统的参数设置和工作特性。<br />
+本文通过仿真实验不仅了解和掌握了异步电动机运行特性，更重要的是得出的仿真数据，为新的实验设备的引进和进一步开发打下了坚实的基础。<br />
+<br />
+仿真图：<br />
+
+<ignore_js_op>
+<p>matlab仿真</p>
+<img src="http://c.51hei.com/d/forum/201809/03/162021w945zj57pde5dpdd.png" alt="matlab仿真" title="matlab仿真" />
+
+</ignore_js_op>
+<br />
+摘要<br />
+<font color="Green">目录<br />
+1 绪论<br />
+1.1 概述<br />
+1.2 交流变频调速技术的现状<br />
+1.3 仿真工具MATLAB/Simulink简介<br />
+1.4 毕业设计的研究内容及章节安排<br />
+2 基于动态模型的异步电动机调速系统工作原理<br />
+2.1 异步电动机的数学模型<br />
+2.2 坐标变换<br />
+2.3 异步电动机在两相坐标系上的数学模型<br />
+3 交流异步电动机性能的仿真研究<br />
+3.1在交流情况下异步电动机工作仿真<br />
+3.2 PWM变频器-电动机系统仿真<br />
+PWM<br />
+4 交流异步电动机矢量控制调速系统仿真<br />
+4.1 转矩内环的转速、磁链闭环矢量控制系统仿真及分析<br />
+4.2 转差频率控制的异步电动机矢量控制系统仿真<br />
+4.3 两种矢量控制系统的特点与存在的问题<br />
+结论<br />
+参考文献<br />
+致谢</font><br />
+<br />
+1 绪论<br />
+<br />
+1.1 概述<br />
+<br />
+电动机作为在工农业生产过程中主要的动力来源，发挥着日益重要的作用。电动机调速性能的好坏，对劳动生产率、节能环保产品质量有着非常重要的影响。直流电动机转速与交流电动机相比，更加容易被控制和调节。当为额定转速以下，可以通过维持励磁电流恒定，改变电枢电压方法来实现恒转矩调速；当为额定转速以上，可以通过维持电枢电压恒定，调节励磁的方法来实现恒功率调速。因此采用转速和电流双闭环直流调速系统可获得优良动态和静态调速特性。<br />
+然而，随着科技的不断发展和前进，直流调速弱点也逐步显现出来。由于直流调速系统中使用换向器，直流电动机维护工作量重，最高转速、单机容量以及使用环境等都受到限制，因此直流调速系统的应用范围狭窄。从20世纪30年代以来，交流调速技术逐步成为人们研究的热点，但交流电动机自身结构特点制约了调速技术发展。70 年代以来，伴随着电机控制技术及电力电子技术的飞速发展，交流调速系统性能也有了长足进步，几乎可以达到与直流调速系统相媲美的程度，为满足生产发展的需要，世界各国都非常重视交流调速技术的研发。<br />
+目前，交流调速系统已逐步取代直流调速系统。交流调速系统广泛采用交-直-交变频器作为交流电源，交-直-交变频器主要包括整流部分和逆变部分，整流部分将工频交流电整流成直流电，逆变部分再将直流电逆变成频率可调整的交流电，从而满足生产过程中对电动机调速系统的需求。<br />
+系统仿真是指使用计算机设备来模拟或描述一个系统或过程的运行行为，从而研究该系统或过程的一种技术。仿真技术是集系统理论、计算机技术、相似原理、控制论于一体的综合性技术。电气传动控制系统的计算机仿真是应用现代科学手段对其进行科学研究的十分重要的手段之一。近年来，几乎所有电动机调速控制系统的高品质控制均离不开系统仿真方面的研究。<br />
+1.2 交流变频调速技术的现状<br />
+<br />
+目前，交流电机变频调速技术经已逐步成为当代电机调速的主流方法，日益得到人们的关注和重视。交流电机调速也由曾经的电磁离合器调速、变极调速、串级调速、转子串电阻调速、调压调速等有级调速方式逐步转变为无极调速方式。变频调速技术飞速发展为异步电动机已经可以实现无极平滑调速提供了可能。由于异步电动机变频调速系统还具有调速范围宽的优点，在工业控制领域中逐渐替代有极调速方式。交流变频调速克服了直流调速中的一些缺点，并拥有造价低、结构简单、坚固耐用等优点，已被公认为最有前途的调速方式。电工领域中各种容量和电压等级的变压器的出现，使得改变交流电压大小很容易实现，从而使得电力系统行业得到快速的发展。长期以来，交流电的频率保持固定不变，但是变频调速技术的出现使得交流电的频率可以可控地变化，这样就使得交流电得到充分利用。<br />
+随着我国经济高速发展，工业自动化领域中变频调速形成了一个巨大的市场。日本三菱、富士、德国西门子、ABB等国外公司先后进入中国市场并在中国建厂，国外公司产品最初约占中国变频器市场80%市场份额。经过近30 年的发展，国内像阿尔法、佳灵、利德华福、英威腾、汇川等近300多家国产变频器开拓市场，已经取得了很好的业绩。在国内变频器市场品牌中，内资品牌约占70%左右，但市场份额却只有30%左右，业内人士分析未来十年后市场才能达到饱和状态，因此该行业发展潜力十分可观。<br />
+变频调速技术的研究现状及发展趋势大体可归结为以下几个方面：<br />
+1、功率器件的发展。电力电子器件从上世纪五十年代开始，由第一代半控晶闸管 SCR及相关的派生器件，发展到全控器件诸如GTO，GTR，电力MOSFET，IGBT，IGCT 以及智能功率模块(IPM)，IEGT(耐压达4KV以上的IGBT系列电力电子器件)，主要向低通态电压、高压大容量、模块封装化方向发展。<br />
+2、控制策略的发展。变频器由最初的恒压频比控制方式(V/F)，转差频率控制方式(SF)发展到矢量控制方式(VC)和直接转矩控制方式(DTC)，调速精度和动态性能上均有明显提高。<br />
+3、微电子技术的发展。高性能矢量控制系统，若没有高效能微处理器支持，将很难实现。16位、32位高速微处理器及含浮点处理单元的DSP和专用集成电路ASIC(Application Specific IC)技术的快速发展，为实现变频调速器高效多功能化提供了硬件支持。<br />
+4、产品化生产。基础工业和各种工业制造业的高速发展，为变频器相关配套件生产提供了有力支持。<br />
+5、高压大功率变频调速装置以及永磁同步电动机及其控制系统的发展。近些年国际上高压大电流及串、并联技术和多电平技术的发展，使高压变频调速得以实现，有着明显的节能效果。<br />
+1.3 仿真工具MATLAB/Simulink简介<br />
+<br />
+MATLAB是矩阵实验室（Matrix Laboratory）的简称，是美国MathWorks公司出品的商业数学软件，用于算法开发、数据可视化、数据分析以及数值计算的高级技术计算语言和交互式环境，主要包括MATLAB和Simulink两大部分。MATLAB可以进行矩阵运算、绘制函数图像和数据、实现算法、创建用户界面、连接其他编程语言程序等，主要应用于工程计算、控制设计、信号处理与通讯、图像处理、信号检测、金融建模设计与分析等领域。现在MATLAB软件不但广泛应用于控制领域，也应用于其它的工程和非工程领域。<br />
+MATLAB具有很多优点，例如：此高级语言可用于技术计算；此开发环境可对代码、文件和数据进行管理；交互式工具可以按迭代的方式探查、设计及求解问题；数学函数可用于线性代数、统计、傅立叶分析、筛选、优化以及数值积分等 ；二维和三维图形函数可用于可视化数据；各种工具可用于构建自定义的图形用户界面；各种函数可将基于MATLAB的算法与外部应用程序和语言（如C、C++、Fortran、Java、COM 以及Microsoft Excel）集成。<br />
+Simulink是一个用来对动态系统进行建模、仿真和分析的软件包。它为用户提供了用方框图进行建模的图形接口，使得建模就像用纸和笔来画画一样容易。Simulink允许用户定制和创建自己的模块。Simulink是建模仿真可视化软件，它用框图表示系统的各个环节，用带方向的连线，来表示各环节的输入输出关系。电力系统(SimPower System)模块库是专用于RLC电路、电力电子电路、电机传动控制系统和电力系统仿真用的模型库。模型库中包含了各种交直流电源，大量电气元器件和电工测量仪表等。利用这些模块可以模拟电力电子系统、电力拖动控制系统和电力系统运行和故障的各种状态运行。<br />
+1.4 毕业设计的研究内容及章节安排<br />
+<br />
+本毕业设计主要用MATLAB软件对在矢量控制条件下的异步电动机变频调速系统的进行仿真，文章的章节安排如下：<br />
+第一章：绪论<br />
+对毕业设计研究背景进行说明，并对异步电动机调速系统所属领域及相关技术的发展进行概述，并且简单介绍了MATLAB/Simulink仿真工具。<br />
+第二章：基于动态模型的异步电动机调速系统的工作原理<br />
+介绍异步电动机数学模型，在异步电动机数学模型的基础上推演了电机的坐标变换，最后介绍了矢量控制的原理。<br />
+第三章：异步电动机性能的仿真研究<br />
+在MATLAB/Simulink中，通过仿真研究异步电动机的特性。首先是介绍鼠笼型交流异步电动机在正弦电压下的工作情况；然后是对交流异步电动机在变频器供电时的工作情况进行分析。<br />
+第四章：交流异步电动机矢量控制变频调速系统的仿真<br />
+在MATLAB/Simulink中，分别对转差频率控制的异步电动机矢量控制系统和带转矩内环的转速、磁链闭环矢量控制系统，在不同的给定转速条件下的仿真,并作出比较。<br />
+<br />
+<strong>2 基于动态模型的异步电动机调速系统工作原理</strong><div align="left">异步电动机具有非线性、强耦合、多变量的性质，要获得高动态调速性能，必须从动态模型出发，分析异步电动机的转矩和磁链控制规律，研究高性能异步电动机的调速方案。矢量控制系统和直接转矩控制系统是已经获得成熟应用的两种基于动态模型的高性能交流电动机调速系统。矢量控制系统通过矢量变换和按转子磁链定向，得到等效的直流电动机模型，然后模仿直流电动机的控制策略设计控制系统。</div><strong>2.1 异步电动机的数学模型</strong><div align="left">1.在研究异步电动机的多变量数学模型时，常做如下假设：</div><div align="left">（1）忽略空间谐波，设三相绕组对称，在空间互差<img id="aimg_Wiuqw" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="31" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.002.jpg" border="0" alt="" />(电角度)，所产生的磁动势沿气隙圆周按正弦规律分布；</div><div align="left">（2）忽略磁路饱，各绕组的自感和互感都是恒定的；</div><div align="left">（3）忽略铁心损耗；</div><div align="left">（4）不考虑温度和频率的变化对电机参数的影响。</div><div align="left">无论电动机转子是绕线型的还是鼠笼型的，都将它等效成绕线转子，到定子侧，折算后的每相绕组匝数都相等。这样，实际电动机就被等效为图示的三相异步电动机的物理模型。在三相异步电动机物理模型中，定子三相绕组轴线A、B、C在空间是固定的，故定义为三相静止坐标系。设A轴为参考坐标轴，转子以<img id="aimg_mwVWP" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="13" height="15" src="http://c.51hei.com/a/huq/a/a/a/71/71.003.jpg" border="0" alt="" />速度旋转，转子绕组轴线为a、b、c随转子旋转。转子a轴和定子A轴间的电角度差<img id="aimg_TJDRZ" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="13" height="19" src="http://c.51hei.com/a/huq/a/a/a/71/71.004.jpg" border="0" alt="" />为空间角位移变量。如图2-1所示，为三相异步电动机物理模型。</div><div align="center"><img id="aimg_W8HDy" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="365" height="292" src="http://c.51hei.com/a/huq/a/a/a/71/71.005.jpg" border="0" alt="" /></div><p style="line-height:19px;text-indent:nullem;text-align:center"><font style="font-size:12pt">图2-1 三相异步电动机物理模型</font></p><div align="left">2.异步电动机三相动态模型的数学表达式</div><div align="left">（1）磁链方程</div><div align="left">异步电动机的数学模型由下述的电压方程、磁链方程、转矩方程和运动方程组成，其中磁链方程和转矩方程为代数方程，电压方程和运动方程为微分方程。</div><div align="left">异步电动机每个绕组的磁链是它本身的自感磁链和其他绕组对它的互感磁链之和，因此，六个绕组磁链如下所示。</div><div align="left"><font style="font-size:12pt"><img id="aimg_WywK6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="324" height="176" src="http://c.51hei.com/a/huq/a/a/a/71/71.006.jpg" border="0" alt="" /></font></div><div align="left">式中，L—6x6阶的电感矩阵，其中对角线元素<img id="aimg_cn5rK" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="26" height="20" src="http://c.51hei.com/a/huq/a/a/a/71/71.007.jpg" border="0" alt="" />，<img id="aimg_LDq5h" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="26" height="20" src="http://c.51hei.com/a/huq/a/a/a/71/71.008.jpg" border="0" alt="" />，<img id="aimg_k9kzI" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="28" height="20" src="http://c.51hei.com/a/huq/a/a/a/71/71.009.jpg" border="0" alt="" />，<img id="aimg_Gp79z" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="25" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.010.jpg" border="0" alt="" />，<img id="aimg_N0YYq" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.011.jpg" border="0" alt="" />，<img id="aimg_iJDWd" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="22" src="http://c.51hei.com/a/huq/a/a/a/71/71.012.jpg" border="0" alt="" />是各相关绕组的自感，其余各项则是绕组间的互感。对于每一项绕组来说，它所交链的磁通是互感磁通与漏磁通之和，因此，定子和转子各相自感为：</div><div align="center"><img id="aimg_EPq6r" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="226" height="23" src="http://c.51hei.com/a/huq/a/a/a/71/71.013.jpg" border="0" alt="" /></div><div align="center"><img id="aimg_zMWEe" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="224" height="22" src="http://c.51hei.com/a/huq/a/a/a/71/71.014.jpg" border="0" alt="" /></div><div align="left">两相绕组之间只有互感，互感的情况较为复杂，定子和转子的六个绕组之间的互感可考虑有两类：一类是A、B、C相绕组及a、b、c相绕组之间因位置固定，故互感为常数；另一类是定子任一相与转子任一相之间的位置是变化的，互感是角位移θ的函数。由于三相绕组的轴线在空间的相位差是<img id="aimg_eY5Wu" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="31" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.002.jpg" border="0" alt="" />电角度，在假设气磁通为正弦分布的情况下，有：</div><div align="center"><img id="aimg_Hjh6v" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="345" height="49" src="http://c.51hei.com/a/huq/a/a/a/71/71.015.jpg" border="0" alt="" /> <img id="aimg_Ikj86" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="351" height="46" src="http://c.51hei.com/a/huq/a/a/a/71/71.016.jpg" border="0" alt="" /></div><div align="left">定、转子间的互感为：</div><div align="center"><img id="aimg_QKrED" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="372" height="28" src="http://c.51hei.com/a/huq/a/a/a/71/71.017.jpg" border="0" alt="" /> <img id="aimg_kP6Zm" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="422" height="39" src="http://c.51hei.com/a/huq/a/a/a/71/71.018.jpg" border="0" alt="" /><img id="aimg_drw9u" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="427" height="43" src="http://c.51hei.com/a/huq/a/a/a/71/71.019.jpg" border="0" alt="" /></div><br />
+<div align="left">矩阵方程写成分块矩阵的形式：</div><div align="center"><img id="aimg_Ww69p" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="207" height="64" src="http://c.51hei.com/a/huq/a/a/a/71/71.020.jpg" border="0" alt="" /></div><div align="left">定子自感矩阵：<img id="aimg_OJJi0" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="285" height="93" src="http://c.51hei.com/a/huq/a/a/a/71/71.021.jpg" border="0" alt="" /></div><div align="left">转子自感矩阵：<img id="aimg_D0W9Q" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="290" height="95" src="http://c.51hei.com/a/huq/a/a/a/71/71.022.jpg" border="0" alt="" /></div><div align="left">定子、转子之间的互感矩阵：</div><div align="center"><img id="aimg_i5hu7" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="465" height="123" src="http://c.51hei.com/a/huq/a/a/a/71/71.023.jpg" border="0" alt="" /></div><div align="left"><img id="aimg_ZN0nw" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="25" height="26" src="http://c.51hei.com/a/huq/a/a/a/71/71.024.jpg" border="0" alt="" />和<img id="aimg_fw5nI" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="25" height="26" src="http://c.51hei.com/a/huq/a/a/a/71/71.025.jpg" border="0" alt="" />两个分块矩阵互为转置，且与转子位置有关，是时变元素，这是因为系统非线性的根源，可以用坐标变换把变参数转换成参数。</div><div align="left">（2）电压方程</div><div align="left">三相定子绕组电压平衡方程式为：</div><div align="center"><img id="aimg_X6JD6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="119" height="34" src="http://c.51hei.com/a/huq/a/a/a/71/71.026.jpg" border="0" alt="" /></div><div align="center"><img id="aimg_Vw7yQ" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="110" height="32" src="http://c.51hei.com/a/huq/a/a/a/71/71.027.jpg" border="0" alt="" /></div><div align="center"><img id="aimg_p60Pu" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="109" height="31" src="http://c.51hei.com/a/huq/a/a/a/71/71.028.jpg" border="0" alt="" /></div><div align="left">三相转子绕组折算到定子侧后的电压方程式为：</div><div align="center"><img id="aimg_mJHU5" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="107" height="31" src="http://c.51hei.com/a/huq/a/a/a/71/71.029.jpg" border="0" alt="" /></div><div align="center"><img id="aimg_uy0qv" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="108" height="32" src="http://c.51hei.com/a/huq/a/a/a/71/71.030.jpg" border="0" alt="" /></div><div align="center"><img id="aimg_zH96P" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="103" height="31" src="http://c.51hei.com/a/huq/a/a/a/71/71.031.jpg" border="0" alt="" /></div><div align="left">上述各量己折算到定子侧，将电压方程用矩阵形式表示可写成：</div><div align="center"><img id="aimg_WyyeV" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="131" height="37" src="http://c.51hei.com/a/huq/a/a/a/71/71.032.jpg" border="0" alt="" /></div><div align="left">（3）转矩方程</div><div align="left">按照机电能量转换原理，可求出电磁转矩<img id="aimg_Gqqqn" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.033.jpg" border="0" alt="" />的表达式：</div><div align="center"><img id="aimg_TVuw0" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="562" height="42" src="http://c.51hei.com/a/huq/a/a/a/71/71.034.jpg" border="0" alt="" /></div><div align="left">式中，<img id="aimg_UM5W8" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="26" height="28" src="http://c.51hei.com/a/huq/a/a/a/71/71.035.jpg" border="0" alt="" />——电磁转矩；</div><div align="left"><img id="aimg_BWdd0" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="25" height="29" src="http://c.51hei.com/a/huq/a/a/a/71/71.036.jpg" border="0" alt="" />——电机的磁极对数。</div><div align="left">（4）运动方程</div><div align="left">作用在电动机轴上的转矩与电动机速度变化之间的关系可以用运动方程来表达，一般情况下，电气传动系统的运动方程式为：</div><div align="center"><img id="aimg_zq7n0" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="244" height="49" src="http://c.51hei.com/a/huq/a/a/a/71/71.037.jpg" border="0" alt="" /></div><div align="left">对于恒转矩负载D=K=0，则：</div><div align="center"><img id="aimg_rYdrM" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="121" height="48" src="http://c.51hei.com/a/huq/a/a/a/71/71.038.jpg" border="0" alt="" /></div><div align="left">上述的异步电动机动态模型是在线性磁路、磁动势在空间按正弦分布的假定条件下得出来的，对定、转子电压和电流未作任何假设。因此，该动态模型完全可以用来分析含有电压、电流谐波的三相异步电动机调速系统的动态过程。</div><strong>2.2 坐标变换</strong><div align="left">三相绕组可以用相互独立的两相正交对称绕组等效替代，等效原则是产生相等是磁动势。所谓独立是指两相绕组间无约束条件，即不存在约束条件；所谓正交是指两相绕组在空间上互差<img id="aimg_WIjD9" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.039.jpg" border="0" alt="" />；所谓对称是两相绕组的匝数和阻值相等。图2-2中绘出两相绕组α、β，通过两相平衡交流电流<img id="aimg_g5856" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.040.jpg" border="0" alt="" />和<img id="aimg_PeWDV" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.041.jpg" border="0" alt="" />，也能产生旋转磁动势。当三相绕组和两相绕组产生的两个旋转磁动势大小和转速都相等时，即认为两相绕组与三相绕组等效，这就是3/2变换。三相坐标系和两相坐标系物理模型如图2-2所示。</div><p style="line-height:19px;text-indent:nullem;text-align:center"><font style="font-size:12pt"><img id="aimg_Eme6q" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="537" height="252" src="http://c.51hei.com/a/huq/a/a/a/71/71.042.jpg" border="0" alt="" /></font></p><p style="line-height:19px;text-indent:nullem;text-align:center"><font style="font-size:12pt">图2-2 三相坐标系和两相坐标系物理模型</font></p><div align="left">异步电动机三相原始动态模型相当复杂，分析和求解这组非线性方程十分困难。异步电动机数学模型之所以复杂，关键是因为有一个复杂的电感矩阵和转矩方程，它们体现了异步电动机的电磁耦合和能量转换的复杂关系。因此，需从电磁耦合关系入手。</div><div align="left">两相匝数相等相互正交的绕组d、q，分别通以直流电流<img id="aimg_A6Q6V" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.043.jpg" border="0" alt="" />和<img id="aimg_oP5Pq" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="13" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.044.jpg" border="0" alt="" />，产生合成磁势F，其位置相对于绕组来说是固定的。如果人为地让包括两个绕组在内的整个铁心以同步转速旋转，则磁势F自然也随之旋转起来，成为旋转磁动势。如果这个旋转磁动势的大小和转速与固定的交流绕组产生的旋转磁动势相等，那么这套旋转的直流绕组也就和前面两套固定的交流绕组等效了。旋转正交坐标系的物理模型如图2-3所示。</div><div align="center"><img id="aimg_fH7Ku" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="296" height="259" src="http://c.51hei.com/a/huq/a/a/a/71/71.045.jpg" border="0" alt="" /></div><p style="line-height:19px;text-indent:nullem;text-align:center"><font style="font-size:12pt">图2-3 旋转正交坐标系的物理模型</font></p><div align="left">由此可见，以产生相同的旋转磁动势为准则，三相交流绕组、两相交流绕组和旋转的直流绕组彼此等效。或者说，在三相坐标系下<img id="aimg_q66nz" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.046.jpg" border="0" alt="" />、<img id="aimg_mPV5Z" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.047.jpg" border="0" alt="" />、<img id="aimg_y67RW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.048.jpg" border="0" alt="" />和在两相坐标系下的<img id="aimg_i657i" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.049.jpg" border="0" alt="" />、<img id="aimg_Me577" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.050.jpg" border="0" alt="" />以及在旋转正交坐标系下的直流<img id="aimg_Rwizm" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.051.jpg" border="0" alt="" />和<img id="aimg_t568w" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="13" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.052.jpg" border="0" alt="" />产生的旋转磁动势相等。在图2-3中的d、q两个绕组而言，当观察者站在地面上看上去，它们是与三相交流绕组等效的旋转直流绕组；如果跳到旋转着的铁心上看，它们就的的确确是一个直流电动机的物理模型。</div><div align="left">这样，通过坐标系的变换，可以找到与交流三绕组等效的直流电动机模型。现在的问题是如何求出<img id="aimg_vmr65" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.046.jpg" border="0" alt="" />、<img id="aimg_JPEDU" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.047.jpg" border="0" alt="" />、<img id="aimg_T99dy" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.048.jpg" border="0" alt="" />与<img id="aimg_V6UdW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.049.jpg" border="0" alt="" />、<img id="aimg_Jnhwu" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.050.jpg" border="0" alt="" />和<img id="aimg_t80qR" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.051.jpg" border="0" alt="" />、<img id="aimg_PRwDD" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="13" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.052.jpg" border="0" alt="" />之间准确的等效关系，这就是坐标变换的任务。</div><div align="left">1.三相-两相变换（3/2变换）</div><div align="left">A、B、C为三相静止绕组，每相绕组的有效匝数为<img id="aimg_eu7rQ" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="21" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.053.jpg" border="0" alt="" />，通以三相平衡的正弦电流，产生合成磁动势F，以同步转速<img id="aimg_S6WmP" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.054.jpg" border="0" alt="" />旋转，A、B、C轴称为三相静止坐标系；α、β为两相静止绕组，每相绕组的有效匝数为<img id="aimg_G6IdW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="23" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.055.jpg" border="0" alt="" />，它们在空间互差<img id="aimg_Qmi50" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.056.jpg" border="0" alt="" />，且通入时间上互差<img id="aimg_L86Uw" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.056.jpg" border="0" alt="" />的两相电流，也产生与上相同的磁动势F，并以同步转速<img id="aimg_FDyPm" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.057.jpg" border="0" alt="" />旋转，α、β轴称为两相静止坐标系。当进行三相/两相坐标变换时，三相总磁动势应该与两相总磁动势相等，两套绕组瞬时总磁动势在α、β轴上的投影都应相等，写成矩阵形式，得：</div><div align="center"><img id="aimg_Mu9zI" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="230" height="99" src="http://c.51hei.com/a/huq/a/a/a/71/71.058.jpg" border="0" alt="" /></div><div align="left">在变换前后总功率不变的前提下，得到匝数比为：</div><div align="center"><img id="aimg_BQ5n8" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="78" height="54" src="http://c.51hei.com/a/huq/a/a/a/71/71.059.jpg" border="0" alt="" /></div><div align="left">三相静止坐标系等效变换到两相静止坐标系的变换矩阵：</div><div align="center"><img id="aimg_WmR6y" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="241" height="94" src="http://c.51hei.com/a/huq/a/a/a/71/71.060.jpg" border="0" alt="" /></div><div align="left">如果从两相静止坐标系变换到三相静止坐标系，可以利用增广矩阵的方法，把<img id="aimg_oREi6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="43" height="30" src="http://c.51hei.com/a/huq/a/a/a/71/71.061.jpg" border="0" alt="" />扩成方阵，求其逆矩阵之后，再除以增加的一列，得：</div><div align="center"><img id="aimg_UZdKq" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="291" height="134" src="http://c.51hei.com/a/huq/a/a/a/71/71.062.jpg" border="0" alt="" /></div><br />
+<div align="left">为了便于利用功率不变条件下的坐标变换矩阵，需将变换矩阵变为方阵，因此，在<img id="aimg_XrUkU" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="13" src="http://c.51hei.com/a/huq/a/a/a/71/71.063.jpg" border="0" alt="" />、<img id="aimg_vk5I9" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="19" src="http://c.51hei.com/a/huq/a/a/a/71/71.064.jpg" border="0" alt="" />坐标系中增设零轴，得：</div><div align="center"><img id="aimg_jziQU" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="348" height="148" src="http://c.51hei.com/a/huq/a/a/a/71/71.065.jpg" border="0" alt="" /></div><div align="left">上述公式同样适合于电压和磁链的变换矩阵。</div><div align="left">2.静止两相-旋转正交变换（2s/2r变换）</div><div align="left">从静止两相正交坐标系αβ到旋转正交坐标系dq的变换，称作静止两相-旋转正交变换，简称2s/2r变换。<img id="aimg_dD5EY" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="22" height="19" src="http://c.51hei.com/a/huq/a/a/a/71/71.066.jpg" border="0" alt="" />为两相静止坐标系统(2S)与磁场定向的M-T两相同步旋转坐标系统(2r)之间的变换称为两相/两相变换，简称<img id="aimg_Kuww5" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="43" height="22" src="http://c.51hei.com/a/huq/a/a/a/71/71.067.jpg" border="0" alt="" />变换，如图2-4所示。</div><div align="center"><img id="aimg_BRhVE" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="350" height="332" src="http://c.51hei.com/a/huq/a/a/a/71/71.068.jpg" border="0" alt="" /></div><p style="line-height:19px;text-indent:nullem;text-align:center"><font style="font-size:12pt">图2-4 静止两相正交坐标系和旋转正交坐标系中磁动势矢量</font></p><div align="left">图中两相交流电流<img id="aimg_jH0PD" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="28" height="26" src="http://c.51hei.com/a/huq/a/a/a/71/71.069.jpg" border="0" alt="" />，两相直流电流<img id="aimg_HnJmJ" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="28" height="28" src="http://c.51hei.com/a/huq/a/a/a/71/71.070.jpg" border="0" alt="" />，产生同样的以同步速度<img id="aimg_n95i6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="20" src="http://c.51hei.com/a/huq/a/a/a/71/71.071.jpg" border="0" alt="" />旋转的合成磁动势F。由于各绕组匝数相等，可以消去磁动势中的匝数，可以用电流表示，但是此时的电流是空间矢量，而非时间相量。<img id="aimg_Uk9wh" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="15" src="http://c.51hei.com/a/huq/a/a/a/71/71.072.jpg" border="0" alt="" />轴和<img id="aimg_d6H6P" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="18" height="23" src="http://c.51hei.com/a/huq/a/a/a/71/71.073.jpg" border="0" alt="" />轴静止不动，分量<img id="aimg_vI5n8" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="18" height="27" src="http://c.51hei.com/a/huq/a/a/a/71/71.074.jpg" border="0" alt="" />和<img id="aimg_njN69" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="18" height="29" src="http://c.51hei.com/a/huq/a/a/a/71/71.075.jpg" border="0" alt="" />的大小却随时间而变化，相当于<img id="aimg_U9vDe" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="13" src="http://c.51hei.com/a/huq/a/a/a/71/71.076.jpg" border="0" alt="" />和<img id="aimg_J7KZR" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="19" src="http://c.51hei.com/a/huq/a/a/a/71/71.077.jpg" border="0" alt="" />绕组在的交流磁动势的瞬时值。M轴和<img id="aimg_OV8d5" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="13" src="http://c.51hei.com/a/huq/a/a/a/71/71.076.jpg" border="0" alt="" />轴之间的夹角<img id="aimg_ovv50" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="12" height="16" src="http://c.51hei.com/a/huq/a/a/a/71/71.078.jpg" border="0" alt="" />是随时间而变化的，而M轴和转子总磁链空间矢量方向重合，由图可知：</div><div align="center"><img id="aimg_X57jz" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="224" height="59" src="http://c.51hei.com/a/huq/a/a/a/71/71.079.jpg" border="0" alt="" /></div><div align="left">写成矩阵形式为：</div><div align="center"><img id="aimg_DWwjr" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="394" height="60" src="http://c.51hei.com/a/huq/a/a/a/71/71.080.jpg" border="0" alt="" /></div><div align="left">式中，</div><div align="center"><img id="aimg_WzjRi" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="248" height="55" src="http://c.51hei.com/a/huq/a/a/a/71/71.081.jpg" border="0" alt="" /></div><div align="left">为两相同步旋转坐标系变换到两相静止坐标系的变换矩阵。</div><div align="left">反之，由两相静止坐标系变换到两相同步旋转坐标系的变换矩阵为：</div><div align="center"><img id="aimg_q5Pd8" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="311" height="65" src="http://c.51hei.com/a/huq/a/a/a/71/71.082.jpg" border="0" alt="" /></div><div align="left">电压和磁链的旋转变换矩阵也与电流(磁动势)的旋转变换矩阵相同。</div><strong>2.3 异步电动机在两相坐标系上的数学模型</strong><div align="left">1.在任意两相旋转坐标系(dq坐标系)上的数学模型</div><div align="left">两相坐标系可以是静止的，也可以是旋转的，其中任意旋转的坐标系是最常见的一种情况，由此，求某一具体两相坐标系上的数学模型就相对比较容易了。</div><div align="left">设两相坐标d轴与三相坐标A轴的夹角为<img id="aimg_Lki6Y" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="20" src="http://c.51hei.com/a/huq/a/a/a/71/71.083.jpg" border="0" alt="" />，<img id="aimg_ij0dU" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="66" height="26" src="http://c.51hei.com/a/huq/a/a/a/71/71.084.jpg" border="0" alt="" />为dq坐标系相对于定子的角速度；<img id="aimg_kh75w" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="25" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.085.jpg" border="0" alt="" />为dq坐标系相对于转子的角速度。要把三相静止坐标系上的电压方程、磁链方程和转矩方程都变换到两相旋转坐标系上来，可以先利用3S/2S变换将方程式中的定子和转子的电流、电压、磁链和转矩都转换到两相静止坐标系<img id="aimg_nUWUh" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="36" height="23" src="http://c.51hei.com/a/huq/a/a/a/71/71.086.jpg" border="0" alt="" />上，然后再用旋转变换矩阵<img id="aimg_wJ6Iu" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="47" height="29" src="http://c.51hei.com/a/huq/a/a/a/71/71.087.jpg" border="0" alt="" />将这些变量都变换到两相旋转坐标系dq上。定子各量用下标1表示，转子各量用下标2表示。具体的变换过程比较复杂，变换后得到的数学模型如下。</div><div align="left">（1）dq坐标系中的电压方程：</div><div align="center"><img id="aimg_AD5ed" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="431" height="124" src="http://c.51hei.com/a/huq/a/a/a/71/71.088.jpg" border="0" alt="" /></div><div align="left">（2）dq坐标系中的磁链方程</div><div align="left">数学模型简化的根本原因可从磁链方程和dq坐标系物理模型上看出。其磁链方程为：</div><div align="center"><img id="aimg_nUzvW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="326" height="119" src="http://c.51hei.com/a/huq/a/a/a/71/71.089.jpg" border="0" alt="" /></div><div align="left">由于变换到dq坐标系上以后，定子和转子等效绕组都落在两根轴上，而且两轴相互垂直，它们之间没有互感的耦合关系，互感磁链只在同轴绕组之间存在，所以式中每个磁链分量只剩下两项了。</div><div align="left">（3）dq坐标系中的转矩方程和运动方程</div><div align="left">将坐标变换矩阵代入ABC三相坐标系中的转矩方程式，简化后，得到dq0坐标系中的转矩方程为：</div><div align="center"><img id="aimg_wRYeY" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="315" height="36" src="http://c.51hei.com/a/huq/a/a/a/71/71.090.jpg" border="0" alt="" /></div><div align="left">所以在dq0坐标系中的运动方程为：</div><div align="center"><img id="aimg_mDZRW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="479" height="58" src="http://c.51hei.com/a/huq/a/a/a/71/71.091.jpg" border="0" alt="" /></div><div align="left">2.按转子磁场定向的两相同步旋转坐标系上的数学模型</div><div align="left">设d轴沿着转子磁链<img id="aimg_i6KjE" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="28" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.092.jpg" border="0" alt="" />的方向，称之M轴；q轴逆时针旋转<img id="aimg_iDp8Z" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="31" height="27" src="http://c.51hei.com/a/huq/a/a/a/71/71.093.jpg" border="0" alt="" />，即垂直于M轴，称为T轴；这样两相同步旋转的坐标系就具体规定为MT坐标系，即按转子磁场定向的坐标系。坐标系旋转速度等于同步角速度<img id="aimg_GRuwi" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="22" height="27" src="http://c.51hei.com/a/huq/a/a/a/71/71.094.jpg" border="0" alt="" />转子旋转机械角速度为<img id="aimg_hie6Q" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="21" height="20" src="http://c.51hei.com/a/huq/a/a/a/71/71.095.jpg" border="0" alt="" />；MT轴相对于转子的角速度为<img id="aimg_A56P6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="131" height="27" src="http://c.51hei.com/a/huq/a/a/a/71/71.096.jpg" border="0" alt="" />，即为转差的角速度。MT坐标系上的数学模型：</div><div align="center"><img id="aimg_Mq50h" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="485" height="129" src="http://c.51hei.com/a/huq/a/a/a/71/71.097.jpg" border="0" alt="" /> <img id="aimg_UY00z" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="11" height="16" src="http://c.51hei.com/a/huq/a/a/a/71/71.098.jpg" border="0" alt="" /></div><br />
+<br />
+<div align="center">1</div><br />
+<br />
+<br />
+<div align="center"><font face="Calibri"><font style="font-size:9pt">安徽理工大学毕业设计</font></font></div><strong>3 交流异步电动机性能的仿真研究</strong><div align="left">本章主要通过仿真研究异步电动机的特性，为下一章交流异步电动机矢量控制调速系统的仿真打下基础。主要内容是在MATLAB/Simulink工作环境下，首先是对鼠笼型交流异步电动机在正弦交流电压下的工作情况进行仿真，参数设置以及出波形的特性；然后是对对在变频器供电时异步电动机的工作情况进行仿真，并对相关波形进行分析。</div><strong>3.1在交流情况下异步电动机工作仿真</strong><div align="left">1.工作原理</div><div align="left">当三相异步电机接三相交流电源时，三相定子绕组流过三相对称电流产生的三相磁动势（定子旋转磁动势）并产生旋转磁场。该旋转磁场与转子导体之间有相对切割运动,根据电磁感应原理,转子导体产生感应电动势并产生感应电流。载流的转子导体在磁场中受到电磁力作用，形成电磁转矩，驱动转子旋转，当电动机轴上带机械负载时，便向外输出机械能。三相异步电动机的转速永远低于旋转磁场的同步转速，使转子和旋转磁场间有相对运动，从而保证转子的闭合导体切割磁力线，感生电流，产生转矩。</div><div align="left">2.在Simulink中交流异步电动机仿真模型的建立</div><div align="left">在Simulink中异步电动机连接三相正弦电源时仿真模型如图3-1所示。</div><div align="center"><img id="aimg_AQIe5" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="597" height="358" src="http://c.51hei.com/a/huq/a/a/a/71/71.099.jpg" border="0" alt="" />图3-1 交流条件下异步电动机仿真模型</div><div align="left">异步电动机连接三相正弦电源，电动机负载由常数模块TL设定，电动机参数通过电动机测量模块（Machines Measurement Demux）测量，通过示波器观测电动机定子三相电流（isa，isb，isc）、转子三相电流（ira，irb，irc)、转速speed和转矩Te，并且由XY图示仪（XY Graph）观测电动机的机械特性（Te-n特性）。模型参数如表3-1所示。</div><div align="center">表3-1 异步电动机特性研究模型参数</div><table cellspacing="0" class="t_table" ><tr><td colspan="4"><div align="right"><div align="center">三相电源</div></div></td></tr><tr><td><div align="right"><div align="center">电压</div></div></td><td><div align="right"><div align="center">220V</div></div></td><td><div align="right"><div align="center">频率</div></div></td><td><div align="right"><div align="center">50Hz</div></div></td></tr><tr><td colspan="4"><div align="right"><div align="center">电动机（容量Pn=4.73e3kW）</div></div></td></tr><tr><td><div align="right"><div align="center">电压Un</div></div></td><td><div align="right"><div align="center">380V</div></div></td><td><div align="right"><div align="center">频率fn</div></div></td><td><div align="right"><div align="center">50Hz</div></div></td></tr><tr><td><div align="right"><div align="center">定子绕组电阻Rs</div></div></td><td><div align="right"><div align="center">0.68</div></div></td><td><div align="right"><div align="center">定子绕组漏感L1s</div></div></td><td><div align="right"><div align="center">0.0042H</div></div></td></tr><tr><td><div align="right"><div align="center">转子绕组电阻Rs</div></div></td><td><div align="right"><div align="center">0.45</div></div></td><td><div align="right"><div align="center">转子绕组漏感L1s</div></div></td><td><div align="right"><div align="center">0.0042H</div></div></td></tr><tr><td><div align="right"><div align="center">互感Lm</div></div></td><td><div align="right"><div align="center">0.1486H</div></div></td><td><div align="right"><div align="center">转动惯量J</div></div></td><td><div align="right"><div align="center">0.05kg·<img id="aimg_LVKzD" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="23" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.100.jpg" border="0" alt="" /></div></div></td></tr><tr><td><div align="right"><div align="center">摩擦系数F</div></div></td><td><div align="right"><div align="center">0.081</div></div></td><td><div align="right"><div align="center">极对数P</div></div></td><td><div align="right"><div align="center">2</div></div></td></tr><tr><td colspan="4"><div align="right"><div align="center">负载设定TL</div></div></td></tr><tr><td><div align="right"><div align="center">加载时间</div></div></td><td><div align="right"><div align="center">0.5s</div></div></td><td><div align="right"><div align="center">加载值</div></div></td><td><div align="right"><div align="center">132</div></div></td></tr><tr><td colspan="4"><div align="right"><div align="center">仿真参数</div></div></td></tr><tr><td><div align="right"><div align="center">算法</div></div></td><td><div align="right"><div align="center">Ode23t</div></div></td><td><div align="right"><div align="center">相对误差</div></div></td><td><div align="right"><div align="center"><img id="aimg_gh8kW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="29" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.101.jpg" border="0" alt="" /></div></div></td></tr></table><div align="left">3.交流异步电动机的仿真波形</div><div align="left">当异步电动机连接三相正弦交流电源时，异步电动机仿真波形如图3-2所示。</div><div align="left"><img id="aimg_IEy0V" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="695" height="294" src="http://c.51hei.com/a/huq/a/a/a/71/71.102.jpg" border="0" alt="" /></div><div align="center">图3-2 异步电动机的仿真波形</div><div align="left">4.对异步电动机仿真波形的分析</div><div align="left">电动机在额定电压下空载起动时，图3-2分别描述了定子电流、转子电流、电动机转速、电动机转矩和机械特性变化情况。</div><div align="left">在电动机启动到空载运行和过载运行过程中，定子电流和转子电流如图3-2（a）、(b)所示，在起动中随着转速的上升定子电流减小，在0.5s加载后定子电流迅速增大，定子电流为50Hz的正弦波。转子电流的变化与定子电流相同，但是从转子电流的波形可以看出，转子电流频率随电动机转差率的变化而变化，在启动过程中随转速上升转差率变小，转子电流频率下降，当电动机达到理想空载转速1500r/min，转子电流的大小和频率都是0，加上负载后随转速的下降和反向后转差变大，转子电流频率又增加。</div><div align="left">由图3-2（c）、（d）可知，起动时电动机转速迅速上升，在0.2s时能够达到稳定转速1500r/min左右。用阶跃信号TL模拟，在t=0.5s时给电动机加上负载转矩132N·m，此时观察电动机转速知，电动机转速下降，转差率变大，在1.45s时转速下降为0，因为该负载远大于电动机额定负载40N·m，1.45s后电动机转速变为负值，这时相当于电动机待位能性负载，负载过大使得电动机处于倒拉反转的状态。图3-2（d）是电动机的转矩响应，起动中交流电动机的转矩有波动的，严重过载时引起电动机反转时，电动机产生很小的转矩。</div><div align="left">图3-2（e）是电动机的动态机械特性，该机械特性与理论上异步电动机起动、空载运行以及带负载运行的机械特性相一致。在异步电动机起动时起动转矩变化比较大，此时电动机的转速较低；当空载运行时，转差率较小，电动机转速较高；在t=0.5s时，给电动机加上负载转矩132N·m，远大于电动机额定负载40N·m，此时异步电动机的工作点会下移，越过转折点，异步电动机进入不稳定区。</div><strong>3.2 PWM变频器-电动机系统仿真</strong><div align="left">1.在Simulink中PWM变频器-电动机系统仿真模型的建立</div><div align="left">模型由三相交流电源模块、两个通用桥模块（Universal Bridge）、调制器（PWM Generator）、电感L2、电容C1、异步交流电动机模块（Asynchronous Machine SI Units）以及电机测量(Machines Measurement Demux)组成。</div><div align="left">仿真电路将三相交流电通过由通用桥模块（Universal Bridge）组成的整流单元整流，并经过电感、电容滤波，得到近似直流电。该直流电经过调制器（PWM Generator）控制下的逆变单元给异步电动机供电，其中逆变单元也是由通用桥模块组成，选择的半导体器件为IGBT。整流单元和逆变单元组成了变频器的主电路，调制器（PWM Generator）相当于控制单元。交流异步电动机由PWM变频器供电的仿真模型如图3-3所示。</div><br />
+<div align="left"><img id="aimg_FMW6N" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="641" height="379" src="http://c.51hei.com/a/huq/a/a/a/71/71.103.jpg" border="0" alt="" /></div><div align="center">图3-3PWM变频器-交流异步电动机系统仿真模型</div><div align="left">2.PWM变频器-电动机系统仿真波形及其分析</div><div align="left">PWM变频器-电动机系统仿真波形如图3-4所示。图3-4分别描绘了逆变器输出电压、电动机定子电流、电动机转子电流以及转速的变化波形。</div><div align="center"><img id="aimg_piN57" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="589" height="356" src="http://c.51hei.com/a/huq/a/a/a/71/71.104.jpg" border="0" alt="" /></div><div align="center">图3-4 逆变器供电电动机工作波形</div><div align="left">图3-4（a）是逆变器输出线电压Uab的波形，PWM发生器给逆变器提供驱动信号，控制开关管IGBT的导通，从而控制Uab输出波形。</div><div align="left">图3-4（b）、（c）分别是电动机定子电流和转子电流，空载启动运行时，刚刚启动</div><div align="left">时定子电流和转子电流很大，随着电动机渐渐达到额定转速时，定子和转子电流都逐渐减小；当t=0.15s时，异步电动机转速达到空载转速，此时定子电流和转子电流为最小值；当在t=0.25s，通过阶跃信号模块TL突加负载转矩45N·m，定子电流和转子电流幅值分别逐渐上升，最终达到稳定状态。定子电流和转子电流变化的根本原因是：为了维持异步电动机转速的恒定和稳定运行，必须使电机产生的电磁转矩和负载转矩相等，由异步电动机的等效T型模型可知，电磁转矩Te与定子电流或者转子电流成正比关系。所以负载转矩的不断变化使得定子和转子电流的不断变化。开始阶段，异步电动机的起动转矩较大，导致了起动电流较大；空载运行时，负载转矩很小，导致了此时定子和转子电流较小；突加负载后，负载转矩上升，导致了定子和转子的电流上升。这样我们就看到了图3-4(b)、(c)定子电流和转子电流的变化情况。</div><div align="left">图3-4（d）是异步电动机从空载启动达到额定转速再负载运行时转速变化情况。由图可知，异步电动机从空载启动，转速上升平稳，大约在0.2s时达到额定转速约为1500r/min；在t=0.25s突加负载后，转速微微下降，此时电磁转矩上升，定子电流和转子电流也有所上升；最终异步电动机转速达到稳定状态，波形中有微微波动，不是一条直线，这主要是因为交流电源经整流模块和滤波单元后，由于滤波不完全，中间存在各次谐波，导致输出直流电波形存在扰动情况。如果用三相电压型SPWM逆变器代替PWM逆变器充当电源供给，输出波形可以更好点。</div><br />
+<div align="center">1</div><br />
+<br />
+<br />
+<div align="center"><font face="Calibri"><font style="font-size:9pt">安徽理工大学毕业设计</font></font></div><strong><font style="font-size:14pt">4</font><font style="font-size:14pt"> </font><font style="font-size:14pt">交流异步电动机矢量控制调速系统仿真</font></strong><div align="left">按转子磁链定向矢量控制的基本思想是通过坐标变换，在按转子磁链定向同步旋转正交坐标系中，得到等效的直流电动机模型，仿照直流电动机的控制方法来控制电磁转矩与磁链，然后将转子磁链定向坐标系中的控制量通过反变换得到三相坐标系的对应量，以实施控制。由于变换的是矢量，所以这样的坐标变换也可称作矢量变换，相应的控制系统称为矢量控制（Vector Control，VC）系统或按转子磁链定向控制（Flux Orientation，FOC）系统。</div><div align="left">本章主要对带转矩内环的转速和磁链闭环异步电动机矢量控制系统、转差频率控制的异步电动机矢量控制系统以及无速度传感器的矢量控制系统仿真，并通过改变模型参数比较和分析交流异步电动机矢量控制调速系统的特性，加强对交流异步电动机矢量控制系统的理解。</div><strong>4.1 转矩内环的转速、磁链闭环矢量控制系统仿真及分析</strong><div align="left">带转矩内环的转速、磁链闭环矢量控制系统主电路采用电流滞环控制型逆变器。在控制电路中，在转速环后增加了转矩控制内环，转速调节器ASR的输出是转矩调节器ATR的给定<img id="aimg_QRkP6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.105.jpg" border="0" alt="" />，而转矩的反馈信号<img id="aimg_E6rzJ" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.106.jpg" border="0" alt="" />，则通过矢量控制方程计算得到。电路中磁链调节器ApsiR用于电动机定子磁链的控制，并设置了电流变换和磁链观测环节。ATR和ApsiR的输出分别是定子磁链的控制，并设置了电流变换和磁链观测环节。ATR和APsiR的输出分别是定子电流的转矩分量<img id="aimg_l800D" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.107.jpg" border="0" alt="" />和励磁分量<img id="aimg_fDD95" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.108.jpg" border="0" alt="" />。<img id="aimg_Wqw96" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.107.jpg" border="0" alt="" />和<img id="aimg_u7uRW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.108.jpg" border="0" alt="" />经过2r/3s变换后得到三相定子电流的给定值<img id="aimg_t5Wy7" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.109.jpg" border="0" alt="" />、<img id="aimg_cy0rv" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.110.jpg" border="0" alt="" />、<img id="aimg_pY6Pr" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.111.jpg" border="0" alt="" />，并通过电流滞环控制PWM逆变器控制电动机定子的三相电流。</div><div align="left">1.带转矩内环转速、磁链闭环控制系统仿真模型</div><div align="left">在带转矩内环转速、磁链闭环控制系统仿真模型中，包含220V三相交流电源、两个通用桥模块（Universal Bridge）、调制器（PWM Generator）、电感L2、电容C1、异步交流电动机模块（Asynchronous Machine SI Units）以及电机测量(Machines Measurement Demux)组成了模型的主电路，逆变器的驱动信号由滞环脉冲发生器产生。三个调节器ASR、ATR和ApsiR是带输出限幅的PI调节器（见图4-2~图4-4）。转子磁链观测使用两相同步旋转坐标系上的磁链模型（Current model），函数模块Fcn用于计算转矩，两相旋转坐标系/三相静止坐标系变换模块（dq0-to-abc）实现了矢量控制中的2r/3s的坐标变换。带转矩内环转速、磁链闭环控制系统仿真模型如图4-1所示。</div><div align="center"><img id="aimg_PuzeJ" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="625" height="507" src="http://c.51hei.com/a/huq/a/a/a/71/71.112.jpg" border="0" alt="" />图4-1 带转矩内环的转速、磁链闭环的矢量控制系统仿真模型</div><div align="left">ASR为转速调节器，ATR为转矩调节器，ApsiR为磁链调节器。三个调节器结构相同，只是内部参数设置不同。带输出限幅的PI调节器ASR、ATR和ApsiR都含有饱和模块（Saturation），其主要作用是限制信号的范围，使信号变化在符合实际要求的范围之内。ASR为转速调节器如图4-2所示，ATR为转矩调节器如图4-3所示，ApsiR为磁链调节器如图4-4所示。</div><div align="center"><font style="font-size:12pt"><img id="aimg_aPN6Z" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="419" height="158" src="http://c.51hei.com/a/huq/a/a/a/71/71.113.jpg" border="0" alt="" /></font></div><div align="center">图4-2 ASR调节器结构</div><div align="center"><font style="font-size:12pt"><img id="aimg_K9Mre" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="407" height="137" src="http://c.51hei.com/a/huq/a/a/a/71/71.114.jpg" border="0" alt="" /></font></div><div align="center">图4-3 ATR调节器结构</div><div align="center"><font style="font-size:12pt"><img id="aimg_O9hwp" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="414" height="135" src="http://c.51hei.com/a/huq/a/a/a/71/71.115.jpg" border="0" alt="" /></font></div><div align="center">图4-4 ApsiR调节器结构</div><div align="left">2.仿真模型参数设定</div><div align="left">电动机参数同表3-1异步电动机仿真模型参数的设定。模型仿真算法为ode23tb，ode23tb在龙格-库塔法的第一阶段用梯形法，第二阶段用二阶的backward differentiation formulas算法。由于仿真模型中采用了双闭环的控制方式，系统抗扰动能力较强，因此采用该算法可以在不影响系统精度的前提下，较为迅速地得出仿真结果。在仿真模型中，给定转速为1400r/min，空载起动，在0.6s时突加负载60N·m。ASR、ATR、ApsiR调节器参数如表4-1所示。</div><div align="center">表4-1 调节器参数参考值</div><table cellspacing="0" class="t_table" ><tr><td rowspan="2"><div align="right"><div align="center">调节器</div><br />
+</div></td><td rowspan="2"><div align="right"><div align="center">比例放大器放大倍数</div></div></td><td rowspan="2"><div align="right"><div align="center">积分放大器放大倍数</div></div></td><td colspan="2"><div align="right"><div align="center">积分器限幅</div></div></td><td colspan="2"><div align="right"><div align="center">调节器输出限幅</div></div></td></tr><tr><td><div align="right"><div align="center">上限</div></div></td><td><div align="right"><div align="center">下限</div></div></td><td><div align="right"><div align="center">上限</div></div></td><td><div align="right"><div align="center">下限</div></div></td></tr><tr><td><div align="right"><div align="center">转速调节器ASR</div></div></td><td><div align="right"><div align="center">3.8（G1）</div></div></td><td><div align="right"><div align="center">0.8（G2）</div></div></td><td><div align="right"><div align="center">80</div></div></td><td><div align="right"><div align="center">-80</div></div></td><td><div align="right"><div align="center">75</div></div></td><td><div align="right"><div align="center">-75</div></div></td></tr><tr><td><div align="right"><div align="center">转矩调节器ATR</div></div></td><td><div align="right"><div align="center">4.5（G3）</div></div></td><td><div align="right"><div align="center">12（G4）</div></div></td><td><div align="right"><div align="center">60</div></div></td><td><div align="right"><div align="center">-60</div></div></td><td><div align="right"><div align="center">60</div></div></td><td><div align="right"><div align="center">60</div></div></td></tr><tr><td><div align="right"><div align="center">磁链调节器ApsiR</div></div></td><td><div align="right"><div align="center">1.8（G5）</div></div></td><td><div align="right"><div align="center">100（G6）</div></div></td><td><div align="right"><div align="center">15</div></div></td><td><div align="right"><div align="center">-15</div></div></td><td><div align="right"><div align="center">13</div></div></td><td><div align="right"><div align="center">-13</div></div></td></tr></table><div align="left">3.仿真输出波形及分析</div><div align="left">（1）在给定转速<img id="aimg_v6n5J" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.116.jpg" border="0" alt="" />=1400r/min时，系统仿真波形如图4-5，4-6所示。</div><div align="left">图4-5（a）带转矩内环转速和磁链闭环控制系统在给定转速<img id="aimg_T6y6P" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.116.jpg" border="0" alt="" />=1400r/min时，转速响应，从波形中可以看出，在矢量控制下，在起动阶段，转速上升平稳；在t=0.35s达到给定转速，此时为空载状态下的转速；当t=0.6s时，给电机加负载，TL=60N·m后，电动机转速略有下降。</div><div align="left"><img id="aimg_I6np6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="733" height="397" src="http://c.51hei.com/a/huq/a/a/a/71/71.117.jpg" onmouseover="img_onmouseoverfunc(this)" onclick="zoom(this)" style="cursor:pointer" border="0" alt="" /></div><div align="center">图4-5 <img id="aimg_HDUD8" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1400r/min时带转矩内环的转速和磁链闭环矢量控制系统仿真波形</div><div align="left">图4-5（c）为异步电动机转矩波形，空载起动时，起动转矩较大，这时电动机产生较大的电磁转矩，使得异步电动机的定子电流也比较大；当起动结束后，空载转速接近同步转速，此时负载转矩很小接近为0；当t=0.6s时，加上负载后，转速不能突变，电磁转矩增加，电磁转矩Te近似等于负载转矩60Nm。所以所得仿真波形与理论上分析的波形基本一致。</div><div align="left">图4-5（b）为A相定子电流，图4-5（d）经过2r/3s变换的A相电流给定值，比较两者波形可知观察给定值<img id="aimg_x5qEW" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.119.jpg" border="0" alt="" />和测量值<img id="aimg_qQh5e" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.120.jpg" border="0" alt="" />波形可知，两者波形近似相同，即<img id="aimg_p9I0w" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.120.jpg" border="0" alt="" />波形始终围绕着<img id="aimg_w76dV" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.119.jpg" border="0" alt="" />值在规定的范围内波动。在起动过程中，由于定子电流的转矩和励磁分量都保持不变，定子电流的给定值<img id="aimg_H0ZW7" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.119.jpg" border="0" alt="" />、<img id="aimg_m5RQM" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.121.jpg" border="0" alt="" />、<img id="aimg_H8ydk" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.122.jpg" border="0" alt="" />也不变，所以在起动过程中，定子电流基本保持不变，实现恒电流起动；在t=0.35s时，此时电动机达到空载状态下的额定转速，当忽略异步电动机T型等效电路中的励磁支路时，有<img id="aimg_U6z5k" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="37" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.123.jpg" border="0" alt="" />，所以t=0.35s到t=0.6s时由于电动机空载运行，所以A相定子电流ia值比较小；t=0.6s加上负载TL=60N·m后，电磁转矩增大，定子电流也随之增大。</div><div align="left"><img id="aimg_b608v" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1400r/min时带转矩内环的转速、磁链闭环矢量控制系统中异步电动机定子磁链轨迹和转矩-转速曲线如图4-6所示。</div><div align="left"><img id="aimg_Gw5wr" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="733" height="271" src="http://c.51hei.com/a/huq/a/a/a/71/71.124.jpg" onmouseover="img_onmouseoverfunc(this)" onclick="zoom(this)" style="cursor:pointer" border="0" alt="" /></div><div align="center">图4-6 <img id="aimg_TXzBR" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1400r/min时系统仿真波形</div><div align="left">图4-6（a）、（b）分别为异步电动机定子磁链轨迹和转矩-转速曲线。比较两者波形可以看出，在起动阶段，磁场建立过程比较平滑，磁链呈螺旋形增加，最终形成圆形旋磁场。同时电动机转矩也不断上升，这有赖于磁链闭环矢量控制方式的作用。当异步电动机转子磁链发生波动时，电磁转矩不是稳定的，电动机转速也受到影响。此时，转子磁链调节器力图使转子磁链恒定，而转速调节器则调节电流转矩分量，以抵消转子磁链的变化对电磁转矩的影响，最后达到平衡状态。</div><div align="left">（2）在给定转速<img id="aimg_CYrdy" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.116.jpg" border="0" alt="" />=1700r/min时，仿真输出波形</div><div align="left"><img id="aimg_iF2R2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1700r/min时闭环矢量控制系统仿真波形如图4-7、4-8所示。</div><div align="left"><img id="aimg_c72vf" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="653" height="284" src="http://c.51hei.com/a/huq/a/a/a/71/71.125.jpg" border="0" alt="" /></div><div align="center">图4-7 <img id="aimg_pD2VI" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1700r/min时系统仿真波形</div><div align="left">图4-7、4-8系统仿真波形总体上和图4-5、4-6相仿，给定值<img id="aimg_PDB0r" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=30*<img id="aimg_RH2Pb" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.126.jpg" border="0" alt="" />/<img id="aimg_Q22TF" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="15" height="15" src="http://c.51hei.com/a/huq/a/a/a/71/71.127.jpg" border="0" alt="" />，通过改变转速给定<img id="aimg_W2Gfh" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />，来改变转子角速度给定值<img id="aimg_bhdf2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.126.jpg" border="0" alt="" />。图4-7（a）带转矩内环转速和磁链闭环控制系统在给定转速<img id="aimg_brHfi" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.116.jpg" border="0" alt="" />=1700r/min时，转速响应，从波形中可以看出，在矢量控制下，在起动阶段，转速上升平稳；在t=0.4s时，空载状态下的转速接近给定转速<img id="aimg_JM6DP" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.116.jpg" border="0" alt="" />=1700r/min；当t=0.6s时，给电机加负载，TL=60N·m后，电动机转速略有下降。</div><div align="left">图4-7（b）为A相定子电流，图4-7（d）经过2r/3s变换的A相电流给定值，比较两者波形可知观察给定值<img id="aimg_h26JI" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.119.jpg" border="0" alt="" />和测量值<img id="aimg_rpLFG" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.120.jpg" border="0" alt="" />波形可知，两者波形近似相同，即<img id="aimg_oBHtl" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.120.jpg" border="0" alt="" />波形始终围绕着<img id="aimg_ZGDmP" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.119.jpg" border="0" alt="" />值在规定的范围内波动。在起动过程中，由于定子电流的转矩和励磁分量都保持不变，定子电流的给定值<img id="aimg_RORdp" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.119.jpg" border="0" alt="" />、<img id="aimg_QpBFX" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.121.jpg" border="0" alt="" />、<img id="aimg_gV6pd" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.122.jpg" border="0" alt="" />也不变，所以在起动过程中，定子电流基本保持不变，实现恒电流起动；在t=0.4s时，此时电动机达到空载状态下的额定转速，当忽略异步电动机T型等效电路中的励磁支路时，有<img id="aimg_gDpOh" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="37" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.123.jpg" border="0" alt="" />，所以t=0.4s到t=0.6s时由于电动机空载运行，所以A相定子电流ia值比较小；t=0.6s加上负载TL=60N·m后，电磁转矩增大，定子电流也随之增大。</div><div align="left">图4-7（c）为异步电动机转矩波形，空载起动时，起动转矩较大，这时电动机产生较大的电磁转矩，使得异步电动机的定子电流也比较大；当起动结束后，空载转速接近同步转速，此时负载转矩很小接近为0；当t=0.6s时，加上负载后，转速不能突变，电磁转矩增加，电磁转矩Te近似等于负载转矩60N·m。</div><div align="left"><img id="aimg_kIVhh" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1700r/min时带转矩内环的转速、磁链闭环矢量控制系统中异步电动机定子磁链轨迹和转矩-转速曲线如图4-8所示。</div><div align="left"><img id="aimg_tr7h6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="673" height="306" src="http://c.51hei.com/a/huq/a/a/a/71/71.128.jpg" border="0" alt="" /></div><div align="center">图4-8 <img id="aimg_LrH07" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1700r/min时系统仿真结果</div><div align="left">图4-8（a）、（b）分别为<img id="aimg_nGrJP" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1700r/min异步电动机定子磁链轨迹和转矩-转速曲线。比较两者波形可以看出，在起动阶段，磁场建立过程比较平滑，磁链呈螺旋形增加，最终形成近似六边形的旋转磁场。同时电动机转矩也不断上升，这有赖于磁链闭环矢量控制方式的作用。比较图4-8（a）和图4-6（a）知，图4-6（a）中旋转磁场更加接近圆形，这是因为图4-8（a）中PWM开关频率设定值较低，而PWM开关频率越高旋转磁场越接近为圆。所以在实际情况中提高PWM开关频率，有助于建立圆形旋转磁场。</div><div align="left">通过比较<img id="aimg_eGTpB" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1400r/min和<img id="aimg_iPHOT" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />=1700r/min条件下，带转矩内环的转速和磁链闭环矢量控制系统仿真结果，我们可以知道，在两种条件下，实际电流都能快速的跟随给定值，充分发挥了闭环控制的优越性。因为根据异步电动机矢量变换及等效直流电动机模型可知，转子磁链定向实现了定子电流的转矩分量和励磁分量的解耦，转子的角速度主要受定子电流的转矩分量<img id="aimg_UHH2r" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.129.jpg" border="0" alt="" />控制。采用电流闭环控制，通过改变转子角速度的给定值<img id="aimg_qRjbx" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.130.jpg" border="0" alt="" />，通过反馈环节可以实现对定子电流转矩分量<img id="aimg_pHD6f" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.129.jpg" border="0" alt="" />的控制。当系统受到扰动时，定子电流转矩分量<img id="aimg_AbpgD" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.129.jpg" border="0" alt="" />虽然发生变化，但是由于反馈环节的作用，<img id="aimg_QFXDP" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.129.jpg" border="0" alt="" />能够很快的恢复到扰动之前的状态。</div><div align="left">纵观图4-4带转矩内环的转速和磁链闭环的矢量控制系统仿真模型，转速给定<img id="aimg_B6fr7" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="17" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.118.jpg" border="0" alt="" />通过转速调节器（ASR）得到转矩调节器（ATR）的给定转矩<img id="aimg_G2z22" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.131.jpg" border="0" alt="" />，而仿真模型中增加了转矩内环，<img id="aimg_Z06yX" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.131.jpg" border="0" alt="" />和矢量控制方程计算出的反馈信号<img id="aimg_LfvRr" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.132.jpg" border="0" alt="" />在转矩调节器（ATR）中作用，得出定子电流的转矩分量给定值<img id="aimg_vR2dv" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="25" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.133.jpg" border="0" alt="" />。转矩内环的作用是：当转子磁链发生波动时，通过转矩调节器及时调整电流转矩分量的给定值，以抵消磁链变化的影响，尽可能不影响或者少影响电动机转速。另一方面，转子磁链给定值为<img id="aimg_RoVrd" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="21" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.134.jpg" border="0" alt="" />与通过转子磁链定向转子磁链电流模型得出的转子磁链<img id="aimg_WVTRb" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.135.jpg" border="0" alt="" />比较，经过转子磁链调节器ApisR，得出电子电流的励磁分量<img id="aimg_Mh6Vy" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.136.jpg" border="0" alt="" />。磁链调节器作用是：力图使转子磁链恒定。ATR和APsiR的输出分别是定子电流的转矩分量<img id="aimg_WrHRl" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.107.jpg" border="0" alt="" />和励磁分量<img id="aimg_K6jir" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.108.jpg" border="0" alt="" />。<img id="aimg_Kg0iP" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.107.jpg" border="0" alt="" />和<img id="aimg_kmLh7" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.108.jpg" border="0" alt="" />经过2r/3s变换后得到三相定子电流的给定值<img id="aimg_GDOyf" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.109.jpg" border="0" alt="" />、<img id="aimg_jrgzZ" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.110.jpg" border="0" alt="" />、<img id="aimg_mhtdx" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.111.jpg" border="0" alt="" />，并通过电流滞环控制PWM逆变器控制电动机定子的三相电流。</div><strong>4.2 转差频率控制的异步电动机矢量控制系统仿真&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </strong><div align="left">1.转差频率控制异步电动机矢量控制系统的工作原理</div><div align="left">以上介绍的磁链闭环控制的矢量控制系统中，磁链幅值和位置信号均由磁链模型计算得到，都受电机参数<img id="aimg_ER2PB" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.137.jpg" border="0" alt="" />和<img id="aimg_XV6T2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="21" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.138.jpg" border="0" alt="" />变化的影响，造成控制系统的不不准确性。采用磁链开环的控制方式，无需转子磁链幅值，但对于矢量变换而言，仍然需要转子磁链的位置信号，转子磁链的计算仍然不可避免。如果利用给定值间接计算转子磁链的位置，可简化系统结构，这种方法称为间接定向。间接定向的矢量控制系统借助于矢量控制方程中转差公式，构成转差型的矢量控制系统。</div><div align="left">转速采取了转差频率控制，即异步电动机定子角频率<img id="aimg_gvXdo" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.139.jpg" border="0" alt="" />由转子角频率<img id="aimg_yFg7g" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.140.jpg" border="0" alt="" />组成（<img id="aimg_yiRg2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.139.jpg" border="0" alt="" />=<img id="aimg_ZrgMb" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.140.jpg" border="0" alt="" />+<img id="aimg_yGfrz" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="15" src="http://c.51hei.com/a/huq/a/a/a/71/71.141.jpg" border="0" alt="" />），这样在转速变化过程中，电动机定子电流频率始终能随转子的实际转速同步升降，使转速调节更为平滑。</div><div align="left">从矢量控制方程中可以看出，在保持转子磁链<img id="aimg_Gpd07" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.142.jpg" border="0" alt="" />不变的控制下，电动机转矩直接收定子电流的转矩分量<img id="aimg_G0ITm" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.143.jpg" border="0" alt="" />控制，并且转差<img id="aimg_ujBhM" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.140.jpg" border="0" alt="" />可以通过定子电流转矩分量<img id="aimg_HZZBd" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.143.jpg" border="0" alt="" />计算，转子磁链<img id="aimg_eoVRr" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.144.jpg" border="0" alt="" />也可以通过定子电流的励磁分量<img id="aimg_CoIJ2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.145.jpg" border="0" alt="" />来计算。在系统中以转速调节器ASR的输出为定子电流的转矩分量<img id="aimg_nHHyV" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.143.jpg" border="0" alt="" />，并通过计算得到<img id="aimg_Sl0zR" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.140.jpg" border="0" alt="" />。如果采用磁通不变控制，则p<img id="aimg_T22jO" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.144.jpg" border="0" alt="" />＝0，而<img id="aimg_iFhxV" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.144.jpg" border="0" alt="" />＝<img id="aimg_iVlHd" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="36" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.146.jpg" border="0" alt="" />，<img id="aimg_IXjZ2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="85" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.147.jpg" border="0" alt="" />。</div><div align="left">由于矢量控制方案得到的是定子电流的励磁分量和转矩分量，而本系统采用了电压型逆变器，需要相应的将电流控制转换为电压控制，其变换关系为：</div><div align="center"><img id="aimg_lBzXh" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="215" height="52" src="http://c.51hei.com/a/huq/a/a/a/71/71.148.jpg" border="0" alt="" /></div><div align="left">式中，<img id="aimg_ddmVR" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.149.jpg" border="0" alt="" />、<img id="aimg_IGTDm" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.150.jpg" border="0" alt="" />为定子电压的励磁分量和转矩分量；<img id="aimg_silm0" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="15" src="http://c.51hei.com/a/huq/a/a/a/71/71.151.jpg" border="0" alt="" />为漏磁系数，<img id="aimg_dpJhR" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="105" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.152.jpg" border="0" alt="" />。</div><div align="left"><img id="aimg_pJDF2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.149.jpg" border="0" alt="" />、<img id="aimg_A6FZy" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.150.jpg" border="0" alt="" />经过两相旋转坐标系/三相静止坐标系的变换(2r/3s)，得到SPWM逆变器的三相电压控制信号，并控制逆变器的输出电压。</div><div align="left">2.转差频率控制异步电动机矢量控制系统参数设置及仿真</div><div align="left">转差频率控制异步电动机矢量控制系统仿真模型如图4-9所示。</div><br />
+<div align="left"><img id="aimg_hT2v2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="572" height="389" src="http://c.51hei.com/a/huq/a/a/a/71/71.153.jpg" border="0" alt="" /></div><div align="center">图4-9 转差频率控制的矢量控制系统仿真模型</div><div align="left">系统的控制部分由给定、PI调节器、函数运算、两相/三相坐标变换、PWM脉冲发生器等环节组成。其中给定环节有定子电流励磁分量im*和转子速度n*。放大器G1、G2和积分器组成带限幅的转速调节器ASR.。电流电压模型转换由函数Um*、Ut*模块实现。函数运算模块ws*根据定子电流的励磁分量和转矩分量计算转差<img id="aimg_o2M6Y" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="20" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.154.jpg" border="0" alt="" />，并与转子频率<img id="aimg_ImffI" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="16" height="15" src="http://c.51hei.com/a/huq/a/a/a/71/71.155.jpg" border="0" alt="" />相加得到定子频率<img id="aimg_kHxDd" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.156.jpg" border="0" alt="" />，再经积分器得到定子电压矢量转角<img id="aimg_KrBrx" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="13" height="19" src="http://c.51hei.com/a/huq/a/a/a/71/71.157.jpg" border="0" alt="" />。模块sin、cos、dq0/abc实现了两相旋转坐标系至三相静止坐标系变换。dq0/abc的输出时PWM发生器的三相调制信号，因为调制信号幅度不能大于1，在dq0/abc输出后插入了衰减环节。PWM发生器设置为内部模式，然后运行模型，根据dq0/abc输出和PWM发生器的三相调制输入信号幅值小于1的要求，计算G4的衰减系数。各放大器的参数取值见表4-2。</div><div align="center">表4-2 转差频率矢量控制仿真模型放大器参数</div><table cellspacing="0" class="t_table" ><tr><td><div align="right"><div align="center">放大器</div></div></td><td><div align="right"><div align="center">放大倍数</div></div></td><td><div align="right"><div align="center">放大器</div></div></td><td><div align="right"><div align="center">放大倍数</div></div></td></tr><tr><td><div align="right"><div align="center">G1</div></div></td><td><div align="right"><div align="center">35</div></div></td><td><div align="right"><div align="center">G4</div></div></td><td><div align="right"><div align="center">2</div></div></td></tr><tr><td><div align="right"><div align="center">G2</div></div></td><td><div align="right"><div align="center">0.15</div></div></td><td><div align="right"><div align="center">G5、G6</div></div></td><td><div align="right"><div align="center">9.55</div></div></td></tr><tr><td><div align="right"><div align="center">G3</div></div></td><td><div align="right"><div align="center">0.0076</div></div></td><td><br />
+</td><td><br />
+</td></tr></table><div align="left">仿真了给定转速为1400r/min时的空载起动的过程，在起动后0.45s加载TL=65N·m。该系统是比较复杂的系统，收敛是仿真计算中经常出现问题，经试用各种计算方法，选择了固定步长算法ode5，步长取<img id="aimg_svj2d" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="29" height="21" src="http://c.51hei.com/a/huq/a/a/a/71/71.158.jpg" border="0" alt="" />。</div><div align="left">3.转差频率控制的矢量控制系统仿真波形及其分析</div><div align="left">转差频率控制的矢量控制系统仿真波形如图4-10所示。</div><div align="left"><img id="aimg_nJ6Li" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="593" height="330" src="http://c.51hei.com/a/huq/a/a/a/71/71.159.jpg" border="0" alt="" /></div><div align="center">图4-10 转差频率矢量控制系统仿真结果</div><div align="left">图4-10（a）是电动机的转速响应，图4-10（b）是定子电流A相电流响应，图4-10（c）是异步电动机的电磁转矩和负载转矩给定。</div><div align="left">图4-10（a）是电动机的转速响应，电机在起动过程中，转速上升平稳，此时异步电动机产生的电磁转矩近似等于起动转矩，起动电流较大；当t=0.4s时，电动机转速稳定在空载运行转速上，此时转速接近同步转速，约1400r/min，异步电动机产生的电磁转矩下降为空载转矩，近似为零，定子电流也比较小；当t=0.45s是，突加负载TL=65N·m，此时电磁转矩上升，转速略有下降，但不是很明显，并且最终稳定下来。</div><div align="left">图4-10（b）是定子电流A相电流响应，起动过程中，由于电磁转矩近似等于起动转矩，起动转矩较大，从而导致起动电流较大，即异步电动机的定子电流较大，幅值接近50A；当t=0.4s时，电磁转矩近似等于空载转矩，非常小，近似为零，从而使得A相定子电流很小，接近为0；当t=0.45s时，突加负载转矩TL=65N·m，为了维持电动机稳定运行，电磁转矩上升，等于负载转矩，这就要求定子电流上升，以产生足够大的电磁转矩。</div><div align="left">图4-10（c）是异步电动机的电磁转矩和负载转矩给定，当t=0时，起动转矩较大，转矩最大值超过了100N·m；当t&lt;0.05s时，异步电动机处于刚刚起动状态，起动转矩波动比较大，异步电动机运行不是很平稳，会出现抖动等不稳定的状况；当0.05s&lt; t&lt;0.2s时，电磁转矩逐步稳定，稳定在70 N·m左右；当t=0.4s时，电动机处于空载运行状态，负载转矩接近为0，电磁转矩也接近为0；当t=0.45s时，突加负载转矩TL=65N·m，负载转矩突然上升，电磁转矩也跟随上升，此时，电磁转矩近似等于负载转矩给定。</div><strong>4.3 两种矢量控制系统的特点与存在的问题</strong><div align="left">对于带转矩内环的转速、磁链闭环矢量控制系统，在本仿真中主电路采用电流滞环控制型逆变器。在计算转子磁链的电流模型都需要实测的电流和转速信号，无论转速高低时都能适用，但都受电动机参数影响。例如在实际情况下，电动机温升和频率变化都会影响转子电阻<img id="aimg_UFtzz" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="21" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.160.jpg" border="0" alt="" />，磁饱和程度将影响电感<img id="aimg_u7J2r" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="21" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.161.jpg" border="0" alt="" />和<img id="aimg_J22Rb" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="19" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.162.jpg" border="0" alt="" />。这些影响都将导致磁链幅值与位置信号失真，而反馈信号的失真比然使磁链闭环控制系统的性能降低，这是带转矩内环的转速、磁链闭环矢量控制系统的不足。</div><div align="left">对于磁链开环转差型矢量控制系统的磁场方向由磁链和电流转矩分量给定信号确定，靠矢量控制方向保证，并没有磁链模型实际计算转子磁链及其相位，所以属于间接的磁场定向。但由于矢量控制方程中包含了电动机转子参数，定向精度仍受参数变化影响，磁链和电流转矩分量给定值与实际值存在差异，将影响系统性能。</div><div align="left">综上可得，两种矢量控制系统存在的共同特点：</div><div align="left">（1）按转子磁链定向，实现定子电流励磁分量和转矩分量的解耦，需要电流闭环控制；</div><div align="left">（2）转子磁链控制在系统的控制对象是稳定的惯性环节，可以采用磁链闭环控制，也可以采用开环控制；</div><div align="left">（3）采用连续的PI控制，转矩与磁链变化平稳，电流闭环控制可有效限制起、制动电流。</div><div align="left">同时，两种矢量控制系统也存在着一些共同的问题：</div><div align="left">（1）转子磁链计算精度易受变化的转子电阻的影响，转子磁链的角度精度影响定向的准确性，使得系统的误差变大。</div><div align="left">（2）需要进行矢量变换，系统结构复杂，运算量大。</div><br />
+<br />
+<strong>结论</strong><div align="left">本文通过在Simulink环境下建立交流异步电动机矢量控制仿真模型，作为研究交流电动机变频调速的基础。本文第一章是绪论部分，主要是介绍毕业设计研究背景和总体思路；第二章主要介绍了基于动态模型的异步电动机调速系统的理论基础；第三章是对交流异步电动机矢量控制系统各部分单元进行仿真，第四章打下基础；第四章对两种矢量控制下的变频调速系统进行仿真，通过仿真实验研究了系统的性能。</div><div align="left">仿真实验结果表明了通过矢量变换建立的电机模型的正确性和有效性。系统仿真表明，适当地选取调节参数和合适的仿真参数和仿真算法，可使该系统得到良好的动态性能，对给定值具有良好的动态跟踪能力，控制系统的各个部分协调运行，实现了优化，获得了具有理想性能的调速系统。同时也可以看到，矢量控制是控制学科发展历程中的一个崭新的阶段。目前，矢量控制的研究与应用己经深入到众多的领域；同样，它的发展也给电气传动系统的控制策略带来了新思想、新方法。SIMULINK软件在矢量控制交流调速系统中确实为优秀而便利的软件，必将获得更广泛的应用。</div><div align="left">通过大量的理论计算和仿真实验研究知，实现矢量控制的方法不是惟一的，比如，为了实现磁场定向控制，需要测出转子磁链的幅值和相位，但是<img id="aimg_PHhr7" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.163.jpg" border="0" alt="" />是电动机内部的物理量，直接检测在技术上难以实现。因此，多采用间接观测的方法，即检测与<img id="aimg_bpPz2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.163.jpg" border="0" alt="" />有关的电动机运行参数，如定子电压、电流或转速等，然后根据电动机的动态数学模型，通过运算，实时计算转子磁链的幅值和相位。此外也可以根据系统运行的指令值<img id="aimg_dRzDL" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="45" height="25" src="http://c.51hei.com/a/huq/a/a/a/71/71.164.jpg" border="0" alt="" />和检测到的转子位置信号或转子速度信号，通过计算求得<img id="aimg_tD77G" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="24" height="24" src="http://c.51hei.com/a/huq/a/a/a/71/71.163.jpg" border="0" alt="" />的幅值和相位。同时利用能够实际测量的物理量的不同组合，可以得到不同形式的各有利弊的转子磁链观测模型。</div><br />
+<br />
+完整的Word格式文档51黑下载地址：<br />
+
+<ignore_js_op>
+
+<img src="static/image/filetype/msoffice.gif" border="0" class="vm" alt="" />
+<span style="white-space: nowrap" id="attach_141535" onmouseover="showMenu({'ctrlid':this.id,'pos':'12'})">
+
+<a href="http://www.51hei.com/bbs/forum.php?mod=attachment&amp;aid=MTQxNTM1fGYxNTgzMWQxfDE1OTI5NDcyNDh8MHwxMzM4MDk%3D" target="_blank">基于matlab的异步电机变频调速系统的设计.doc</a>
+
+<em class="xg1">(1.43 MB, 下载次数: 123)</em>
+</span>
+<div class="tip tip_4" id="attach_141535_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="tip_c xs0">
+<div class="y">2018-9-3 16:14 上传</div>
+点击文件名下载附件
+
+</ignore_js_op>
+<br />
+<br />
+<br />
+<br />
+</td></tr></table>
+
+
+</div>
+<div id="comment_549210" class="cm">
+</div>
+
+<div id="post_rate_div_549210"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition549210"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;reppost=549210&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_549210" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport549210', 'misc.php?mod=report&rtype=post&rid=549210&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_549210_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_549210')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+<script type="text/javascript" reload="1">
+aimgcount[549210] = ['Wiuqw','mwVWP','TJDRZ','W8HDy','WywK6','cn5rK','LDq5h','k9kzI','Gp79z','N0YYq','iJDWd','EPq6r','zMWEe','eY5Wu','Hjh6v','Ikj86','QKrED','kP6Zm','drw9u','Ww69p','OJJi0','D0W9Q','i5hu7','ZN0nw','fw5nI','X6JD6','Vw7yQ','p60Pu','mJHU5','uy0qv','zH96P','WyyeV','Gqqqn','TVuw0','UM5W8','BWdd0','zq7n0','rYdrM','WIjD9','g5856','PeWDV','Eme6q','A6Q6V','oP5Pq','fH7Ku','q66nz','mPV5Z','y67RW','i657i','Me577','Rwizm','t568w','vmr65','JPEDU','T99dy','V6UdW','Jnhwu','t80qR','PRwDD','eu7rQ','S6WmP','G6IdW','Qmi50','L86Uw','FDyPm','Mu9zI','BQ5n8','WmR6y','oREi6','UZdKq','XrUkU','vk5I9','jziQU','dD5EY','Kuww5','BRhVE','jH0PD','HnJmJ','n95i6','Uk9wh','d6H6P','vI5n8','njN69','U9vDe','J7KZR','OV8d5','ovv50','X57jz','DWwjr','WzjRi','q5Pd8','Lki6Y','ij0dU','kh75w','nUWUh','wJ6Iu','AD5ed','nUzvW','wRYeY','mDZRW','i6KjE','iDp8Z','GRuwi','hie6Q','A56P6','Mq50h','UY00z','AQIe5','LVKzD','gh8kW','IEy0V','FMW6N','piN57','QRkP6','E6rzJ','l800D','fDD95','Wqw96','u7uRW','t5Wy7','cy0rv','pY6Pr','PuzeJ','aPN6Z','K9Mre','O9hwp','v6n5J','T6y6P','I6np6','HDUD8','x5qEW','qQh5e','p9I0w','w76dV','H0ZW7','m5RQM','H8ydk','U6z5k','b608v','Gw5wr','TXzBR','CYrdy','iF2R2','c72vf','pD2VI','PDB0r','RH2Pb','Q22TF','W2Gfh','bhdf2','brHfi','JM6DP','h26JI','rpLFG','oBHtl','ZGDmP','RORdp','QpBFX','gV6pd','gDpOh','kIVhh','tr7h6','LrH07','nGrJP','eGTpB','iPHOT','UHH2r','qRjbx','pHD6f','AbpgD','QFXDP','B6fr7','G2z22','Z06yX','LfvRr','vR2dv','RoVrd','WVTRb','Mh6Vy','WrHRl','K6jir','Kg0iP','kmLh7','GDOyf','jrgzZ','mhtdx','ER2PB','XV6T2','gvXdo','yFg7g','yiRg2','ZrgMb','yGfrz','Gpd07','G0ITm','ujBhM','HZZBd','eoVRr','CoIJ2','nHHyV','Sl0zR','T22jO','iFhxV','iVlHd','IXjZ2','lBzXh','ddmVR','IGTDm','silm0','dpJhR','pJDF2','A6FZy','hT2v2','o2M6Y','ImffI','kHxDd','KrBrx','svj2d','nJ6Li','UFtzz','u7J2r','J22Rb','PHhr7','bpPz2','dRzDL','tD77G','141538'];
+attachimggroup(549210);
+attachimgshow(549210);
+var aimgfid = 0;
+</script>
+</div><div id="post_552975" ><table id="pid552975" class="plhin" summary="pid552975" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar552975" class="pls favatar">
+ <div class="p_pop blk bui card_gender_" id="userinfo552975" style="display: none; ">
+<div class="m z">
+<div id="userinfo552975_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-395889.html" target="_blank" class="xi2">hehe22</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=395889&do=profile" target="_blank" class="xi2">12</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=395889&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-395889.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/39/58/89_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon552975" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-395889.html" target="_blank" class="xi2">hehe22</a>
+<em id="authorposton552975">发表于 2018-9-10 10:05</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_552975">
+我也是这个方向的的嘞，感谢分享</td></tr></table>
+
+
+</div>
+<div id="comment_552975" class="cm">
+</div>
+
+<div id="post_rate_div_552975"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition552975"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;repquote=552975&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_552975" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport552975', 'misc.php?mod=report&rtype=post&rid=552975&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_552975_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_552975')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="post_595512" ><table id="pid595512" class="plhin" summary="pid595512" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar595512" class="pls favatar">
+ <div class="p_pop blk bui card_gender_" id="userinfo595512" style="display: none; ">
+<div class="m z">
+<div id="userinfo595512_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-428261.html" target="_blank" class="xi2">贺鹏康</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=428261&do=profile" target="_blank" class="xi2">9</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=428261&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-428261.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/42/82/61_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon595512" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-428261.html" target="_blank" class="xi2">贺鹏康</a>
+<em id="authorposton595512">发表于 2018-11-21 08:56</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_595512">
+楼主你好，能不能分享一下磁链观测器和dq0-to-abc模块怎么做出来的嘛<img src="static/image/smiley/default/em04.gif" smilieid="4" border="0" alt="" /><br />
+</td></tr></table>
+
+
+</div>
+<div id="comment_595512" class="cm">
+</div>
+
+<div id="post_rate_div_595512"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition595512"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;repquote=595512&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_595512" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport595512', 'misc.php?mod=report&rtype=post&rid=595512&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_595512_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_595512')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="post_652853" ><table id="pid652853" class="plhin" summary="pid652853" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar652853" class="pls favatar">
+ <div class="p_pop blk bui card_gender_" id="userinfo652853" style="display: none; ">
+<div class="m z">
+<div id="userinfo652853_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-489394.html" target="_blank" class="xi2">gchq521</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=489394&do=profile" target="_blank" class="xi2">94</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=489394&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-489394.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/48/93/94_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon652853" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-489394.html" target="_blank" class="xi2">gchq521</a>
+<em id="authorposton652853">发表于 2019-3-12 17:50</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_652853">
+想看下~<img src="static/image/smiley/default/em01.gif" smilieid="1" border="0" alt="" />能下载吗</td></tr></table>
+
+
+</div>
+<div id="comment_652853" class="cm">
+</div>
+
+<div id="post_rate_div_652853"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition652853"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;repquote=652853&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_652853" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport652853', 'misc.php?mod=report&rtype=post&rid=652853&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_652853_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_652853')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="post_663525" ><table id="pid663525" class="plhin" summary="pid663525" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar663525" class="pls favatar">
+ <div class="p_pop blk bui card_gender_" id="userinfo663525" style="display: none; ">
+<div class="m z">
+<div id="userinfo663525_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-502499.html" target="_blank" class="xi2">wyflds</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=502499&do=profile" target="_blank" class="xi2">7</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=502499&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-502499.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/50/24/99_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon663525" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-502499.html" target="_blank" class="xi2">wyflds</a>
+<em id="authorposton663525">发表于 2019-4-1 16:00</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_663525">
+您好，请问可以分享一下转差频率控制的矢量控制系统仿真模型（即图4-9）的原图吗？或者MATLAB文件，谢谢！</td></tr></table>
+
+
+</div>
+<div id="comment_663525" class="cm">
+</div>
+
+<div id="post_rate_div_663525"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition663525"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;repquote=663525&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_663525" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport663525', 'misc.php?mod=report&rtype=post&rid=663525&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_663525_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_663525')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="post_686463" ><table id="pid686463" class="plhin" summary="pid686463" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar686463" class="pls favatar">
+ <div class="p_pop blk bui card_gender_" id="userinfo686463" style="display: none; ">
+<div class="m z">
+<div id="userinfo686463_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-532428.html" target="_blank" class="xi2">我不要你温柔</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=532428&do=profile" target="_blank" class="xi2">3</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=532428&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-532428.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/53/24/28_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon686463" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-532428.html" target="_blank" class="xi2">我不要你温柔</a>
+<em id="authorposton686463">发表于 2019-5-10 13:28</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_686463">
+<div class="quote"><blockquote><font size="2"><a href="http://www.51hei.com/bbs/forum.php?mod=redirect&amp;goto=findpost&amp;pid=552975&amp;ptid=133809" target="_blank"><font color="#999999">hehe22 发表于 2018-9-10 10:05</font></a></font><br />
+我也是这个方向的的嘞，感谢分享</blockquote></div><br />
+请问您做完了吗<br />
+</td></tr></table>
+
+
+</div>
+<div id="comment_686463" class="cm">
+</div>
+
+<div id="post_rate_div_686463"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition686463"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;repquote=686463&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_686463" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport686463', 'misc.php?mod=report&rtype=post&rid=686463&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_686463_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_686463')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="post_708067" ><table id="pid708067" class="plhin" summary="pid708067" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar708067" class="pls favatar">
+ <div class="p_pop blk bui card_gender_" id="userinfo708067" style="display: none; ">
+<div class="m z">
+<div id="userinfo708067_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-565832.html" target="_blank" class="xi2">156790</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=565832&do=profile" target="_blank" class="xi2">3</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=565832&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-565832.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/56/58/32_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon708067" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-565832.html" target="_blank" class="xi2">156790</a>
+<em id="authorposton708067">发表于 2019-6-18 15:54</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_708067">
+收获颇多，感谢！</td></tr></table>
+
+
+</div>
+<div id="comment_708067" class="cm">
+</div>
+
+<div id="post_rate_div_708067"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition708067"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;repquote=708067&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_708067" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport708067', 'misc.php?mod=report&rtype=post&rid=708067&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_708067_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_708067')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="post_864332" ><table id="pid864332" class="plhin" summary="pid864332" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls" rowspan="2">
+<div id="favatar864332" class="pls favatar">
+ <a name="lastpost"></a><div class="p_pop blk bui card_gender_" id="userinfo864332" style="display: none; ">
+<div class="m z">
+<div id="userinfo864332_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="http://www.51hei.com/bbs/space-uid-764967.html" target="_blank" class="xi2">教室的节奏</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="http://www.51hei.com/bbs/home.php?mod=space&uid=764967&do=profile" target="_blank" class="xi2">5</a></dd>
+</dl>
+<div class="imicn">
+<a href="http://www.51hei.com/bbs/home.php?mod=space&amp;uid=764967&amp;do=profile" target="_blank" title="查看详细资料"><img src="static/image/common/userinfo.gif" alt="查看详细资料" /></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="http://www.51hei.com/bbs/space-uid-764967.html" class="avtm" target="_blank"><img src="http://www.51hei.com/bbs/uc_server/data/avatar/000/76/49/67_avatar_middle.jpg" onerror="this.onerror=null;this.src='http://www.51hei.com/bbs/uc_server/images/noavatar_middle.gif'" /></a></div>
+</div>
+</div>
+</td>
+	
+<td class="plc">
+<div class="pi">
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon864332" src="static/image/common/online_member.gif" />
+<a href="http://www.51hei.com/bbs/space-uid-764967.html" target="_blank" class="xi2">教室的节奏</a>
+<em id="authorposton864332">发表于 2020-5-30 13:28</em>
+<span class="pipe">|</span>
+<a href="http://www.51hei.com/bbs/dpj-133809-1.html" rel="nofollow">显示全部楼层</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tr><td class="t_f" id="postmessage_864332">
+您好 请问在么<br />
+您的那篇基于MATLAB的异步电机变频调速系统的设计文档分析的很全面 内容也很到位&nbsp; &nbsp;我目前的方向和这篇有很大关联&nbsp;&nbsp;恳请您能把仿真部分的文件或代码借我参考&nbsp;&nbsp;<br />
+</td></tr></table>
+
+
+</div>
+<div id="comment_864332" class="cm">
+</div>
+
+<div id="post_rate_div_864332"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition864332"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;repquote=864332&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_864332" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow('miscreport864332', 'misc.php?mod=report&rtype=post&rid=864332&tid=133809&fid=57', 'get', -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_864332_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_864332')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</table>
+</div><div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+
+
+<form method="post" autocomplete="off" name="modactions" id="modactions">
+<input type="hidden" name="formhash" value="b806d97b" />
+<input type="hidden" name="optgroup" />
+<input type="hidden" name="operation" />
+<input type="hidden" name="listextra" value="page%3D1" />
+<input type="hidden" name="page" value="1" />
+</form>
+
+
+
+<div class="pgs mtm mbm cl">
+<span class="pgb y"><a href="http://www.51hei.com/bbs/mcu-plc-1.html">返回列表</a></span>
+<a id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=57')" href="javascript:;" title="发新帖"><img src="static/image/common/pn_post.png" alt="发新帖" /></a>
+</div>
+
+<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+<script type="text/javascript">
+var postminchars = parseInt('6');
+var postmaxchars = parseInt('140000');
+var disablepostctrl = parseInt('0');
+</script>
+
+<div id="f_pst" class="pl bm bmw">
+<form method="post" autocomplete="off" id="fastpostform" action="forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;extra=page%3D1&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onSubmit="return fastpostvalidate(this)">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="pls">
+</td>
+<td class="plc">
+
+<span id="fastpostreturn"></span>
+
+
+<div class="cl">
+<div id="fastsmiliesdiv" class="y"><div id="fastsmiliesdiv_data"><div id="fastsmilies"></div></div></div><div class="hasfsl" id="fastposteditor">
+<div class="tedt mtn">
+<div class="bar">
+<span class="y">
+<a href="http://www.51hei.com/bbs/forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+</span><script src="data/cache/seditor.js?I0s" type="text/javascript"></script>
+<div class="fpd">
+<a href="javascript:;" title="文字加粗" class="fbld">B</a>
+<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a>
+<a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a>
+<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a>
+<a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a>
+<a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a>
+<a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a>
+</div></div>
+<div class="area">
+<div class="pt hm">
+您需要登录后才可以回帖 <a href="member.php?mod=logging&amp;action=login" onclick="showWindow('login', this.href)" class="xi2">登录</a> | <a href="member.php?mod=register" class="xi2">立即注册</a>
+
+
+<a href="http://www.51hei.com/bbs/connect.php?mod=login&op=init&referer=forum.php%3Fmod%3Dviewthread%26tid%3D133809%26extra%3Dpage%253D1%26page%3D1%26&statfrom=login" target="_top" rel="nofollow"><img src="static/image/common/qq_login.gif" class="vm" /></a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="seccheck_fastpost">
+</div>
+
+
+<input type="hidden" name="formhash" value="b806d97b" />
+<input type="hidden" name="usesig" value="" />
+<input type="hidden" name="subject" value="  " />
+<p class="ptm pnpost">
+<a href="http://www.51hei.com/bbs/home.php?mod=spacecp&amp;ac=credit&amp;op=rule&amp;fid=57" class="y" target="_blank">本版积分规则</a>
+<button type="button" onclick="showWindow('login', 'member.php?mod=logging&action=login&guestmessage=yes')" onmouseover="checkpostrule('seccheck_fastpost', 'ac=reply');this.onmouseover=null" name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5"><strong>发表回复</strong></button>
+<label class="lb"><input type="checkbox" name="adddynamic" class="pc" value="1" />回帖并转播</label>
+<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc" />回帖后跳转到最后一页</label>
+<script type="text/javascript">if(getcookie('fastpostrefresh') == 1) {$('fastpostrefresh').checked=true;}</script>
+</p>
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<script type="text/javascript">
+var connect_qzone_share_url = 'http://www.51hei.com/bbs/home.php?mod=spacecp&ac=plugin&id=qqconnect:spacecp&pluginop=share&sh_type=1&thread_id=133809';
+var connect_weibo_share_url = 'http://www.51hei.com/bbs/home.php?mod=spacecp&ac=plugin&id=qqconnect:spacecp&pluginop=share&sh_type=2&thread_id=133809';
+var connect_thread_info = {
+thread_url: 'http://www.51hei.com/bbs/dpj-133809-1.html',
+thread_id: '133809',
+post_id: '549210',
+forum_id: '57',
+author_id: '393039',
+author: 'Elio丶'
+};
+
+connect_autoshare = '0';
+connect_isbind = '';
+if(connect_autoshare == 1 && connect_isbind) {
+_attachEvent(window, 'load', function(){
+connect_share(connect_weibo_share_url, connect_openid);
+});
+}
+</script>
+
+
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+var fObj = $('followmod_'+values['fuid']);
+if(values['type'] == 'add') {
+fObj.innerHTML = '不收听';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+} else if(values['type'] == 'del') {
+fObj.innerHTML = '收听TA';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=b806d97b&fuid='+values['fuid'];
+}
+}
+fixed_avatar([549210,552975,595512,652853,663525,686463,708067,864332], 1);
+</script>	</div>
+
+
+<script type="text/javascript">var cookieLogin = Ajax("TEXT");cookieLogin.get("connect.php?mod=check&op=cookie", function() {});</script>
+
+<div id="ft" class="wp cl">
+<div id="flk" class="y">
+<p>
+<a href="http://www.51hei.com/bbs/forum.php?mobile=yes" >手机版</a><span class="pipe">|</span><a href="http://www.51hei.com/bbs/forum.php?mod=misc&action=showdarkroom" >小黑屋</a><span class="pipe">|</span><strong><a href="http://www.51hei.com/bbs/" target="_blank">单片机论坛</a></strong>
+<span class="pipe">|</span><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=28d71e289fb09e7d2be6ebd7d41367e152a5285694d0cb0eb9c2d4abc2c62ba9"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="51黑电子论坛6群" title="51黑电子论坛6群"></a>
+<a href="http://wpa.qq.com/msgrd?V=3&amp;uin=125739409&amp;Site=单片机论坛&amp;Menu=yes&amp;from=discuz" target="_blank" title="QQ"><img src="static/image/common/site_qq.jpg" alt="QQ"></a>
+管理员QQ:125739409;技术交流QQ群281945664</p>
+<p class="xs0">
+
+<span id="debuginfo">
+</span>
+</p>
+</div>
+<div id="frt">
+<p>Powered by <strong><a href="http://www.51hei.com" target="_blank">单片机教程网</a></strong> </p>
+<p class="xs0"><img src="http://www.51hei.com/myf/wxbb.jpg" style="height:88px;"> </p>
+</div></div>
+<script src="home.php?mod=misc&ac=sendmail&rand=1592947248" type="text/javascript"></script>
+<div id="scrolltop">
+<span><a href="http://www.51hei.com/bbs/forum.php?mod=post&amp;action=reply&amp;fid=57&amp;tid=133809&amp;extra=page%3D1&amp;page=1" onclick="showWindow('reply', this.href)" class="replyfast" title="快速回复"><b>快速回复</b></a></span>
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+<span>
+<a href="http://www.51hei.com/bbs/mcu-plc-1.html" hidefocus="true" class="returnlist" title="返回列表"><b>返回列表</b></a>
+</span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>

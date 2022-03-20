@@ -1,0 +1,42 @@
+SELECT COUNT(*)  FROM  SC 
+SELECT SQRT(SCORE)  FROM  SC  WHERE   SCORE>=85
+SELECT YEAR(GETDATE()),MONTH(GETDATE()),DAY(GETDATE())
+SELECT Sname ,Stelno FROM Student
+	WHERE Snum='S002'
+SELECT Sname FROM Student
+	WHERE Ssex='女' AND Sdept='生物工程' 
+SELECT * FROM Student
+	WHERE Sname LIKE '张__' OR Sname LIKE '李__'
+SELECT * FROM Student
+	WHERE province IN('北京','上海','新疆')
+SELECT Snum, Sname,Sbirth FROM Student
+	WHERE Sbirth BETWEEN '1999' AND '2000'
+SELECT Snum, Sname,Sbirth FROM Student
+	WHERE  DATEDIFF(YEAR,Sbirth,'2018')>19
+			AND DATEDIFF(YEAR,Sbirth,'2018')<20
+SELECT * FROM Student
+	GROUP BY Ssex,Snum,Sname,Sbirth,Stelno,province,Sdept
+	ORDER BY Ssex,Sdept
+SELECT AVG(Score) FROM SC
+	WHERE Sunm='S004'
+SELECT COUNT(*)AS'选课人数',MAX(Score)AS'最高成绩',MIN(Score)AS'最低成绩',AVG(Score)AS'平均成绩' FROM SC
+	WHERE Cnum='C01'
+SELECT Sunm,Sname FROM SC,Student
+	WHERE SC.Sunm=Student.Snum AND Cnum='C02' AND Score>90
+SELECT Sunm,Sname,Score FROM SC,Student,Couse
+	WHERE SC.Sunm=Student.Snum AND SC.Cnum=Couse.Cnum AND Cname='VB'	
+SELECT Tname FROM Teacher,Couse
+	WHERE Teacher.Tnum=SC.Tno  AND Cname='VB'	
+	
+ALTER TABLE Couse ADD CONSTRAINT FK_Tno FOREIGN KEY(Tno) REFERENCES Teacher(Tnum)
+SELECT Sunm,Sname,Score FROM Student,SC,Couse 
+	WHERE SC.Sunm=Student.Snum AND SC.Cnum=Couse.Cnum AND 	Cname='数据库基础'  
+	GROUP BY Sunm,Sname,Score HAVING Score = MAX(Score)
+SELECT Sname,Sbirth FROM STUDENT WHERE Ssex= (SELECT Ssex FROM Student WHERE Sname='李勇')
+SELECT Snum,Sname,Ssex FROM STUDENT WHERE S
+CREATE  VIEW stu_CS AS SELECT * FROM Student
+
+INSERT INTO stu_CS (Snum,Sname,Ssex,Sbirth)
+VALUES ('S0011','赵红萍','男','19980808')
+
+DROP  VIEW stu_CS 

@@ -1,0 +1,82 @@
+CREATE TABLE Student(
+Snum CHAR(10) PRIMARY KEY,
+Sname CHAR(20) NOT NULL,
+Ssex CHAR(2) CHECK(Ssex='男' or Ssex= '女' ),
+Sdept VARCHAR(50) ,
+Sbirth DATETIME,
+Stelno VARCHAR(20))
+CREATE TABLE Teacher(
+Tnum CHAR(6) PRIMARY KEY,
+Tname CHAR(8) NOT NULL,
+Ttitle CHAR(10) ,
+Ttelno VARCHAR(20) ,
+Temail VARCHAR(50),)
+CREATE TABLE Couse(
+Cnum CHAR(6) PRIMARY KEY,
+Cname VARCHAR(50) NOT NULL,
+Ccredit REAL CHECK(Ccredit>=1 AND Ccredit<=6) ,
+CSemester SMALLINT ,
+CProperty CHAR(10),
+Tno CHAR(6))
+CREATE TABLE SC(
+Sunm CHAR(10) FOREIGN KEY REFERENCES Student,
+Cnum CHAR(6) FOREIGN KEY REFERENCES Couse,
+Score SMALLINT)
+
+INSERT INTO Student VALUES	('S001','李勇',		'男','计算机',	'2000.3.25',180808081)
+INSERT INTO Student VALUES	('S002','赵健',		'男','计算机',	'2000.1.1',	180808082)
+INSERT INTO Student VALUES	('S003','王谦',		'男','交通工程','2001.4.1',	180808083)
+INSERT INTO Student VALUES	('S004','孙启明',	'男','土木工程','2000.7.17',180808084)
+INSERT INTO Student VALUES	('S005','余帆',		'男','机械工程','2000.6.1',	180808085)
+INSERT INTO Student VALUES	('S006','李晓静',	'女','生物工程','2000.9.10',180808086)
+INSERT INTO Student VALUES	('S007','金之林',	'女','信息',	'2000.8.2',	180808087)
+INSERT INTO Student VALUES	('S008','张东晓',	'男','信息',	'1999.5.1',	180808088)
+INSERT INTO Student VALUES	('S009','海琳',		'女','城市规划','1999.10.1',180808089)
+
+INSERT INTO Couse VALUES	('c01','大学英语',3,1,'必修','T001')
+INSERT INTO Couse 	(Cnum,Cname,Ccredit,CSemester,CProperty) 
+	VALUES('c02','VB',			2,3,'选修')
+INSERT INTO Couse 	(Cnum,Cname,Ccredit,CSemester,CProperty) 
+	VALUES('c03','计算机网络',	4,7,'选修')
+INSERT INTO Couse 	(Cnum,Cname,Ccredit,CSemester,CProperty) 
+	VALUES('c04','数据库基础',	3,6,'必修')
+INSERT INTO Couse 	(Cnum,Cname,Ccredit,CSemester,CProperty) 
+	VALUES('c05','高等数学',	2,2,'必修')
+INSERT INTO Couse 	(Cnum,Cname,Ccredit,CSemester,CProperty) 
+	VALUES('c06','数据结构',	4,4,'必修')
+
+INSERT INTO SC VALUES('S001','c01',90)
+INSERT INTO SC VALUES('S001','c02',86)
+INSERT INTO SC VALUES('S001','c06',NULL)
+
+INSERT INTO SC VALUES('S002','c02',78)
+INSERT INTO SC VALUES('S002','c04',66)
+INSERT INTO SC VALUES('S002','c01',82)
+INSERT INTO SC VALUES('S002','c03',75)
+INSERT INTO SC VALUES('S002','c04',92)
+INSERT INTO SC VALUES('S002','c05',50)
+
+INSERT INTO SC VALUES('S004','c02',68)
+INSERT INTO SC VALUES('S004','c06',NULL)
+INSERT INTO SC VALUES('S004','c01',80)
+INSERT INTO SC VALUES('S004','c03',95)
+INSERT INTO SC VALUES('S004','c05',85)
+
+INSERT INTO Teacher  (Tnum,Tname)
+	VALUES ('T001','陈小小')
+INSERT INTO Teacher  (Tnum,Tname)
+	VALUES ('T002','王大大')
+INSERT INTO Teacher  (Tnum,Tname)
+	VALUES ('T003','叶平平')
+INSERT INTO Teacher  (Tnum,Tname)
+	VALUES ('T004','王倩倩')
+INSERT INTO Teacher  (Tnum,Tname)
+	VALUES ('T006','李莉莉')
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+DROP INDEX SC.idx_sno_cno 
